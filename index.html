@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Lucid Save Parser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon Lucid Save Parser</h1>
+        
+        <div class="upload-box">
+            <input type="file" id="save-upload" accept=".sav" hidden/>
+            <button id="file-select-btn">Choose Save File</button>
+            
+            <div class="options">
+                <div class="option-group">
+                    <input type="text" id="export-level" placeholder="Export Level">
+                </div>
+            </div>
+        </div>
+        
+        <div id="loading" class="loading-indicator" hidden>
+            <div class="spinner"></div>
+            <p>Processing save file...</p>
+        </div>
+        
+        <div id="output-container" class="output-container" hidden>
+            <div class="output-header">
+                <h2>Showdown Export:</h2>
+                <button id="copy-btn">Copy to Clipboard</button>
+            </div>
+            <pre id="output-text"></pre>
+        </div>
+        
+        <div class="footer">
+            <p>All processing happens locally in your browser for privacy and convenience.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
