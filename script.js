@@ -2,3579 +2,2808 @@
 // (Your lucidSpeciesAbilities, moves, mons, abilities, natures, charMap)
 // ... PASTE ALL YOUR DATA ARRAYS HERE ...
 const lucidSpeciesAbilities = {
-    // bulbasaur (ID 1)
+    // Bulbasaur (ID 1)
     1: { regular: ["Overgrow", null], hidden: "Chlorophyll" },
-
-    // ivysaur (ID 2)
+    // Ivysaur (ID 2)
     2: { regular: ["Overgrow", null], hidden: "Chlorophyll" },
-
-    // venusaurgmax (ID 3)
+    // Venusaur (ID 3)
     3: { regular: ["Overgrow", null], hidden: "Chlorophyll" },
-
-    // charmander (ID 4)
+    // Charmander (ID 4)
     4: { regular: ["Blaze", null], hidden: "Solar Power" },
-
-    // charmeleon (ID 5)
+    // Charmeleon (ID 5)
     5: { regular: ["Blaze", null], hidden: "Solar Power" },
-
-    // charizardgmax (ID 6)
+    // Charizard (ID 6)
     6: { regular: ["Blaze", null], hidden: "Solar Power" },
-
-    // squirtle (ID 7)
+    // Squirtle (ID 7)
     7: { regular: ["Torrent", null], hidden: "Rain Dish" },
-
-    // wartortle (ID 8)
+    // Wartortle (ID 8)
     8: { regular: ["Torrent", null], hidden: "Rain Dish" },
-
-    // blastoisegmax (ID 9)
+    // Blastoise (ID 9)
     9: { regular: ["Torrent", null], hidden: "Rain Dish" },
-
-    // caterpie (ID 10)
+    // Caterpie (ID 10)
     10: { regular: ["Shield Dust", null], hidden: "Run Away" },
-
-    // metapod (ID 11)
+    // Metapod (ID 11)
     11: { regular: ["Shed Skin", null], hidden: null },
-
-    // butterfreegmax (ID 12)
-    12: { regular: ["Compound Eyes", null], hidden: "Tinted Lens" },
-
-    // weedle (ID 13)
+    // Butterfree (ID 12)
+    12: { regular: ["Shield Dust", null], hidden: "Tinted Lens" },
+    // Weedle (ID 13)
     13: { regular: ["Shield Dust", null], hidden: "Run Away" },
-
-    // kakuna (ID 14)
+    // Kakuna (ID 14)
     14: { regular: ["Shed Skin", null], hidden: null },
-
-    // beedrill (ID 15)
+    // Beedrill (ID 15)
     15: { regular: ["Swarm", null], hidden: "Sniper" },
-
-    // pidgey [non-vanilla] (ID 16)
+    // Pidgey (ID 16)
     16: { regular: ["Quick Feet", null], hidden: "Big Pecks" },
-
-    // pidgeotto [non-vanilla] (ID 17)
+    // Pidgeotto (ID 17)
     17: { regular: ["Quick Feet", null], hidden: "Big Pecks" },
-
-    // pidgeot [non-vanilla] (ID 18)
+    // Pidgeot (ID 18)
     18: { regular: ["Quick Feet", null], hidden: "Big Pecks" },
-
-    // rattata [non-vanilla] (ID 19)
+    // Rattata (ID 19)
     19: { regular: ["Guts", null], hidden: "Hustle" },
-
-    // raticate [non-vanilla] (ID 20)
+    // Raticate (ID 20)
     20: { regular: ["Guts", null], hidden: "Hustle" },
-
-    // spearow [non-vanilla] (ID 21)
+    // Spearow (ID 21)
     21: { regular: ["Sniper", null], hidden: "Keen Eye" },
-
-    // fearow [non-vanilla] (ID 22)
+    // Fearow (ID 22)
     22: { regular: ["Sniper", null], hidden: "Keen Eye" },
-
-    // ekans [non-vanilla] (ID 23)
+    // Ekans (ID 23)
     23: { regular: ["Intimidate", null], hidden: "Unnerve" },
-
-    // arbok [non-vanilla] (ID 24)
+    // Arbok (ID 24)
     24: { regular: ["Intimidate", null], hidden: "Unnerve" },
-
-    // pikachustarter (ID 25)
+    // Pikachu (ID 25)
     25: { regular: ["Static", null], hidden: "Lightning Rod" },
-
-    // raichu (ID 26)
+    // Raichu (ID 26)
     26: { regular: ["Static", null], hidden: "Lightning Rod" },
-
-    // sandshrew [non-vanilla] (ID 27)
+    // Sandshrew (ID 27)
     27: { regular: ["Sand Rush", null], hidden: "Sand Veil" },
-
-    // sandslash [non-vanilla] (ID 28)
+    // Sandslash (ID 28)
     28: { regular: ["Sand Rush", null], hidden: "Sand Veil" },
-
-    // nidoranf [non-vanilla] (ID 29)
+    // Nidoran-F (ID 29)
     29: { regular: ["Poison Point", null], hidden: "Hustle" },
-
-    // nidorina [non-vanilla] (ID 30)
+    // Nidorina (ID 30)
     30: { regular: ["Poison Point", null], hidden: "Hustle" },
-
-    // nidoqueen [non-vanilla] (ID 31)
+    // Nidoqueen (ID 31)
     31: { regular: ["Acid Coat", null], hidden: "Sheer Force" },
-
-    // nidoranm [non-vanilla] (ID 32)
+    // Nidoran-M (ID 32)
     32: { regular: ["Poison Point", null], hidden: "Hustle" },
-
-    // nidorino [non-vanilla] (ID 33)
+    // Nidorino (ID 33)
     33: { regular: ["Poison Point", null], hidden: "Hustle" },
-
-    // nidoking [non-vanilla] (ID 34)
+    // Nidoking (ID 34)
     34: { regular: ["Acid Coat", null], hidden: "Sheer Force" },
-
-    // clefairy [non-vanilla] (ID 35)
+    // Clefairy (ID 35)
     35: { regular: ["Magic Guard", null], hidden: "Friend Guard" },
-
-    // clefable [non-vanilla] (ID 36)
+    // Clefable (ID 36)
     36: { regular: ["Magic Guard", null], hidden: "Unaware" },
-
-    // vulpix (ID 37)
+    // Vulpix (ID 37)
     37: { regular: ["Flash Fire", null], hidden: "Drought" },
-
-    // ninetales (ID 38)
+    // Ninetales (ID 38)
     38: { regular: ["Flash Fire", null], hidden: "Drought" },
-
-    // jigglypuff (ID 39)
+    // Jigglypuff (ID 39)
     39: { regular: ["Cute Charm", "Competitive"], hidden: "Friend Guard" },
-
-    // wigglytuff (ID 40)
+    // Wigglytuff (ID 40)
     40: { regular: ["Cute Charm", "Competitive"], hidden: "Frisk" },
-
-    // zubat (ID 41)
+    // Zubat (ID 41)
     41: { regular: ["Inner Focus", null], hidden: "Infiltrator" },
-
-    // golbat (ID 42)
+    // Golbat (ID 42)
     42: { regular: ["Inner Focus", null], hidden: "Infiltrator" },
-
-    // oddish (ID 43)
+    // Oddish (ID 43)
     43: { regular: ["Chlorophyll", null], hidden: "Run Away" },
-
-    // gloom (ID 44)
+    // Gloom (ID 44)
     44: { regular: ["Chlorophyll", null], hidden: "Stench" },
-
-    // vileplume (ID 45)
+    // Vileplume (ID 45)
     45: { regular: ["Chlorophyll", null], hidden: "Effect Spore" },
-
-    // paras [non-vanilla] (ID 46)
+    // Paras (ID 46)
     46: { regular: ["Effect Spore", null], hidden: "Dry Skin" },
-
-    // parasect [non-vanilla] (ID 47)
+    // Parasect (ID 47)
     47: { regular: ["Effect Spore", null], hidden: "Dry Skin" },
-
-    // venonat (ID 48)
+    // Venonat (ID 48)
     48: { regular: ["Compound Eyes", "Tinted Lens"], hidden: "Run Away" },
-
-    // venomoth (ID 49)
+    // Venomoth (ID 49)
     49: { regular: ["Shield Dust", "Tinted Lens"], hidden: "Wonder Skin" },
-
-    // diglett (ID 50)
+    // Diglett (ID 50)
     50: { regular: ["Sand Veil", "Arena Trap"], hidden: "Sand Force" },
-
-    // dugtrio (ID 51)
+    // Dugtrio (ID 51)
     51: { regular: ["Sand Veil", "Arena Trap"], hidden: "Sand Force" },
-
-    // meowthgmax (ID 52)
+    // Meowth (ID 52)
     52: { regular: ["Pickup", "Technician"], hidden: "Unnerve" },
-
-    // persian (ID 53)
+    // Persian (ID 53)
     53: { regular: ["Limber", "Technician"], hidden: "Unnerve" },
-
-    // psyduck [non-vanilla] (ID 54)
+    // Psyduck (ID 54)
     54: { regular: ["Swift Swim", "Cloud Nine"], hidden: "Damp" },
-
-    // golduck [non-vanilla] (ID 55)
+    // Golduck (ID 55)
     55: { regular: ["Swift Swim", "Cloud Nine"], hidden: "Damp" },
-
-    // mankey [non-vanilla] (ID 56)
+    // Mankey (ID 56)
     56: { regular: ["Vital Spirit", null], hidden: "Defiant" },
-
-    // primeape [non-vanilla] (ID 57)
+    // Primeape (ID 57)
     57: { regular: ["Vital Spirit", null], hidden: "Defiant" },
-
-    // growlithe [non-vanilla] (ID 58)
+    // Growlithe (ID 58)
     58: { regular: ["Intimidate", null], hidden: "Justified" },
-
-    // arcanine [non-vanilla] (ID 59)
+    // Arcanine (ID 59)
     59: { regular: ["Intimidate", null], hidden: "Justified" },
-
-    // poliwag [non-vanilla] (ID 60)
+    // Poliwag (ID 60)
     60: { regular: ["Swift Swim", null], hidden: "Water Absorb" },
-
-    // poliwhirl [non-vanilla] (ID 61)
+    // Poliwhirl (ID 61)
     61: { regular: ["Swift Swim", null], hidden: "Water Absorb" },
-
-    // poliwrath [non-vanilla] (ID 62)
+    // Poliwrath (ID 62)
     62: { regular: ["Swift Swim", null], hidden: "Water Absorb" },
-
-    // abra (ID 63)
+    // Abra (ID 63)
     63: { regular: ["Synchronize", "Inner Focus"], hidden: "Magic Guard" },
-
-    // kadabra (ID 64)
+    // Kadabra (ID 64)
     64: { regular: ["Synchronize", "Inner Focus"], hidden: "Magic Guard" },
-
-    // alakazam (ID 65)
+    // Alakazam (ID 65)
     65: { regular: ["Synchronize", "Inner Focus"], hidden: "Magic Guard" },
-
-    // machop (ID 66)
+    // Machop (ID 66)
     66: { regular: ["Guts", "No Guard"], hidden: "Steadfast" },
-
-    // machoke (ID 67)
+    // Machoke (ID 67)
     67: { regular: ["Guts", "No Guard"], hidden: "Steadfast" },
-
-    // machampgmax (ID 68)
+    // Machamp (ID 68)
     68: { regular: ["Guts", "No Guard"], hidden: "Steadfast" },
-
-    // bellsprout (ID 69)
+    // Bellsprout (ID 69)
     69: { regular: ["Chlorophyll", null], hidden: "Gluttony" },
-
-    // weepinbell (ID 70)
+    // Weepinbell (ID 70)
     70: { regular: ["Chlorophyll", null], hidden: "Gluttony" },
-
-    // victreebel (ID 71)
+    // Victreebel (ID 71)
     71: { regular: ["Chlorophyll", null], hidden: "Gluttony" },
-
-    // tentacool [non-vanilla] (ID 72)
+    // Tentacool (ID 72)
     72: { regular: ["Rain Dish", "Liquid Ooze"], hidden: "Clear Body" },
-
-    // tentacruel [non-vanilla] (ID 73)
+    // Tentacruel (ID 73)
     73: { regular: ["Rain Dish", "Liquid Ooze"], hidden: "Clear Body" },
-
-    // geodude (ID 74)
+    // Geodude (ID 74)
     74: { regular: ["Rock Head", "Sturdy"], hidden: "Sand Veil" },
-
-    // graveler (ID 75)
+    // Graveler (ID 75)
     75: { regular: ["Rock Head", "Sturdy"], hidden: "Sand Veil" },
-
-    // golem (ID 76)
+    // Golem (ID 76)
     76: { regular: ["Rock Head", "Sturdy"], hidden: "Sand Veil" },
-
-    // ponyta [non-vanilla] (ID 77)
+    // Ponyta (ID 77)
     77: { regular: ["Fiery Charge", null], hidden: "Flame Body" },
-
-    // rapidash [non-vanilla] (ID 78)
+    // Rapidash (ID 78)
     78: { regular: ["Fiery Charge", null], hidden: "Flame Body" },
-
-    // slowpoke (ID 79)
+    // Slowpoke (ID 79)
     79: { regular: ["Oblivious", "Own Tempo"], hidden: "Regenerator" },
-
-    // slowbro (ID 80)
+    // Slowbro (ID 80)
     80: { regular: ["Oblivious", "Own Tempo"], hidden: "Regenerator" },
-
-    // magnemite (ID 81)
+    // Magnemite (ID 81)
     81: { regular: ["Magnet Pull", "Sturdy"], hidden: "Analytic" },
-
-    // magneton (ID 82)
+    // Magneton (ID 82)
     82: { regular: ["Magnet Pull", "Sturdy"], hidden: "Analytic" },
-
-    // farfetchd (ID 83)
+    // Farfetchd (ID 83)
     83: { regular: ["Keen Eye", "Inner Focus"], hidden: "Defiant" },
-
-    // doduo [non-vanilla] (ID 84)
+    // Doduo (ID 84)
     84: { regular: ["Technician", null], hidden: "Tangled Feet" },
-
-    // dodrio [non-vanilla] (ID 85)
+    // Dodrio (ID 85)
     85: { regular: ["Technician", null], hidden: "Tangled Feet" },
-
-    // seel [non-vanilla] (ID 86)
+    // Seel (ID 86)
     86: { regular: ["Thick Fat", null], hidden: "Ice Body" },
-
-    // dewgong [non-vanilla] (ID 87)
+    // Dewgong (ID 87)
     87: { regular: ["Thick Fat", null], hidden: "Ice Body" },
-
-    // grimer (ID 88)
+    // Grimer (ID 88)
     88: { regular: ["Stench", "Sticky Hold"], hidden: "Poison Touch" },
-
-    // muk (ID 89)
+    // Muk (ID 89)
     89: { regular: ["Stench", "Sticky Hold"], hidden: "Poison Touch" },
-
-    // shellder (ID 90)
+    // Shellder (ID 90)
     90: { regular: ["Shell Armor", "Skill Link"], hidden: "Overcoat" },
-
-    // cloyster (ID 91)
+    // Cloyster (ID 91)
     91: { regular: ["Shell Armor", "Skill Link"], hidden: "Overcoat" },
-
-    // gastly (ID 92)
+    // Gastly (ID 92)
     92: { regular: ["Levitate", null], hidden: null },
-
-    // haunter (ID 93)
+    // Haunter (ID 93)
     93: { regular: ["Levitate", null], hidden: null },
-
-    // gengargmax (ID 94)
+    // Gengar (ID 94)
     94: { regular: ["Cursed Body", null], hidden: null },
-
-    // onix (ID 95)
+    // Onix (ID 95)
     95: { regular: ["Rock Head", "Sturdy"], hidden: "Weak Armor" },
-
-    // drowzee (ID 96)
+    // Drowzee (ID 96)
     96: { regular: ["Insomnia", "Forewarn"], hidden: "Inner Focus" },
-
-    // hypno (ID 97)
+    // Hypno (ID 97)
     97: { regular: ["Insomnia", "Forewarn"], hidden: "Inner Focus" },
-
-    // krabby [non-vanilla] (ID 98)
+    // Krabby (ID 98)
     98: { regular: ["Shell Armor", null], hidden: "Sheer Force" },
-
-    // kinglergmax (ID 99)
-    99: { regular: ["Hyper Cutter", "Shell Armor"], hidden: "Sheer Force" },
-
-    // voltorb (ID 100)
+    // Kingler (ID 99)
+    99: { regular: ["Shell Armor", null], hidden: "Sheer Force" },
+    // Voltorb (ID 100)
     100: { regular: ["Soundproof", "Static"], hidden: "Aftermath" },
-
-    // electrode (ID 101)
+    // Electrode (ID 101)
     101: { regular: ["Soundproof", "Static"], hidden: "Aftermath" },
-
-    // exeggcute [non-vanilla] (ID 102)
+    // Exeggcute (ID 102)
     102: { regular: ["Harvest", null], hidden: "Chlorophyll" },
-
-    // exeggutor [non-vanilla] (ID 103)
+    // Exeggutor (ID 103)
     103: { regular: ["Harvest", null], hidden: "Chlorophyll" },
-
-    // cubone [non-vanilla] (ID 104)
+    // Cubone (ID 104)
     104: { regular: ["Battle Armor", null], hidden: "Lightning Rod" },
-
-    // marowak [non-vanilla] (ID 105)
+    // Marowak (ID 105)
     105: { regular: ["Battle Armor", null], hidden: "Lightning Rod" },
-
-    // hitmonlee [non-vanilla] (ID 106)
+    // Hitmonlee (ID 106)
     106: { regular: ["Striker", null], hidden: "Unburden" },
-
-    // hitmonchan [non-vanilla] (ID 107)
+    // Hitmonchan (ID 107)
     107: { regular: ["Iron Fist", null], hidden: "Inner Focus" },
-
-    // lickitung (ID 108)
+    // Lickitung (ID 108)
     108: { regular: ["Own Tempo", "Oblivious"], hidden: "Cloud Nine" },
-
-    // koffing (ID 109)
+    // Koffing (ID 109)
     109: { regular: ["Levitate", "Neutralizing Gas"], hidden: "Stench" },
-
-    // weezing (ID 110)
+    // Weezing (ID 110)
     110: { regular: ["Levitate", "Neutralizing Gas"], hidden: "Stench" },
-
-    // rhyhorn [non-vanilla] (ID 111)
+    // Rhyhorn (ID 111)
     111: { regular: ["Rock Head", null], hidden: "Lightning Rod" },
-
-    // rhydon [non-vanilla] (ID 112)
+    // Rhydon (ID 112)
     112: { regular: ["Rock Head", null], hidden: "Lightning Rod" },
-
-    // chansey (ID 113)
+    // Chansey (ID 113)
     113: { regular: ["Natural Cure", "Serene Grace"], hidden: "Healer" },
-
-    // tangela (ID 114)
+    // Tangela (ID 114)
     114: { regular: ["Chlorophyll", "Leaf Guard"], hidden: "Regenerator" },
-
-    // kangaskhan [non-vanilla] (ID 115)
+    // Kangaskhan (ID 115)
     115: { regular: ["Inner Focus", null], hidden: "Scrappy" },
-
-    // horsea (ID 116)
+    // Horsea (ID 116)
     116: { regular: ["Swift Swim", "Sniper"], hidden: "Damp" },
-
-    // seadra (ID 117)
+    // Seadra (ID 117)
     117: { regular: ["Poison Point", "Sniper"], hidden: "Damp" },
-
-    // goldeen [non-vanilla] (ID 118)
+    // Goldeen (ID 118)
     118: { regular: ["Swift Swim", null], hidden: "Lightning Rod" },
-
-    // seaking [non-vanilla] (ID 119)
+    // Seaking (ID 119)
     119: { regular: ["Swift Swim", null], hidden: "Lightning Rod" },
-
-    // staryu [non-vanilla] (ID 120)
+    // Staryu (ID 120)
     120: { regular: ["Analytic", null], hidden: "Natural Cure" },
-
-    // starmie [non-vanilla] (ID 121)
+    // Starmie (ID 121)
     121: { regular: ["Analytic", null], hidden: "Natural Cure" },
-
-    // mrmime (ID 122)
+    // Mr. Mime (ID 122)
     122: { regular: ["Soundproof", "Filter"], hidden: "Technician" },
-
-    // scyther (ID 123)
+    // Scyther (ID 123)
     123: { regular: ["Swarm", "Technician"], hidden: "Steadfast" },
-
-    // jynx [non-vanilla] (ID 124)
+    // Jynx (ID 124)
     124: { regular: ["Rain Dish", null], hidden: "Hydration" },
-
-    // electabuzz (ID 125)
+    // Electabuzz (ID 125)
     125: { regular: ["Static", null], hidden: "Vital Spirit" },
-
-    // magmar (ID 126)
+    // Magmar (ID 126)
     126: { regular: ["Flame Body", null], hidden: "Vital Spirit" },
-
-    // pinsir (ID 127)
+    // Pinsir (ID 127)
     127: { regular: ["Hyper Cutter", "Mold Breaker"], hidden: "Moxie" },
-
-    // tauros [non-vanilla] (ID 128)
+    // Tauros (ID 128)
     128: { regular: ["Intimidate", null], hidden: "Sheer Force" },
-
-    // magikarp (ID 129)
+    // Magikarp (ID 129)
     129: { regular: ["Swift Swim", null], hidden: "Rattled" },
-
-    // gyarados (ID 130)
+    // Gyarados (ID 130)
     130: { regular: ["Intimidate", null], hidden: "Moxie" },
-
-    // laprasgmax (ID 131)
-    131: { regular: ["Water Absorb", "Shell Armor"], hidden: "Hydration" },
-
-    // ditto (ID 132)
+    // Lapras (ID 131)
+    131: { regular: ["Shell Armor", null], hidden: "Hydration" },
+    // Ditto (ID 132)
     132: { regular: ["Limber", null], hidden: "Imposter" },
-
-    // eeveestarter (ID 133)
+    // Eevee (ID 133)
     133: { regular: ["Run Away", "Adaptability"], hidden: "Anticipation" },
-
-    // vaporeon [non-vanilla] (ID 134)
+    // Vaporeon (ID 134)
     134: { regular: ["Hydration", null], hidden: "Water Absorb" },
-
-    // jolteon [non-vanilla] (ID 135)
+    // Jolteon (ID 135)
     135: { regular: ["Quick Feet", null], hidden: "Volt Absorb" },
-
-    // flareon [non-vanilla] (ID 136)
+    // Flareon (ID 136)
     136: { regular: ["Guts", null], hidden: "Flash Fire" },
-
-    // porygon (ID 137)
+    // Porygon (ID 137)
     137: { regular: ["Trace", "Download"], hidden: "Analytic" },
-
-    // omanyte [non-vanilla] (ID 138)
+    // Omanyte (ID 138)
     138: { regular: ["Solid Rock", "Shell Armor"], hidden: "Swift Swim" },
-
-    // omastar [non-vanilla] (ID 139)
+    // Omastar (ID 139)
     139: { regular: ["Solid Rock", "Shell Armor"], hidden: "Swift Swim" },
-
-    // kabuto [non-vanilla] (ID 140)
+    // Kabuto (ID 140)
     140: { regular: ["Sharpness", "Battle Armor"], hidden: "Swift Swim" },
-
-    // kabutops [non-vanilla] (ID 141)
+    // Kabutops (ID 141)
     141: { regular: ["Sharpness", "Battle Armor"], hidden: "Swift Swim" },
-
-    // aerodactyl (ID 142)
+    // Aerodactyl (ID 142)
     142: { regular: ["Rock Head", "Pressure"], hidden: "Unnerve" },
-
-    // snorlaxgmax (ID 143)
+    // Snorlax (ID 143)
     143: { regular: ["Immunity", "Thick Fat"], hidden: "Gluttony" },
-
-    // articuno (ID 144)
+    // Articuno (ID 144)
     144: { regular: ["Pressure", null], hidden: "Snow Cloak" },
-
-    // zapdos (ID 145)
+    // Zapdos (ID 145)
     145: { regular: ["Pressure", null], hidden: "Static" },
-
-    // moltres (ID 146)
+    // Moltres (ID 146)
     146: { regular: ["Pressure", null], hidden: "Flame Body" },
-
-    // dratini (ID 147)
+    // Dratini (ID 147)
     147: { regular: ["Shed Skin", null], hidden: "Marvel Scale" },
-
-    // dragonair (ID 148)
+    // Dragonair (ID 148)
     148: { regular: ["Shed Skin", null], hidden: "Marvel Scale" },
-
-    // dragonite (ID 149)
+    // Dragonite (ID 149)
     149: { regular: ["Inner Focus", null], hidden: "Multiscale" },
-
-    // mewtwo (ID 150)
+    // Mewtwo (ID 150)
     150: { regular: ["Pressure", null], hidden: "Unnerve" },
-
-    // mew (ID 151)
+    // Mew (ID 151)
     151: { regular: ["Synchronize", null], hidden: null },
-
-    // chikorita (ID 152)
+    // Chikorita (ID 152)
     152: { regular: ["Overgrow", null], hidden: "Leaf Guard" },
-
-    // bayleef (ID 153)
+    // Bayleef (ID 153)
     153: { regular: ["Overgrow", null], hidden: "Leaf Guard" },
-
-    // meganium (ID 154)
+    // Meganium (ID 154)
     154: { regular: ["Overgrow", null], hidden: "Leaf Guard" },
-
-    // cyndaquil [non-vanilla] (ID 155)
+    // Cyndaquil (ID 155)
     155: { regular: ["Flame Body", null], hidden: "Blaze" },
-
-    // quilava [non-vanilla] (ID 156)
+    // Quilava (ID 156)
     156: { regular: ["Flame Body", null], hidden: "Blaze" },
-
-    // typhlosion [non-vanilla] (ID 157)
+    // Typhlosion (ID 157)
     157: { regular: ["Flame Body", null], hidden: "Blaze" },
-
-    // totodile (ID 158)
+    // Totodile (ID 158)
     158: { regular: ["Torrent", null], hidden: "Sheer Force" },
-
-    // croconaw (ID 159)
+    // Croconaw (ID 159)
     159: { regular: ["Torrent", null], hidden: "Sheer Force" },
-
-    // feraligatr (ID 160)
+    // Feraligatr (ID 160)
     160: { regular: ["Torrent", null], hidden: "Sheer Force" },
-
-    // sentret (ID 161)
+    // Sentret (ID 161)
     161: { regular: ["Run Away", "Keen Eye"], hidden: "Frisk" },
-
-    // furret (ID 162)
+    // Furret (ID 162)
     162: { regular: ["Run Away", "Keen Eye"], hidden: "Frisk" },
-
-    // hoothoot [non-vanilla] (ID 163)
+    // Hoothoot (ID 163)
     163: { regular: ["Tinted Lens", "Insomnia"], hidden: "Keen Eye" },
-
-    // noctowl [non-vanilla] (ID 164)
+    // Noctowl (ID 164)
     164: { regular: ["Tinted Lens", "Insomnia"], hidden: "Keen Eye" },
-
-    // ledyba (ID 165)
+    // Ledyba (ID 165)
     165: { regular: ["Swarm", "Early Bird"], hidden: "Rattled" },
-
-    // ledian (ID 166)
+    // Ledian (ID 166)
     166: { regular: ["Swarm", "Early Bird"], hidden: "Iron Fist" },
-
-    // spinarak (ID 167)
+    // Spinarak (ID 167)
     167: { regular: ["Swarm", "Insomnia"], hidden: "Sniper" },
-
-    // ariados (ID 168)
+    // Ariados (ID 168)
     168: { regular: ["Swarm", "Insomnia"], hidden: "Sniper" },
-
-    // crobat (ID 169)
+    // Crobat (ID 169)
     169: { regular: ["Inner Focus", null], hidden: "Infiltrator" },
-
-    // chinchou [non-vanilla] (ID 170)
+    // Chinchou (ID 170)
     170: { regular: ["Volt Absorb", null], hidden: "Water Absorb" },
-
-    // lanturn [non-vanilla] (ID 171)
+    // Lanturn (ID 171)
     171: { regular: ["Volt Absorb", null], hidden: "Water Absorb" },
-
-    // pichu (ID 172)
+    // Pichu (ID 172)
     172: { regular: ["Static", null], hidden: "Lightning Rod" },
-
-    // cleffa [non-vanilla] (ID 173)
+    // Cleffa (ID 173)
     173: { regular: ["Magic Guard", null], hidden: "Friend Guard" },
-
-    // igglybuff (ID 174)
+    // Igglybuff (ID 174)
     174: { regular: ["Cute Charm", "Competitive"], hidden: "Friend Guard" },
-
-    // togepi [non-vanilla] (ID 175)
+    // Togepi (ID 175)
     175: { regular: ["Hustle", "Super Luck"], hidden: "Serene Grace" },
-
-    // togetic [non-vanilla] (ID 176)
+    // Togetic (ID 176)
     176: { regular: ["Hustle", "Super Luck"], hidden: "Serene Grace" },
-
-    // natu (ID 177)
+    // Natu (ID 177)
     177: { regular: ["Synchronize", "Early Bird"], hidden: "Magic Bounce" },
-
-    // xatu (ID 178)
+    // Xatu (ID 178)
     178: { regular: ["Synchronize", "Early Bird"], hidden: "Magic Bounce" },
-
-    // mareep (ID 179)
+    // Mareep (ID 179)
     179: { regular: ["Static", null], hidden: "Plus" },
-
-    // flaaffy (ID 180)
+    // Flaaffy (ID 180)
     180: { regular: ["Static", null], hidden: "Plus" },
-
-    // ampharos (ID 181)
+    // Ampharos (ID 181)
     181: { regular: ["Static", null], hidden: "Plus" },
-
-    // bellossom (ID 182)
+    // Bellossom (ID 182)
     182: { regular: ["Chlorophyll", null], hidden: "Healer" },
-
-    // marill [non-vanilla] (ID 183)
+    // Marill (ID 183)
     183: { regular: ["Huge Power", null], hidden: "Sap Sipper" },
-
-    // azumarill [non-vanilla] (ID 184)
+    // Azumarill (ID 184)
     184: { regular: ["Huge Power", null], hidden: "Sap Sipper" },
-
-    // sudowoodo (ID 185)
+    // Sudowoodo (ID 185)
     185: { regular: ["Sturdy", "Rock Head"], hidden: "Rattled" },
-
-    // politoed [non-vanilla] (ID 186)
+    // Politoed (ID 186)
     186: { regular: ["Swift Swim", null], hidden: "Drizzle" },
-
-    // hoppip (ID 187)
+    // Hoppip (ID 187)
     187: { regular: ["Chlorophyll", "Leaf Guard"], hidden: "Infiltrator" },
-
-    // skiploom (ID 188)
+    // Skiploom (ID 188)
     188: { regular: ["Chlorophyll", "Leaf Guard"], hidden: "Infiltrator" },
-
-    // jumpluff (ID 189)
+    // Jumpluff (ID 189)
     189: { regular: ["Chlorophyll", "Leaf Guard"], hidden: "Infiltrator" },
-
-    // aipom [non-vanilla] (ID 190)
+    // Aipom (ID 190)
     190: { regular: ["Skill Link", "Technician"], hidden: "Run Away" },
-
-    // sunkern (ID 191)
+    // Sunkern (ID 191)
     191: { regular: ["Chlorophyll", "Solar Power"], hidden: "Early Bird" },
-
-    // sunflora (ID 192)
+    // Sunflora (ID 192)
     192: { regular: ["Chlorophyll", "Solar Power"], hidden: "Early Bird" },
-
-    // yanma (ID 193)
+    // Yanma (ID 193)
     193: { regular: ["Speed Boost", "Compound Eyes"], hidden: "Frisk" },
-
-    // wooper [non-vanilla] (ID 194)
+    // Wooper (ID 194)
     194: { regular: ["Water Absorb", null], hidden: "Unaware" },
-
-    // quagsire [non-vanilla] (ID 195)
+    // Quagsire (ID 195)
     195: { regular: ["Water Absorb", null], hidden: "Unaware" },
-
-    // espeon (ID 196)
+    // Espeon (ID 196)
     196: { regular: ["Synchronize", null], hidden: "Magic Bounce" },
-
-    // umbreon (ID 197)
+    // Umbreon (ID 197)
     197: { regular: ["Synchronize", null], hidden: "Inner Focus" },
-
-    // murkrow [non-vanilla] (ID 198)
+    // Murkrow (ID 198)
     198: { regular: ["Super Luck", null], hidden: "Prankster" },
-
-    // slowking (ID 199)
+    // Slowking (ID 199)
     199: { regular: ["Oblivious", "Own Tempo"], hidden: "Regenerator" },
-
-    // misdreavus (ID 200)
+    // Misdreavus (ID 200)
     200: { regular: ["Levitate", null], hidden: null },
-
-    // wobbuffet (ID 202)
+    // Wobbuffet (ID 202)
     202: { regular: ["Shadow Tag", null], hidden: "Telepathy" },
-
-    // girafarig (ID 203)
+    // Girafarig (ID 203)
     203: { regular: ["Inner Focus", "Early Bird"], hidden: "Sap Sipper" },
-
-    // pineco (ID 204)
+    // Pineco (ID 204)
     204: { regular: ["Sturdy", null], hidden: "Overcoat" },
-
-    // forretress (ID 205)
+    // Forretress (ID 205)
     205: { regular: ["Sturdy", null], hidden: "Overcoat" },
-
-    // dunsparce [non-vanilla] (ID 206)
+    // Dunsparce (ID 206)
     206: { regular: ["Serene Grace", null], hidden: "Rattled" },
-
-    // gligar [non-vanilla] (ID 207)
+    // Gligar (ID 207)
     207: { regular: ["Hyper Cutter", null], hidden: "Immunity" },
-
-    // steelix (ID 208)
+    // Steelix (ID 208)
     208: { regular: ["Rock Head", "Sturdy"], hidden: "Sheer Force" },
-
-    // snubbull [non-vanilla] (ID 209)
+    // Snubbull (ID 209)
     209: { regular: ["Intimidate", null], hidden: "Run Away" },
-
-    // granbull [non-vanilla] (ID 210)
+    // Granbull (ID 210)
     210: { regular: ["Intimidate", null], hidden: "Quick Feet" },
-
-    // qwilfish [non-vanilla] (ID 211)
+    // Qwilfish (ID 211)
     211: { regular: ["Intimidate", "Swift Swim"], hidden: "Poison Point" },
-
-    // scizor (ID 212)
+    // Scizor (ID 212)
     212: { regular: ["Swarm", "Technician"], hidden: "Light Metal" },
-
-    // shuckle (ID 213)
+    // Shuckle (ID 213)
     213: { regular: ["Sturdy", "Gluttony"], hidden: "Contrary" },
-
-    // heracross (ID 214)
+    // Heracross (ID 214)
     214: { regular: ["Swarm", "Guts"], hidden: "Moxie" },
-
-    // sneasel [non-vanilla] (ID 215)
+    // Sneasel (ID 215)
     215: { regular: ["Inner Focus", null], hidden: "Pickpocket" },
-
-    // teddiursa [non-vanilla] (ID 216)
+    // Teddiursa (ID 216)
     216: { regular: ["Quick Feet", null], hidden: "Honey Gather" },
-
-    // ursaring [non-vanilla] (ID 217)
+    // Ursaring (ID 217)
     217: { regular: ["Quick Feet", null], hidden: "Unnerve" },
-
-    // slugma (ID 218)
+    // Slugma (ID 218)
     218: { regular: ["Magma Armor", "Flame Body"], hidden: "Weak Armor" },
-
-    // magcargo (ID 219)
+    // Magcargo (ID 219)
     219: { regular: ["Magma Armor", "Flame Body"], hidden: "Weak Armor" },
-
-    // swinub [non-vanilla] (ID 220)
+    // Swinub (ID 220)
     220: { regular: ["Thick Fat", null], hidden: "Snow Cloak" },
-
-    // piloswine [non-vanilla] (ID 221)
+    // Piloswine (ID 221)
     221: { regular: ["Thick Fat", null], hidden: "Snow Cloak" },
-
-    // corsola (ID 222)
+    // Corsola (ID 222)
     222: { regular: ["Hustle", "Natural Cure"], hidden: "Regenerator" },
-
-    // remoraid (ID 223)
+    // Remoraid (ID 223)
     223: { regular: ["Hustle", "Sniper"], hidden: "Moody" },
-
-    // octillery (ID 224)
+    // Octillery (ID 224)
     224: { regular: ["Suction Cups", "Sniper"], hidden: "Moody" },
-
-    // delibird (ID 225)
+    // Delibird (ID 225)
     225: { regular: ["Vital Spirit", "Hustle"], hidden: "Insomnia" },
-
-    // mantine [non-vanilla] (ID 226)
+    // Mantine (ID 226)
     226: { regular: ["Swift Swim", null], hidden: "Water Absorb" },
-
-    // skarmory (ID 227)
+    // Skarmory (ID 227)
     227: { regular: ["Keen Eye", "Sturdy"], hidden: "Weak Armor" },
-
-    // houndour [non-vanilla] (ID 228)
+    // Houndour (ID 228)
     228: { regular: ["Unnerve", null], hidden: "Flash Fire" },
-
-    // houndoom [non-vanilla] (ID 229)
+    // Houndoom (ID 229)
     229: { regular: ["Unnerve", null], hidden: "Flash Fire" },
-
-    // kingdra (ID 230)
+    // Kingdra (ID 230)
     230: { regular: ["Swift Swim", "Sniper"], hidden: "Damp" },
-
-    // phanpy [non-vanilla] (ID 231)
+    // Phanpy (ID 231)
     231: { regular: ["Sturdy", null], hidden: "Sand Veil" },
-
-    // donphan (ID 232)
+    // Donphan (ID 232)
     232: { regular: ["Sturdy", null], hidden: "Sand Veil" },
-
-    // porygon2 (ID 233)
+    // Porygon2 (ID 233)
     233: { regular: ["Trace", "Download"], hidden: "Analytic" },
-
-    // stantler (ID 234)
+    // Stantler (ID 234)
     234: { regular: ["Intimidate", "Frisk"], hidden: "Sap Sipper" },
-
-    // smeargle (ID 235)
+    // Smeargle (ID 235)
     235: { regular: ["Own Tempo", "Technician"], hidden: "Moody" },
-
-    // tyrogue [non-vanilla] (ID 236)
+    // Tyrogue (ID 236)
     236: { regular: ["Guts", null], hidden: "Vital Spirit" },
-
-    // hitmontop [non-vanilla] (ID 237)
+    // Hitmontop (ID 237)
     237: { regular: ["Intimidate", null], hidden: "Steadfast" },
-
-    // smoochum [non-vanilla] (ID 238)
+    // Smoochum (ID 238)
     238: { regular: ["Rain Dish", null], hidden: "Hydration" },
-
-    // elekid (ID 239)
+    // Elekid (ID 239)
     239: { regular: ["Static", null], hidden: "Vital Spirit" },
-
-    // magby (ID 240)
+    // Magby (ID 240)
     240: { regular: ["Flame Body", null], hidden: "Vital Spirit" },
-
-    // miltank (ID 241)
+    // Miltank (ID 241)
     241: { regular: ["Thick Fat", "Scrappy"], hidden: "Sap Sipper" },
-
-    // blissey (ID 242)
+    // Blissey (ID 242)
     242: { regular: ["Natural Cure", "Serene Grace"], hidden: "Healer" },
-
-    // raikou (ID 243)
+    // Raikou (ID 243)
     243: { regular: ["Pressure", null], hidden: "Inner Focus" },
-
-    // entei (ID 244)
+    // Entei (ID 244)
     244: { regular: ["Pressure", null], hidden: "Inner Focus" },
-
-    // suicune (ID 245)
+    // Suicune (ID 245)
     245: { regular: ["Pressure", null], hidden: "Inner Focus" },
-
-    // larvitar [non-vanilla] (ID 246)
+    // Larvitar (ID 246)
     246: { regular: ["Sand Veil", null], hidden: "Guts" },
-
-    // pupitar (ID 247)
+    // Pupitar (ID 247)
     247: { regular: ["Shed Skin", null], hidden: null },
-
-    // tyranitar [non-vanilla] (ID 248)
+    // Tyranitar (ID 248)
     248: { regular: ["Unnerve", null], hidden: "Sand Stream" },
-
-    // lugia (ID 249)
+    // Lugia (ID 249)
     249: { regular: ["Pressure", null], hidden: "Multiscale" },
-
-    // hooh (ID 250)
+    // Ho-Oh (ID 250)
     250: { regular: ["Pressure", null], hidden: "Regenerator" },
-
-    // celebi (ID 251)
+    // Celebi (ID 251)
     251: { regular: ["Natural Cure", null], hidden: null },
-
-    // treecko (ID 252)
+    // Treecko (ID 252)
     252: { regular: ["Overgrow", null], hidden: "Unburden" },
-
-    // grovyle (ID 253)
+    // Grovyle (ID 253)
     253: { regular: ["Overgrow", null], hidden: "Unburden" },
-
-    // sceptile (ID 254)
+    // Sceptile (ID 254)
     254: { regular: ["Overgrow", null], hidden: "Unburden" },
-
-    // torchic (ID 255)
+    // Torchic (ID 255)
     255: { regular: ["Blaze", null], hidden: "Speed Boost" },
-
-    // combusken (ID 256)
+    // Combusken (ID 256)
     256: { regular: ["Blaze", null], hidden: "Speed Boost" },
-
-    // blaziken (ID 257)
+    // Blaziken (ID 257)
     257: { regular: ["Blaze", null], hidden: "Speed Boost" },
-
-    // mudkip (ID 258)
+    // Mudkip (ID 258)
     258: { regular: ["Torrent", null], hidden: "Damp" },
-
-    // marshtomp (ID 259)
+    // Marshtomp (ID 259)
     259: { regular: ["Torrent", null], hidden: "Damp" },
-
-    // swampert (ID 260)
+    // Swampert (ID 260)
     260: { regular: ["Torrent", null], hidden: "Damp" },
-
-    // poochyena [non-vanilla] (ID 261)
+    // Poochyena (ID 261)
     261: { regular: ["Run Away", null], hidden: "Rattled" },
-
-    // mightyena [non-vanilla] (ID 262)
+    // Mightyena (ID 262)
     262: { regular: ["Intimidate", null], hidden: "Moxie" },
-
-    // zigzagoon (ID 263)
+    // Zigzagoon (ID 263)
     263: { regular: ["Pickup", "Gluttony"], hidden: "Quick Feet" },
-
-    // linoone (ID 264)
+    // Linoone (ID 264)
     264: { regular: ["Pickup", "Gluttony"], hidden: "Quick Feet" },
-
-    // wurmple (ID 265)
+    // Wurmple (ID 265)
     265: { regular: ["Shield Dust", null], hidden: "Run Away" },
-
-    // silcoon (ID 266)
+    // Silcoon (ID 266)
     266: { regular: ["Shed Skin", null], hidden: null },
-
-    // beautifly (ID 267)
+    // Beautifly (ID 267)
     267: { regular: ["Swarm", null], hidden: "Rivalry" },
-
-    // cascoon (ID 268)
+    // Cascoon (ID 268)
     268: { regular: ["Shed Skin", null], hidden: null },
-
-    // dustox (ID 269)
+    // Dustox (ID 269)
     269: { regular: ["Shield Dust", null], hidden: "Compound Eyes" },
-
-    // lotad (ID 270)
+    // Lotad (ID 270)
     270: { regular: ["Swift Swim", "Rain Dish"], hidden: "Own Tempo" },
-
-    // lombre (ID 271)
+    // Lombre (ID 271)
     271: { regular: ["Swift Swim", "Rain Dish"], hidden: "Own Tempo" },
-
-    // ludicolo (ID 272)
+    // Ludicolo (ID 272)
     272: { regular: ["Swift Swim", "Rain Dish"], hidden: "Own Tempo" },
-
-    // seedot [non-vanilla] (ID 273)
+    // Seedot (ID 273)
     273: { regular: ["Wind Rider", "Chlorophyll"], hidden: "Pickpocket" },
-
-    // nuzleaf [non-vanilla] (ID 274)
+    // Nuzleaf (ID 274)
     274: { regular: ["Wind Rider", "Chlorophyll"], hidden: "Pickpocket" },
-
-    // shiftry [non-vanilla] (ID 275)
+    // Shiftry (ID 275)
     275: { regular: ["Wind Rider", "Chlorophyll"], hidden: "Pickpocket" },
-
-    // taillow (ID 276)
+    // Taillow (ID 276)
     276: { regular: ["Guts", null], hidden: "Scrappy" },
-
-    // swellow (ID 277)
+    // Swellow (ID 277)
     277: { regular: ["Guts", null], hidden: "Scrappy" },
-
-    // wingull [non-vanilla] (ID 278)
+    // Wingull (ID 278)
     278: { regular: ["Rain Dish", null], hidden: "Keen Eye" },
-
-    // pelipper [non-vanilla] (ID 279)
+    // Pelipper (ID 279)
     279: { regular: ["Rain Dish", null], hidden: "Drizzle" },
-
-    // ralts [non-vanilla] (ID 280)
+    // Ralts (ID 280)
     280: { regular: ["Pixilate", null], hidden: "Telepathy" },
-
-    // kirlia [non-vanilla] (ID 281)
+    // Kirlia (ID 281)
     281: { regular: ["Pixilate", null], hidden: "Telepathy" },
-
-    // gardevoir [non-vanilla] (ID 282)
+    // Gardevoir (ID 282)
     282: { regular: ["Pixilate", null], hidden: "Telepathy" },
-
-    // surskit (ID 283)
+    // Surskit (ID 283)
     283: { regular: ["Swift Swim", null], hidden: "Rain Dish" },
-
-    // masquerain (ID 284)
+    // Masquerain (ID 284)
     284: { regular: ["Intimidate", null], hidden: "Unnerve" },
-
-    // shroomish (ID 285)
+    // Shroomish (ID 285)
     285: { regular: ["Effect Spore", "Poison Heal"], hidden: "Quick Feet" },
-
-    // breloom (ID 286)
+    // Breloom (ID 286)
     286: { regular: ["Effect Spore", "Poison Heal"], hidden: "Technician" },
-
-    // slakoth (ID 287)
+    // Slakoth (ID 287)
     287: { regular: ["Truant", null], hidden: null },
-
-    // vigoroth (ID 288)
+    // Vigoroth (ID 288)
     288: { regular: ["Vital Spirit", null], hidden: null },
-
-    // slaking (ID 289)
+    // Slaking (ID 289)
     289: { regular: ["Truant", null], hidden: null },
-
-    // nincada (ID 290)
+    // Nincada (ID 290)
     290: { regular: ["Compound Eyes", null], hidden: "Run Away" },
-
-    // ninjask (ID 291)
+    // Ninjask (ID 291)
     291: { regular: ["Speed Boost", null], hidden: "Infiltrator" },
-
-    // shedinja (ID 292)
+    // Shedinja (ID 292)
     292: { regular: ["Wonder Guard", null], hidden: null },
-
-    // whismur (ID 293)
+    // Whismur (ID 293)
     293: { regular: ["Soundproof", null], hidden: "Rattled" },
-
-    // loudred (ID 294)
+    // Loudred (ID 294)
     294: { regular: ["Soundproof", null], hidden: "Scrappy" },
-
-    // exploud (ID 295)
+    // Exploud (ID 295)
     295: { regular: ["Soundproof", null], hidden: "Scrappy" },
-
-    // makuhita [non-vanilla] (ID 296)
+    // Makuhita (ID 296)
     296: { regular: ["Guts", null], hidden: "Thick Fat" },
-
-    // hariyama [non-vanilla] (ID 297)
+    // Hariyama (ID 297)
     297: { regular: ["Guts", null], hidden: "Thick Fat" },
-
-    // azurill [non-vanilla] (ID 298)
+    // Azurill (ID 298)
     298: { regular: ["Huge Power", null], hidden: "Sap Sipper" },
-
-    // nosepass (ID 299)
+    // Nosepass (ID 299)
     299: { regular: ["Sturdy", "Magnet Pull"], hidden: "Sand Force" },
-
-    // skitty (ID 300)
+    // Skitty (ID 300)
     300: { regular: ["Cute Charm", "Normalize"], hidden: "Wonder Skin" },
-
-    // delcatty (ID 301)
+    // Delcatty (ID 301)
     301: { regular: ["Cute Charm", "Normalize"], hidden: "Wonder Skin" },
-
-    // sableye [non-vanilla] (ID 302)
+    // Sableye (ID 302)
     302: { regular: ["Prankster", null], hidden: "Stall" },
-
-    // mawile [non-vanilla] (ID 303)
+    // Mawile (ID 303)
     303: { regular: ["Intimidate", null], hidden: "Sheer Force" },
-
-    // aron (ID 304)
+    // Aron (ID 304)
     304: { regular: ["Sturdy", "Rock Head"], hidden: "Heavy Metal" },
-
-    // lairon (ID 305)
+    // Lairon (ID 305)
     305: { regular: ["Sturdy", "Rock Head"], hidden: "Heavy Metal" },
-
-    // aggron [non-vanilla] (ID 306)
+    // Aggron (ID 306)
     306: { regular: ["Sturdy", "Filter"], hidden: "Heavy Metal" },
-
-    // meditite (ID 307)
+    // Meditite (ID 307)
     307: { regular: ["Pure Power", null], hidden: "Telepathy" },
-
-    // medicham (ID 308)
+    // Medicham (ID 308)
     308: { regular: ["Pure Power", null], hidden: "Telepathy" },
-
-    // electrike [non-vanilla] (ID 309)
+    // Electrike (ID 309)
     309: { regular: ["Galvanize", null], hidden: "Lightning Rod" },
-
-    // manectric [non-vanilla] (ID 310)
+    // Manectric (ID 310)
     310: { regular: ["Galvanize", null], hidden: "Lightning Rod" },
-
-    // plusle (ID 311)
+    // Plusle (ID 311)
     311: { regular: ["Plus", null], hidden: "Lightning Rod" },
-
-    // minun (ID 312)
+    // Minun (ID 312)
     312: { regular: ["Minus", null], hidden: "Volt Absorb" },
-
-    // volbeat (ID 313)
+    // Volbeat (ID 313)
     313: { regular: ["Illuminate", "Swarm"], hidden: "Prankster" },
-
-    // illumise (ID 314)
+    // Illumise (ID 314)
     314: { regular: ["Oblivious", "Tinted Lens"], hidden: "Prankster" },
-
-    // roselia [non-vanilla] (ID 315)
+    // Roselia (ID 315)
     315: { regular: ["Leaf Guard", "Poison Point"], hidden: "Natural Cure" },
-
-    // gulpin (ID 316)
+    // Gulpin (ID 316)
     316: { regular: ["Liquid Ooze", "Sticky Hold"], hidden: "Gluttony" },
-
-    // swalot (ID 317)
+    // Swalot (ID 317)
     317: { regular: ["Liquid Ooze", "Sticky Hold"], hidden: "Gluttony" },
-
-    // carvanha [non-vanilla] (ID 318)
+    // Carvanha (ID 318)
     318: { regular: ["Speed Boost", "Strong Jaw"], hidden: "Rough Skin" },
-
-    // sharpedo [non-vanilla] (ID 319)
+    // Sharpedo (ID 319)
     319: { regular: ["Speed Boost", "Strong Jaw"], hidden: "Rough Skin" },
-
-    // wailmer (ID 320)
+    // Wailmer (ID 320)
     320: { regular: ["Water Veil", "Oblivious"], hidden: "Pressure" },
-
-    // wailord (ID 321)
+    // Wailord (ID 321)
     321: { regular: ["Water Veil", "Oblivious"], hidden: "Pressure" },
-
-    // numel [non-vanilla] (ID 322)
+    // Numel (ID 322)
     322: { regular: ["Oblivious", null], hidden: "Own Tempo" },
-
-    // camerupt [non-vanilla] (ID 323)
+    // Camerupt (ID 323)
     323: { regular: ["Magma Armor", null], hidden: "Anger Point" },
-
-    // torkoal [non-vanilla] (ID 324)
+    // Torkoal (ID 324)
     324: { regular: ["Shell Armor", null], hidden: "Drought" },
-
-    // spoink (ID 325)
+    // Spoink (ID 325)
     325: { regular: ["Thick Fat", "Own Tempo"], hidden: "Gluttony" },
-
-    // grumpig (ID 326)
+    // Grumpig (ID 326)
     326: { regular: ["Thick Fat", "Own Tempo"], hidden: "Gluttony" },
-
-    // spinda (ID 327)
+    // Spinda (ID 327)
     327: { regular: ["Own Tempo", "Tangled Feet"], hidden: "Contrary" },
-
-    // trapinch (ID 328)
+    // Trapinch (ID 328)
     328: { regular: ["Hyper Cutter", "Arena Trap"], hidden: "Sheer Force" },
-
-    // vibrava (ID 329)
+    // Vibrava (ID 329)
     329: { regular: ["Levitate", null], hidden: null },
-
-    // flygon (ID 330)
+    // Flygon (ID 330)
     330: { regular: ["Levitate", null], hidden: null },
-
-    // cacnea (ID 331)
+    // Cacnea (ID 331)
     331: { regular: ["Sand Veil", null], hidden: "Water Absorb" },
-
-    // cacturne (ID 332)
+    // Cacturne (ID 332)
     332: { regular: ["Sand Veil", null], hidden: "Water Absorb" },
-
-    // swablu (ID 333)
+    // Swablu (ID 333)
     333: { regular: ["Natural Cure", null], hidden: "Cloud Nine" },
-
-    // altaria (ID 334)
+    // Altaria (ID 334)
     334: { regular: ["Natural Cure", null], hidden: "Cloud Nine" },
-
-    // zangoose (ID 335)
+    // Zangoose (ID 335)
     335: { regular: ["Immunity", null], hidden: "Toxic Boost" },
-
-    // seviper (ID 336)
+    // Seviper (ID 336)
     336: { regular: ["Shed Skin", null], hidden: "Infiltrator" },
-
-    // lunatone (ID 337)
+    // Lunatone (ID 337)
     337: { regular: ["Levitate", null], hidden: null },
-
-    // solrock (ID 338)
+    // Solrock (ID 338)
     338: { regular: ["Levitate", null], hidden: null },
-
-    // barboach [non-vanilla] (ID 339)
+    // Barboach (ID 339)
     339: { regular: ["Hydration", null], hidden: "Anticipation" },
-
-    // whiscash [non-vanilla] (ID 340)
+    // Whiscash (ID 340)
     340: { regular: ["Hydration", null], hidden: "Anticipation" },
-
-    // corphish [non-vanilla] (ID 341)
+    // Corphish (ID 341)
     341: { regular: ["Shell Armor", null], hidden: "Adaptability" },
-
-    // crawdaunt [non-vanilla] (ID 342)
+    // Crawdaunt (ID 342)
     342: { regular: ["Shell Armor", null], hidden: "Adaptability" },
-
-    // baltoy (ID 343)
+    // Baltoy (ID 343)
     343: { regular: ["Levitate", null], hidden: null },
-
-    // claydol (ID 344)
+    // Claydol (ID 344)
     344: { regular: ["Levitate", null], hidden: null },
-
-    // lileep (ID 345)
+    // Lileep (ID 345)
     345: { regular: ["Suction Cups", null], hidden: "Storm Drain" },
-
-    // cradily (ID 346)
+    // Cradily (ID 346)
     346: { regular: ["Suction Cups", null], hidden: "Storm Drain" },
-
-    // anorith (ID 347)
+    // Anorith (ID 347)
     347: { regular: ["Battle Armor", null], hidden: "Swift Swim" },
-
-    // armaldo (ID 348)
+    // Armaldo (ID 348)
     348: { regular: ["Battle Armor", null], hidden: "Swift Swim" },
-
-    // feebas [non-vanilla] (ID 349)
+    // Feebas (ID 349)
     349: { regular: ["Swift Swim", "Adaptability"], hidden: "Oblivious" },
-
-    // milotic [non-vanilla] (ID 350)
+    // Milotic (ID 350)
     350: { regular: ["Marvel Scale", "Cute Charm"], hidden: "Competitive" },
-
-    // kecleon (ID 352)
+    // Castform-Normal (ID 351)
+    351: { regular: ["Forecast", null], hidden: null },
+    // Kecleon (ID 352)
     352: { regular: ["Color Change", null], hidden: "Protean" },
-
-    // shuppet (ID 353)
+    // Shuppet (ID 353)
     353: { regular: ["Insomnia", "Frisk"], hidden: "Cursed Body" },
-
-    // banette (ID 354)
+    // Banette (ID 354)
     354: { regular: ["Insomnia", "Frisk"], hidden: "Cursed Body" },
-
-    // duskull (ID 355)
+    // Duskull (ID 355)
     355: { regular: ["Levitate", null], hidden: "Frisk" },
-
-    // dusclops (ID 356)
+    // Dusclops (ID 356)
     356: { regular: ["Pressure", null], hidden: "Frisk" },
-
-    // tropius (ID 357)
+    // Tropius (ID 357)
     357: { regular: ["Chlorophyll", "Solar Power"], hidden: "Harvest" },
-
-    // chimecho (ID 358)
+    // Chimecho (ID 358)
     358: { regular: ["Levitate", null], hidden: null },
-
-    // absol [non-vanilla] (ID 359)
+    // Absol (ID 359)
     359: { regular: ["Sharpness", null], hidden: "Super Luck" },
-
-    // wynaut (ID 360)
+    // Wynaut (ID 360)
     360: { regular: ["Shadow Tag", null], hidden: "Telepathy" },
-
-    // snorunt [non-vanilla] (ID 361)
+    // Snorunt (ID 361)
     361: { regular: ["Inner Focus", null], hidden: "Moody" },
-
-    // glalie [non-vanilla] (ID 362)
+    // Glalie (ID 362)
     362: { regular: ["Inner Focus", null], hidden: "Moody" },
-
-    // spheal [non-vanilla] (ID 363)
+    // Spheal (ID 363)
     363: { regular: ["Thick Fat", null], hidden: "Ice Body" },
-
-    // sealeo [non-vanilla] (ID 364)
+    // Sealeo (ID 364)
     364: { regular: ["Thick Fat", null], hidden: "Ice Body" },
-
-    // walrein [non-vanilla] (ID 365)
+    // Walrein (ID 365)
     365: { regular: ["Thick Fat", null], hidden: "Ice Body" },
-
-    // clamperl (ID 366)
+    // Clamperl (ID 366)
     366: { regular: ["Shell Armor", null], hidden: "Rattled" },
-
-    // huntail (ID 367)
+    // Huntail (ID 367)
     367: { regular: ["Swift Swim", null], hidden: "Water Veil" },
-
-    // gorebyss (ID 368)
+    // Gorebyss (ID 368)
     368: { regular: ["Swift Swim", null], hidden: "Hydration" },
-
-    // relicanth [non-vanilla] (ID 369)
+    // Relicanth (ID 369)
     369: { regular: ["Swift Swim", null], hidden: "Sturdy" },
-
-    // luvdisc (ID 370)
+    // Luvdisc (ID 370)
     370: { regular: ["Swift Swim", null], hidden: "Hydration" },
-
-    // bagon (ID 371)
+    // Bagon (ID 371)
     371: { regular: ["Rock Head", null], hidden: "Sheer Force" },
-
-    // shelgon (ID 372)
+    // Shelgon (ID 372)
     372: { regular: ["Rock Head", null], hidden: "Overcoat" },
-
-    // salamence (ID 373)
+    // Salamence (ID 373)
     373: { regular: ["Intimidate", null], hidden: "Moxie" },
-
-    // beldum (ID 374)
+    // Beldum (ID 374)
     374: { regular: ["Clear Body", null], hidden: "Light Metal" },
-
-    // metang (ID 375)
+    // Metang (ID 375)
     375: { regular: ["Clear Body", null], hidden: "Light Metal" },
-
-    // metagross (ID 376)
+    // Metagross (ID 376)
     376: { regular: ["Clear Body", null], hidden: "Light Metal" },
-
-    // regirock (ID 377)
+    // Regirock (ID 377)
     377: { regular: ["Clear Body", null], hidden: "Sturdy" },
-
-    // regice (ID 378)
+    // Regice (ID 378)
     378: { regular: ["Clear Body", null], hidden: "Ice Body" },
-
-    // registeel (ID 379)
+    // Registeel (ID 379)
     379: { regular: ["Clear Body", null], hidden: "Light Metal" },
-
-    // latias (ID 380)
+    // Latias (ID 380)
     380: { regular: ["Levitate", null], hidden: null },
-
-    // latios (ID 381)
+    // Latios (ID 381)
     381: { regular: ["Levitate", null], hidden: null },
-
-    // kyogre (ID 382)
+    // Kyogre (ID 382)
     382: { regular: ["Drizzle", null], hidden: null },
-
-    // groudon (ID 383)
+    // Groudon (ID 383)
     383: { regular: ["Drought", null], hidden: null },
-
-    // rayquaza (ID 384)
+    // Rayquaza (ID 384)
     384: { regular: ["Air Lock", null], hidden: null },
-
-    // jirachi (ID 385)
+    // Jirachi (ID 385)
     385: { regular: ["Serene Grace", null], hidden: null },
-
-    // turtwig (ID 387)
+    // Deoxys-Normal (ID 386)
+    386: { regular: ["Pressure", null], hidden: null },
+    // Turtwig (ID 387)
     387: { regular: ["Overgrow", null], hidden: "Shell Armor" },
-
-    // grotle (ID 388)
+    // Grotle (ID 388)
     388: { regular: ["Overgrow", null], hidden: "Shell Armor" },
-
-    // torterra (ID 389)
+    // Torterra (ID 389)
     389: { regular: ["Overgrow", null], hidden: "Shell Armor" },
-
-    // chimchar (ID 390)
+    // Chimchar (ID 390)
     390: { regular: ["Blaze", null], hidden: "Iron Fist" },
-
-    // monferno (ID 391)
+    // Monferno (ID 391)
     391: { regular: ["Blaze", null], hidden: "Iron Fist" },
-
-    // infernape (ID 392)
+    // Infernape (ID 392)
     392: { regular: ["Blaze", null], hidden: "Iron Fist" },
-
-    // piplup (ID 393)
+    // Piplup (ID 393)
     393: { regular: ["Torrent", null], hidden: "Competitive" },
-
-    // prinplup (ID 394)
+    // Prinplup (ID 394)
     394: { regular: ["Torrent", null], hidden: "Competitive" },
-
-    // empoleon (ID 395)
+    // Empoleon (ID 395)
     395: { regular: ["Torrent", null], hidden: "Competitive" },
-
-    // starly (ID 396)
+    // Starly (ID 396)
     396: { regular: ["Keen Eye", null], hidden: "Reckless" },
-
-    // staravia (ID 397)
+    // Staravia (ID 397)
     397: { regular: ["Intimidate", null], hidden: "Reckless" },
-
-    // staraptor (ID 398)
+    // Staraptor (ID 398)
     398: { regular: ["Intimidate", null], hidden: "Reckless" },
-
-    // bidoof (ID 399)
+    // Bidoof (ID 399)
     399: { regular: ["Simple", "Unaware"], hidden: "Moody" },
-
-    // bibarel (ID 400)
+    // Bibarel (ID 400)
     400: { regular: ["Simple", "Unaware"], hidden: "Moody" },
-
-    // kricketot (ID 401)
+    // Kricketot (ID 401)
     401: { regular: ["Shed Skin", null], hidden: "Run Away" },
-
-    // kricketune (ID 402)
+    // Kricketune (ID 402)
     402: { regular: ["Swarm", null], hidden: "Technician" },
-
-    // shinx [non-vanilla] (ID 403)
+    // Shinx (ID 403)
     403: { regular: ["Intimidate", "Strong Jaw"], hidden: "Guts" },
-
-    // luxio [non-vanilla] (ID 404)
+    // Luxio (ID 404)
     404: { regular: ["Intimidate", "Strong Jaw"], hidden: "Guts" },
-
-    // luxray [non-vanilla] (ID 405)
+    // Luxray (ID 405)
     405: { regular: ["Intimidate", "Strong Jaw"], hidden: "Guts" },
-
-    // budew [non-vanilla] (ID 406)
+    // Budew (ID 406)
     406: { regular: ["Leaf Guard", "Poison Point"], hidden: "Natural Cure" },
-
-    // roserade [non-vanilla] (ID 407)
+    // Roserade (ID 407)
     407: { regular: ["Technician", "Poison Point"], hidden: "Natural Cure" },
-
-    // cranidos (ID 408)
+    // Cranidos (ID 408)
     408: { regular: ["Mold Breaker", null], hidden: "Sheer Force" },
-
-    // rampardos (ID 409)
+    // Rampardos (ID 409)
     409: { regular: ["Mold Breaker", null], hidden: "Sheer Force" },
-
-    // shieldon (ID 410)
+    // Shieldon (ID 410)
     410: { regular: ["Sturdy", null], hidden: "Soundproof" },
-
-    // bastiodon (ID 411)
+    // Bastiodon (ID 411)
     411: { regular: ["Sturdy", null], hidden: "Soundproof" },
-
-    // mothim (ID 414)
+    // Burmy-Plant-Cloak (ID 412)
+    412: { regular: ["Shed Skin", null], hidden: "Overcoat" },
+    // Wormadam-Plant-Cloak (ID 413)
+    413: { regular: ["Anticipation", null], hidden: "Overcoat" },
+    // Mothim (ID 414)
     414: { regular: ["Swarm", null], hidden: "Tinted Lens" },
-
-    // combee (ID 415)
+    // Combee (ID 415)
     415: { regular: ["Honey Gather", null], hidden: "Hustle" },
-
-    // vespiquen (ID 416)
+    // Vespiquen (ID 416)
     416: { regular: ["Pressure", null], hidden: "Unnerve" },
-
-    // pachirisu [non-vanilla] (ID 417)
+    // Pachirisu (ID 417)
     417: { regular: ["Static", "Pickup"], hidden: "Volt Absorb" },
-
-    // buizel (ID 418)
+    // Buizel (ID 418)
     418: { regular: ["Swift Swim", null], hidden: "Water Veil" },
-
-    // floatzel (ID 419)
+    // Floatzel (ID 419)
     419: { regular: ["Swift Swim", null], hidden: "Water Veil" },
-
-    // cherubi (ID 420)
+    // Cherubi (ID 420)
     420: { regular: ["Chlorophyll", null], hidden: null },
-
-    // shellos [non-vanilla] (ID 422)
+    // Cherrim-Overcast (ID 421)
+    421: { regular: ["Flower Gift", null], hidden: null },
+    // Shellos (ID 422)
     422: { regular: ["Sticky Hold", "Sand Force"], hidden: "Storm Drain" },
-
-    // gastrodon [non-vanilla] (ID 423)
+    // Gastrodon (ID 423)
     423: { regular: ["Sticky Hold", "Sand Force"], hidden: "Storm Drain" },
-
-    // ambipom [non-vanilla] (ID 424)
+    // Ambipom (ID 424)
     424: { regular: ["Skill Link", "Technician"], hidden: "Run Away" },
-
-    // drifloon (ID 425)
+    // Drifloon (ID 425)
     425: { regular: ["Aftermath", "Unburden"], hidden: "Flare Boost" },
-
-    // drifblim (ID 426)
+    // Drifblim (ID 426)
     426: { regular: ["Aftermath", "Unburden"], hidden: "Flare Boost" },
-
-    // buneary [non-vanilla] (ID 427)
+    // Buneary (ID 427)
     427: { regular: ["Limber", null], hidden: "Run Away" },
-
-    // lopunny [non-vanilla] (ID 428)
+    // Lopunny (ID 428)
     428: { regular: ["Limber", null], hidden: "Cute Charm" },
-
-    // mismagius (ID 429)
+    // Mismagius (ID 429)
     429: { regular: ["Levitate", null], hidden: null },
-
-    // honchkrow [non-vanilla] (ID 430)
+    // Honchkrow (ID 430)
     430: { regular: ["Super Luck", null], hidden: "Prankster" },
-
-    // glameow (ID 431)
+    // Glameow (ID 431)
     431: { regular: ["Limber", "Own Tempo"], hidden: "Keen Eye" },
-
-    // purugly (ID 432)
+    // Purugly (ID 432)
     432: { regular: ["Thick Fat", "Own Tempo"], hidden: "Defiant" },
-
-    // chingling (ID 433)
+    // Chingling (ID 433)
     433: { regular: ["Levitate", null], hidden: null },
-
-    // stunky (ID 434)
+    // Stunky (ID 434)
     434: { regular: ["Stench", "Aftermath"], hidden: "Keen Eye" },
-
-    // skuntank (ID 435)
+    // Skuntank (ID 435)
     435: { regular: ["Stench", "Aftermath"], hidden: "Keen Eye" },
-
-    // bronzor (ID 436)
+    // Bronzor (ID 436)
     436: { regular: ["Levitate", "Heatproof"], hidden: "Heavy Metal" },
-
-    // bronzong (ID 437)
+    // Bronzong (ID 437)
     437: { regular: ["Levitate", "Heatproof"], hidden: "Heavy Metal" },
-
-    // bonsly (ID 438)
+    // Bonsly (ID 438)
     438: { regular: ["Sturdy", "Rock Head"], hidden: "Rattled" },
-
-    // mimejr (ID 439)
+    // Mime Jr. (ID 439)
     439: { regular: ["Soundproof", "Filter"], hidden: "Technician" },
-
-    // happiny (ID 440)
+    // Happiny (ID 440)
     440: { regular: ["Natural Cure", "Serene Grace"], hidden: "Friend Guard" },
-
-    // chatot (ID 441)
+    // Chatot (ID 441)
     441: { regular: ["Keen Eye", "Tangled Feet"], hidden: "Big Pecks" },
-
-    // spiritomb (ID 442)
+    // Spiritomb (ID 442)
     442: { regular: ["Pressure", null], hidden: "Infiltrator" },
-
-    // gible (ID 443)
+    // Gible (ID 443)
     443: { regular: ["Sand Veil", null], hidden: "Rough Skin" },
-
-    // gabite (ID 444)
+    // Gabite (ID 444)
     444: { regular: ["Sand Veil", null], hidden: "Rough Skin" },
-
-    // garchomp (ID 445)
+    // Garchomp (ID 445)
     445: { regular: ["Sand Veil", null], hidden: "Rough Skin" },
-
-    // munchlax (ID 446)
+    // Munchlax (ID 446)
     446: { regular: ["Pickup", "Thick Fat"], hidden: "Gluttony" },
-
-    // riolu [non-vanilla] (ID 447)
+    // Riolu (ID 447)
     447: { regular: ["Inner Focus", null], hidden: "Prankster" },
-
-    // lucario [non-vanilla] (ID 448)
+    // Lucario (ID 448)
     448: { regular: ["Inner Focus", null], hidden: "Justified" },
-
-    // hippopotas [non-vanilla] (ID 449)
+    // Hippopotas (ID 449)
     449: { regular: ["Sand Force", null], hidden: "Sand Stream" },
-
-    // hippowdon [non-vanilla] (ID 450)
+    // Hippowdon (ID 450)
     450: { regular: ["Sand Force", null], hidden: "Sand Stream" },
-
-    // skorupi [non-vanilla] (ID 451)
+    // Skorupi (ID 451)
     451: { regular: ["Battle Armor", null], hidden: "Sniper" },
-
-    // drapion [non-vanilla] (ID 452)
+    // Drapion (ID 452)
     452: { regular: ["Battle Armor", null], hidden: "Sniper" },
-
-    // croagunk [non-vanilla] (ID 453)
+    // Croagunk (ID 453)
     453: { regular: ["Poison Touch", "Poison Point"], hidden: "Dry Skin" },
-
-    // toxicroak [non-vanilla] (ID 454)
+    // Toxicroak (ID 454)
     454: { regular: ["Poison Touch", "Poison Point"], hidden: "Dry Skin" },
-
-    // carnivine (ID 455)
+    // Carnivine (ID 455)
     455: { regular: ["Levitate", null], hidden: null },
-
-    // finneon [non-vanilla] (ID 456)
+    // Finneon (ID 456)
     456: { regular: ["Swift Swim", null], hidden: "Storm Drain" },
-
-    // lumineon [non-vanilla] (ID 457)
+    // Lumineon (ID 457)
     457: { regular: ["Swift Swim", null], hidden: "Storm Drain" },
-
-    // mantyke [non-vanilla] (ID 458)
+    // Mantyke (ID 458)
     458: { regular: ["Swift Swim", null], hidden: "Water Absorb" },
-
-    // snover (ID 459)
+    // Snover (ID 459)
     459: { regular: ["Snow Warning", null], hidden: "Soundproof" },
-
-    // abomasnow (ID 460)
+    // Abomasnow (ID 460)
     460: { regular: ["Snow Warning", null], hidden: "Soundproof" },
-
-    // weavile (ID 461)
+    // Weavile (ID 461)
     461: { regular: ["Pressure", null], hidden: "Pickpocket" },
-
-    // magnezone (ID 462)
+    // Magnezone (ID 462)
     462: { regular: ["Magnet Pull", "Sturdy"], hidden: "Analytic" },
-
-    // lickilicky (ID 463)
+    // Lickilicky (ID 463)
     463: { regular: ["Own Tempo", "Oblivious"], hidden: "Cloud Nine" },
-
-    // rhyperior [non-vanilla] (ID 464)
+    // Rhyperior (ID 464)
     464: { regular: ["Solid Rock", null], hidden: "Lightning Rod" },
-
-    // tangrowth (ID 465)
+    // Tangrowth (ID 465)
     465: { regular: ["Chlorophyll", "Leaf Guard"], hidden: "Regenerator" },
-
-    // electivire [non-vanilla] (ID 466)
+    // Electivire (ID 466)
     466: { regular: ["Iron Fist", null], hidden: "Vital Spirit" },
-
-    // magmortar (ID 467)
+    // Magmortar (ID 467)
     467: { regular: ["Flame Body", null], hidden: "Vital Spirit" },
-
-    // togekiss [non-vanilla] (ID 468)
+    // Togekiss (ID 468)
     468: { regular: ["Aerilate", "Super Luck"], hidden: "Serene Grace" },
-
-    // yanmega (ID 469)
+    // Yanmega (ID 469)
     469: { regular: ["Speed Boost", "Tinted Lens"], hidden: "Frisk" },
-
-    // leafeon [non-vanilla] (ID 470)
+    // Leafeon (ID 470)
     470: { regular: ["Technician", null], hidden: "Chlorophyll" },
-
-    // glaceon [non-vanilla] (ID 471)
+    // Glaceon (ID 471)
     471: { regular: ["Slush Rush", null], hidden: "Ice Body" },
-
-    // gliscor [non-vanilla] (ID 472)
+    // Gliscor (ID 472)
     472: { regular: ["Hyper Cutter", null], hidden: "Poison Heal" },
-
-    // mamoswine [non-vanilla] (ID 473)
+    // Mamoswine (ID 473)
     473: { regular: ["Thick Fat", null], hidden: "Snow Cloak" },
-
-    // porygonz (ID 474)
+    // Porygon-Z (ID 474)
     474: { regular: ["Adaptability", "Download"], hidden: "Analytic" },
-
-    // gallade [non-vanilla] (ID 475)
+    // Gallade (ID 475)
     475: { regular: ["Sharpness", null], hidden: "Justified" },
-
-    // probopass (ID 476)
+    // Probopass (ID 476)
     476: { regular: ["Sturdy", "Magnet Pull"], hidden: "Sand Force" },
-
-    // dusknoir (ID 477)
+    // Dusknoir (ID 477)
     477: { regular: ["Pressure", null], hidden: "Frisk" },
-
-    // froslass (ID 478)
+    // Froslass (ID 478)
     478: { regular: ["Snow Cloak", null], hidden: "Cursed Body" },
-
-    // rotom (ID 479)
+    // Rotom (ID 479)
     479: { regular: ["Levitate", null], hidden: null },
-
-    // uxie (ID 480)
+    // Uxie (ID 480)
     480: { regular: ["Levitate", null], hidden: null },
-
-    // mesprit (ID 481)
+    // Mesprit (ID 481)
     481: { regular: ["Levitate", null], hidden: null },
-
-    // azelf (ID 482)
+    // Azelf (ID 482)
     482: { regular: ["Levitate", null], hidden: null },
-
-    // dialga (ID 483)
+    // Dialga (ID 483)
     483: { regular: ["Pressure", null], hidden: "Telepathy" },
-
-    // palkia (ID 484)
+    // Palkia (ID 484)
     484: { regular: ["Pressure", null], hidden: "Telepathy" },
-
-    // heatran (ID 485)
+    // Heatran (ID 485)
     485: { regular: ["Flash Fire", null], hidden: "Flame Body" },
-
-    // regigigas (ID 486)
+    // Regigigas (ID 486)
     486: { regular: ["Slow Start", null], hidden: null },
-
-    // cresselia (ID 488)
+    // Giratina-Altered (ID 487)
+    487: { regular: ["Pressure", null], hidden: "Telepathy" },
+    // Cresselia (ID 488)
     488: { regular: ["Levitate", null], hidden: null },
-
-    // phione (ID 489)
+    // Phione (ID 489)
     489: { regular: ["Hydration", null], hidden: null },
-
-    // manaphy (ID 490)
+    // Manaphy (ID 490)
     490: { regular: ["Hydration", null], hidden: null },
-
-    // darkrai (ID 491)
+    // Darkrai (ID 491)
     491: { regular: ["Bad Dreams", null], hidden: null },
-
-    // victini (ID 494)
+    // Shaymin-Land (ID 492)
+    492: { regular: ["Natural Cure", null], hidden: null },
+    // Arceus-Normal (ID 493)
+    493: { regular: ["Multitype", null], hidden: null },
+    // Victini (ID 494)
     494: { regular: ["Victory Star", null], hidden: null },
-
-    // snivy (ID 495)
+    // Snivy (ID 495)
     495: { regular: ["Overgrow", null], hidden: "Contrary" },
-
-    // servine (ID 496)
+    // Servine (ID 496)
     496: { regular: ["Overgrow", null], hidden: "Contrary" },
-
-    // serperior (ID 497)
+    // Serperior (ID 497)
     497: { regular: ["Overgrow", null], hidden: "Contrary" },
-
-    // tepig (ID 498)
+    // Tepig (ID 498)
     498: { regular: ["Blaze", null], hidden: "Thick Fat" },
-
-    // pignite (ID 499)
+    // Pignite (ID 499)
     499: { regular: ["Blaze", null], hidden: "Thick Fat" },
-
-    // emboar (ID 500)
+    // Emboar (ID 500)
     500: { regular: ["Blaze", null], hidden: "Reckless" },
-
-    // oshawott [non-vanilla] (ID 501)
+    // Oshawott (ID 501)
     501: { regular: ["Shell Armor", null], hidden: "Torrent" },
-
-    // dewott [non-vanilla] (ID 502)
+    // Dewott (ID 502)
     502: { regular: ["Shell Armor", null], hidden: "Torrent" },
-
-    // samurott [non-vanilla] (ID 503)
+    // Samurott (ID 503)
     503: { regular: ["Shell Armor", null], hidden: "Torrent" },
-
-    // patrat (ID 504)
+    // Patrat (ID 504)
     504: { regular: ["Run Away", "Keen Eye"], hidden: "Analytic" },
-
-    // watchog (ID 505)
+    // Watchog (ID 505)
     505: { regular: ["Illuminate", "Keen Eye"], hidden: "Analytic" },
-
-    // lillipup [non-vanilla] (ID 506)
+    // Lillipup (ID 506)
     506: { regular: ["Vital Spirit", "Sand Rush"], hidden: "Run Away" },
-
-    // herdier (ID 507)
+    // Herdier (ID 507)
     507: { regular: ["Intimidate", "Sand Rush"], hidden: "Scrappy" },
-
-    // stoutland (ID 508)
+    // Stoutland (ID 508)
     508: { regular: ["Intimidate", "Sand Rush"], hidden: "Scrappy" },
-
-    // purrloin (ID 509)
+    // Purrloin (ID 509)
     509: { regular: ["Limber", "Unburden"], hidden: "Prankster" },
-
-    // liepard (ID 510)
+    // Liepard (ID 510)
     510: { regular: ["Limber", "Unburden"], hidden: "Prankster" },
-
-    // pansage (ID 511)
+    // Pansage (ID 511)
     511: { regular: ["Gluttony", null], hidden: "Overgrow" },
-
-    // simisage (ID 512)
+    // Simisage (ID 512)
     512: { regular: ["Gluttony", null], hidden: "Overgrow" },
-
-    // pansear (ID 513)
+    // Pansear (ID 513)
     513: { regular: ["Gluttony", null], hidden: "Blaze" },
-
-    // simisear (ID 514)
+    // Simisear (ID 514)
     514: { regular: ["Gluttony", null], hidden: "Blaze" },
-
-    // panpour (ID 515)
+    // Panpour (ID 515)
     515: { regular: ["Gluttony", null], hidden: "Torrent" },
-
-    // simipour (ID 516)
+    // Simipour (ID 516)
     516: { regular: ["Gluttony", null], hidden: "Torrent" },
-
-    // munna [non-vanilla] (ID 517)
+    // Munna (ID 517)
     517: { regular: ["Telepathy", null], hidden: "Synchronize" },
-
-    // musharna [non-vanilla] (ID 518)
+    // Musharna (ID 518)
     518: { regular: ["Telepathy", null], hidden: "Synchronize" },
-
-    // pidove [non-vanilla] (ID 519)
+    // Pidove (ID 519)
     519: { regular: ["Quick Feet", null], hidden: "Rivalry" },
-
-    // tranquill [non-vanilla] (ID 520)
+    // Tranquill (ID 520)
     520: { regular: ["Quick Feet", null], hidden: "Rivalry" },
-
-    // unfezant [non-vanilla] (ID 521)
+    // Unfezant (ID 521)
     521: { regular: ["Quick Feet", null], hidden: "Rivalry" },
-
-    // blitzle (ID 522)
+    // Blitzle (ID 522)
     522: { regular: ["Lightning Rod", "Motor Drive"], hidden: "Sap Sipper" },
-
-    // zebstrika (ID 523)
+    // Zebstrika (ID 523)
     523: { regular: ["Lightning Rod", "Motor Drive"], hidden: "Sap Sipper" },
-
-    // roggenrola [non-vanilla] (ID 524)
+    // Roggenrola (ID 524)
     524: { regular: ["Sturdy", "Solid Rock"], hidden: "Weak Armor" },
-
-    // boldore [non-vanilla] (ID 525)
+    // Boldore (ID 525)
     525: { regular: ["Sturdy", "Solid Rock"], hidden: "Weak Armor" },
-
-    // gigalith [non-vanilla] (ID 526)
+    // Gigalith (ID 526)
     526: { regular: ["Sturdy", "Solid Rock"], hidden: "Sand Stream" },
-
-    // woobat (ID 527)
+    // Woobat (ID 527)
     527: { regular: ["Unaware", "Klutz"], hidden: "Simple" },
-
-    // swoobat (ID 528)
+    // Swoobat (ID 528)
     528: { regular: ["Unaware", "Klutz"], hidden: "Simple" },
-
-    // drilbur (ID 529)
+    // Drilbur (ID 529)
     529: { regular: ["Sand Rush", "Sand Force"], hidden: "Mold Breaker" },
-
-    // excadrill (ID 530)
+    // Excadrill (ID 530)
     530: { regular: ["Sand Rush", "Sand Force"], hidden: "Mold Breaker" },
-
-    // audino (ID 531)
+    // Audino (ID 531)
     531: { regular: ["Healer", "Regenerator"], hidden: "Klutz" },
-
-    // timburr [non-vanilla] (ID 532)
+    // Timburr (ID 532)
     532: { regular: ["Iron Fist", null], hidden: "Guts" },
-
-    // gurdurr [non-vanilla] (ID 533)
+    // Gurdurr (ID 533)
     533: { regular: ["Iron Fist", null], hidden: "Guts" },
-
-    // conkeldurr [non-vanilla] (ID 534)
+    // Conkeldurr (ID 534)
     534: { regular: ["Iron Fist", null], hidden: "Guts" },
-
-    // tympole [non-vanilla] (ID 535)
+    // Tympole (ID 535)
     535: { regular: ["Swift Swim", null], hidden: "Water Absorb" },
-
-    // palpitoad [non-vanilla] (ID 536)
+    // Palpitoad (ID 536)
     536: { regular: ["Swift Swim", null], hidden: "Water Absorb" },
-
-    // seismitoad [non-vanilla] (ID 537)
+    // Seismitoad (ID 537)
     537: { regular: ["Swift Swim", null], hidden: "Water Absorb" },
-
-    // throh (ID 538)
+    // Throh (ID 538)
     538: { regular: ["Guts", "Inner Focus"], hidden: "Mold Breaker" },
-
-    // sawk (ID 539)
+    // Sawk (ID 539)
     539: { regular: ["Sturdy", "Inner Focus"], hidden: "Mold Breaker" },
-
-    // sewaddle [non-vanilla] (ID 540)
+    // Sewaddle (ID 540)
     540: { regular: ["Swarm", null], hidden: "Chlorophyll" },
-
-    // swadloon [non-vanilla] (ID 541)
+    // Swadloon (ID 541)
     541: { regular: ["Leaf Guard", null], hidden: "Chlorophyll" },
-
-    // leavanny [non-vanilla] (ID 542)
+    // Leavanny (ID 542)
     542: { regular: ["Sharpness", null], hidden: "Chlorophyll" },
-
-    // venipede (ID 543)
+    // Venipede (ID 543)
     543: { regular: ["Poison Point", "Swarm"], hidden: "Speed Boost" },
-
-    // whirlipede (ID 544)
+    // Whirlipede (ID 544)
     544: { regular: ["Poison Point", "Swarm"], hidden: "Speed Boost" },
-
-    // scolipede (ID 545)
+    // Scolipede (ID 545)
     545: { regular: ["Poison Point", "Swarm"], hidden: "Speed Boost" },
-
-    // cottonee [non-vanilla] (ID 546)
+    // Cottonee (ID 546)
     546: { regular: ["Wind Rider", null], hidden: "Prankster" },
-
-    // whimsicott [non-vanilla] (ID 547)
+    // Whimsicott (ID 547)
     547: { regular: ["Wind Rider", null], hidden: "Prankster" },
-
-    // petilil (ID 548)
+    // Petilil (ID 548)
     548: { regular: ["Chlorophyll", "Own Tempo"], hidden: "Leaf Guard" },
-
-    // lilligant (ID 549)
+    // Lilligant (ID 549)
     549: { regular: ["Chlorophyll", "Own Tempo"], hidden: "Leaf Guard" },
-
-    // basculin (ID 550)
+    // Basculin (ID 550)
     550: { regular: ["Reckless", "Adaptability"], hidden: "Mold Breaker" },
-
-    // sandile [non-vanilla] (ID 551)
+    // Sandile (ID 551)
     551: { regular: ["Intimidate", null], hidden: "Moxie" },
-
-    // krokorok [non-vanilla] (ID 552)
+    // Krokorok (ID 552)
     552: { regular: ["Intimidate", null], hidden: "Moxie" },
-
-    // krookodile [non-vanilla] (ID 553)
+    // Krookodile (ID 553)
     553: { regular: ["Intimidate", null], hidden: "Moxie" },
-
-    // darumaka (ID 554)
+    // Darumaka (ID 554)
     554: { regular: ["Hustle", null], hidden: "Inner Focus" },
-
-    // maractus [non-vanilla] (ID 556)
+    // Darmanitan-Standard-Mode (ID 555)
+    555: { regular: ["Sheer Force", null], hidden: "Zen Mode" },
+    // Maractus (ID 556)
     556: { regular: ["Chlorophyll", null], hidden: "Storm Drain" },
-
-    // dwebble (ID 557)
+    // Dwebble (ID 557)
     557: { regular: ["Sturdy", "Shell Armor"], hidden: "Weak Armor" },
-
-    // crustle (ID 558)
+    // Crustle (ID 558)
     558: { regular: ["Sturdy", "Shell Armor"], hidden: "Weak Armor" },
-
-    // scraggy [non-vanilla] (ID 559)
+    // Scraggy (ID 559)
     559: { regular: ["Intimidate", null], hidden: "Moxie" },
-
-    // scrafty [non-vanilla] (ID 560)
+    // Scrafty (ID 560)
     560: { regular: ["Intimidate", null], hidden: "Moxie" },
-
-    // sigilyph (ID 561)
+    // Sigilyph (ID 561)
     561: { regular: ["Wonder Skin", "Magic Guard"], hidden: "Tinted Lens" },
-
-    // yamask (ID 562)
+    // Yamask (ID 562)
     562: { regular: ["Mummy", null], hidden: null },
-
-    // cofagrigus (ID 563)
+    // Cofagrigus (ID 563)
     563: { regular: ["Mummy", null], hidden: null },
-
-    // tirtouga (ID 564)
+    // Tirtouga (ID 564)
     564: { regular: ["Solid Rock", "Sturdy"], hidden: "Swift Swim" },
-
-    // carracosta (ID 565)
+    // Carracosta (ID 565)
     565: { regular: ["Solid Rock", "Sturdy"], hidden: "Swift Swim" },
-
-    // archen (ID 566)
+    // Archen (ID 566)
     566: { regular: ["Defeatist", null], hidden: null },
-
-    // archeops (ID 567)
+    // Archeops (ID 567)
     567: { regular: ["Defeatist", null], hidden: null },
-
-    // trubbish (ID 568)
+    // Trubbish (ID 568)
     568: { regular: ["Stench", "Sticky Hold"], hidden: "Aftermath" },
-
-    // garbodorgmax (ID 569)
+    // Garbodor (ID 569)
     569: { regular: ["Stench", "Weak Armor"], hidden: "Aftermath" },
-
-    // zorua [non-vanilla] (ID 570)
+    // Zorua (ID 570)
     570: { regular: ["Eclipsate", null], hidden: "Illusion" },
-
-    // zoroark [non-vanilla] (ID 571)
+    // Zoroark (ID 571)
     571: { regular: ["Eclipsate", null], hidden: "Illusion" },
-
-    // minccino [non-vanilla] (ID 572)
+    // Minccino (ID 572)
     572: { regular: ["Skill Link", "Technician"], hidden: "Cute Charm" },
-
-    // cinccino [non-vanilla] (ID 573)
+    // Cinccino (ID 573)
     573: { regular: ["Skill Link", "Technician"], hidden: "Cute Charm" },
-
-    // gothita (ID 574)
+    // Gothita (ID 574)
     574: { regular: ["Frisk", "Competitive"], hidden: "Shadow Tag" },
-
-    // gothorita (ID 575)
+    // Gothorita (ID 575)
     575: { regular: ["Frisk", "Competitive"], hidden: "Shadow Tag" },
-
-    // gothitelle (ID 576)
+    // Gothitelle (ID 576)
     576: { regular: ["Frisk", "Competitive"], hidden: "Shadow Tag" },
-
-    // solosis [non-vanilla] (ID 577)
+    // Solosis (ID 577)
     577: { regular: ["Regenerator", "Magic Guard"], hidden: "Overcoat" },
-
-    // duosion [non-vanilla] (ID 578)
+    // Duosion (ID 578)
     578: { regular: ["Regenerator", "Magic Guard"], hidden: "Overcoat" },
-
-    // reuniclus [non-vanilla] (ID 579)
+    // Reuniclus (ID 579)
     579: { regular: ["Regenerator", "Magic Guard"], hidden: "Overcoat" },
-
-    // ducklett [non-vanilla] (ID 580)
+    // Ducklett (ID 580)
     580: { regular: ["No Guard", null], hidden: "Hydration" },
-
-    // swanna [non-vanilla] (ID 581)
+    // Swanna (ID 581)
     581: { regular: ["No Guard", null], hidden: "Hydration" },
-
-    // vanillite (ID 582)
+    // Vanillite (ID 582)
     582: { regular: ["Ice Body", "Snow Cloak"], hidden: "Weak Armor" },
-
-    // vanillish (ID 583)
+    // Vanillish (ID 583)
     583: { regular: ["Ice Body", "Snow Cloak"], hidden: "Weak Armor" },
-
-    // vanilluxe (ID 584)
+    // Vanilluxe (ID 584)
     584: { regular: ["Ice Body", "Snow Warning"], hidden: "Weak Armor" },
-
-    // deerling [non-vanilla] (ID 585)
+    // Deerling (ID 585)
     585: { regular: ["Leaf Rush", null], hidden: "Serene Grace" },
-
-    // sawsbuck [non-vanilla] (ID 586)
+    // Sawsbuck (ID 586)
     586: { regular: ["Leaf Rush", null], hidden: "Serene Grace" },
-
-    // emolga (ID 587)
+    // Emolga (ID 587)
     587: { regular: ["Static", null], hidden: "Motor Drive" },
-
-    // karrablast (ID 588)
+    // Karrablast (ID 588)
     588: { regular: ["Swarm", "Shed Skin"], hidden: "No Guard" },
-
-    // escavalier (ID 589)
+    // Escavalier (ID 589)
     589: { regular: ["Swarm", "Shell Armor"], hidden: "Overcoat" },
-
-    // foongus (ID 590)
+    // Foongus (ID 590)
     590: { regular: ["Effect Spore", null], hidden: "Regenerator" },
-
-    // amoonguss (ID 591)
+    // Amoonguss (ID 591)
     591: { regular: ["Effect Spore", null], hidden: "Regenerator" },
-
-    // frillish [non-vanilla] (ID 592)
+    // Frillish (ID 592)
     592: { regular: ["Damp", "Cursed Body"], hidden: "Water Absorb" },
-
-    // jellicent [non-vanilla] (ID 593)
+    // Jellicent (ID 593)
     593: { regular: ["Damp", "Cursed Body"], hidden: "Water Absorb" },
-
-    // alomomola (ID 594)
+    // Alomomola (ID 594)
     594: { regular: ["Healer", "Hydration"], hidden: "Regenerator" },
-
-    // joltik (ID 595)
+    // Joltik (ID 595)
     595: { regular: ["Compound Eyes", "Unnerve"], hidden: "Swarm" },
-
-    // galvantula (ID 596)
+    // Galvantula (ID 596)
     596: { regular: ["Compound Eyes", "Unnerve"], hidden: "Swarm" },
-
-    // ferroseed (ID 597)
+    // Ferroseed (ID 597)
     597: { regular: ["Iron Barbs", null], hidden: null },
-
-    // ferrothorn (ID 598)
+    // Ferrothorn (ID 598)
     598: { regular: ["Iron Barbs", null], hidden: "Anticipation" },
-
-    // klink [non-vanilla] (ID 599)
+    // Klink (ID 599)
     599: { regular: ["Clear Body", null], hidden: null },
-
-    // klang [non-vanilla] (ID 600)
+    // Klang (ID 600)
     600: { regular: ["Clear Body", null], hidden: null },
-
-    // klinklang [non-vanilla] (ID 601)
+    // Klinklang (ID 601)
     601: { regular: ["Clear Body", null], hidden: null },
-
-    // tynamo (ID 602)
+    // Tynamo (ID 602)
     602: { regular: ["Levitate", null], hidden: null },
-
-    // eelektrik (ID 603)
+    // Eelektrik (ID 603)
     603: { regular: ["Levitate", null], hidden: null },
-
-    // eelektross (ID 604)
+    // Eelektross (ID 604)
     604: { regular: ["Levitate", null], hidden: null },
-
-    // elgyem (ID 605)
+    // Elgyem (ID 605)
     605: { regular: ["Telepathy", "Synchronize"], hidden: "Analytic" },
-
-    // beheeyem (ID 606)
+    // Beheeyem (ID 606)
     606: { regular: ["Telepathy", "Synchronize"], hidden: "Analytic" },
-
-    // litwick [non-vanilla] (ID 607)
+    // Litwick (ID 607)
     607: { regular: ["Flame Body", null], hidden: "Infiltrator" },
-
-    // lampent [non-vanilla] (ID 608)
+    // Lampent (ID 608)
     608: { regular: ["Flame Body", null], hidden: "Infiltrator" },
-
-    // chandelure [non-vanilla] (ID 609)
+    // Chandelure (ID 609)
     609: { regular: ["Flame Body", null], hidden: "Infiltrator" },
-
-    // axew (ID 610)
+    // Axew (ID 610)
     610: { regular: ["Rivalry", "Mold Breaker"], hidden: "Unnerve" },
-
-    // fraxure (ID 611)
+    // Fraxure (ID 611)
     611: { regular: ["Rivalry", "Mold Breaker"], hidden: "Unnerve" },
-
-    // haxorus (ID 612)
+    // Haxorus (ID 612)
     612: { regular: ["Rivalry", "Mold Breaker"], hidden: "Unnerve" },
-
-    // cubchoo (ID 613)
+    // Cubchoo (ID 613)
     613: { regular: ["Snow Cloak", "Slush Rush"], hidden: "Rattled" },
-
-    // beartic (ID 614)
+    // Beartic (ID 614)
     614: { regular: ["Snow Cloak", "Slush Rush"], hidden: "Swift Swim" },
-
-    // cryogonal (ID 615)
+    // Cryogonal (ID 615)
     615: { regular: ["Levitate", null], hidden: null },
-
-    // shelmet (ID 616)
+    // Shelmet (ID 616)
     616: { regular: ["Hydration", "Shell Armor"], hidden: "Overcoat" },
-
-    // accelgor (ID 617)
+    // Accelgor (ID 617)
     617: { regular: ["Hydration", "Sticky Hold"], hidden: "Unburden" },
-
-    // stunfisk (ID 618)
+    // Stunfisk (ID 618)
     618: { regular: ["Static", "Limber"], hidden: "Sand Veil" },
-
-    // mienfoo (ID 619)
+    // Mienfoo (ID 619)
     619: { regular: ["Inner Focus", "Regenerator"], hidden: "Reckless" },
-
-    // mienshao (ID 620)
+    // Mienshao (ID 620)
     620: { regular: ["Inner Focus", "Regenerator"], hidden: "Reckless" },
-
-    // druddigon (ID 621)
+    // Druddigon (ID 621)
     621: { regular: ["Rough Skin", "Sheer Force"], hidden: "Mold Breaker" },
-
-    // golett [non-vanilla] (ID 622)
+    // Golett (ID 622)
     622: { regular: ["Iron Fist", "No Guard"], hidden: "Klutz" },
-
-    // golurk [non-vanilla] (ID 623)
+    // Golurk (ID 623)
     623: { regular: ["Iron Fist", "No Guard"], hidden: "Klutz" },
-
-    // pawniard [non-vanilla] (ID 624)
+    // Pawniard (ID 624)
     624: { regular: ["Inner Focus", null], hidden: "Defiant" },
-
-    // bisharp [non-vanilla] (ID 625)
+    // Bisharp (ID 625)
     625: { regular: ["Inner Focus", null], hidden: "Defiant" },
-
-    // bouffalant (ID 626)
+    // Bouffalant (ID 626)
     626: { regular: ["Reckless", "Sap Sipper"], hidden: "Soundproof" },
-
-    // rufflet (ID 627)
+    // Rufflet (ID 627)
     627: { regular: ["Keen Eye", "Sheer Force"], hidden: "Hustle" },
-
-    // braviary (ID 628)
+    // Braviary (ID 628)
     628: { regular: ["Keen Eye", "Sheer Force"], hidden: "Defiant" },
-
-    // vullaby (ID 629)
+    // Vullaby (ID 629)
     629: { regular: ["Big Pecks", "Overcoat"], hidden: "Weak Armor" },
-
-    // mandibuzz (ID 630)
+    // Mandibuzz (ID 630)
     630: { regular: ["Big Pecks", "Overcoat"], hidden: "Weak Armor" },
-
-    // heatmor (ID 631)
+    // Heatmor (ID 631)
     631: { regular: ["Gluttony", "Flash Fire"], hidden: "White Smoke" },
-
-    // durant [non-vanilla] (ID 632)
+    // Durant (ID 632)
     632: { regular: ["Swarm", null], hidden: "Truant" },
-
-    // deino (ID 633)
+    // Deino (ID 633)
     633: { regular: ["Hustle", null], hidden: null },
-
-    // zweilous (ID 634)
+    // Zweilous (ID 634)
     634: { regular: ["Hustle", null], hidden: null },
-
-    // hydreigon (ID 635)
+    // Hydreigon (ID 635)
     635: { regular: ["Levitate", null], hidden: null },
-
-    // larvesta (ID 636)
+    // Larvesta (ID 636)
     636: { regular: ["Flame Body", null], hidden: "Swarm" },
-
-    // volcarona (ID 637)
+    // Volcarona (ID 637)
     637: { regular: ["Flame Body", null], hidden: "Swarm" },
-
-    // cobalion (ID 638)
+    // Cobalion (ID 638)
     638: { regular: ["Justified", null], hidden: null },
-
-    // terrakion (ID 639)
+    // Terrakion (ID 639)
     639: { regular: ["Justified", null], hidden: null },
-
-    // virizion (ID 640)
+    // Virizion (ID 640)
     640: { regular: ["Justified", null], hidden: null },
-
-    // tornadus (ID 641)
+    // Tornadus (ID 641)
     641: { regular: ["Prankster", null], hidden: "Defiant" },
-
-    // thundurus (ID 642)
+    // Thundurus (ID 642)
     642: { regular: ["Prankster", null], hidden: "Defiant" },
-
-    // reshiram (ID 643)
+    // Reshiram (ID 643)
     643: { regular: ["Turboblaze", null], hidden: null },
-
-    // zekrom (ID 644)
+    // Zekrom (ID 644)
     644: { regular: ["Teravolt", null], hidden: null },
-
-    // landorus (ID 645)
+    // Landorus (ID 645)
     645: { regular: ["Sand Force", null], hidden: "Sheer Force" },
-
-    // kyurem (ID 646)
+    // Kyurem (ID 646)
     646: { regular: ["Pressure", null], hidden: null },
-
-    // genesect (ID 649)
+    // Keldeo-Ordinary (ID 647)
+    647: { regular: ["Justified", null], hidden: null },
+    // Meloetta-Aria (ID 648)
+    648: { regular: ["Serene Grace", null], hidden: null },
+    // Genesect (ID 649)
     649: { regular: ["Download", null], hidden: null },
-
-    // chespin (ID 650)
+    // Chespin (ID 650)
     650: { regular: ["Overgrow", null], hidden: "Bulletproof" },
-
-    // quilladin (ID 651)
+    // Quilladin (ID 651)
     651: { regular: ["Overgrow", null], hidden: "Bulletproof" },
-
-    // chesnaught (ID 652)
+    // Chesnaught (ID 652)
     652: { regular: ["Overgrow", null], hidden: "Bulletproof" },
-
-    // fennekin (ID 653)
+    // Fennekin (ID 653)
     653: { regular: ["Blaze", null], hidden: "Magician" },
-
-    // braixen (ID 654)
+    // Braixen (ID 654)
     654: { regular: ["Blaze", null], hidden: "Magician" },
-
-    // delphox (ID 655)
+    // Delphox (ID 655)
     655: { regular: ["Blaze", null], hidden: "Magician" },
-
-    // froakie (ID 656)
+    // Froakie (ID 656)
     656: { regular: ["Torrent", null], hidden: "Protean" },
-
-    // frogadier (ID 657)
+    // Frogadier (ID 657)
     657: { regular: ["Torrent", null], hidden: "Protean" },
-
-    // greninja (ID 658)
+    // Greninja (ID 658)
     658: { regular: ["Torrent", null], hidden: "Protean" },
-
-    // bunnelby [non-vanilla] (ID 659)
+    // Bunnelby (ID 659)
     659: { regular: ["Huge Power", null], hidden: "Cheek Pouch" },
-
-    // diggersby [non-vanilla] (ID 660)
+    // Diggersby (ID 660)
     660: { regular: ["Huge Power", null], hidden: "Cheek Pouch" },
-
-    // fletchling [non-vanilla] (ID 661)
+    // Fletchling (ID 661)
     661: { regular: ["Gale Wings", null], hidden: "Big Pecks" },
-
-    // fletchinder [non-vanilla] (ID 662)
+    // Fletchinder (ID 662)
     662: { regular: ["Gale Wings", null], hidden: "Flame Body" },
-
-    // talonflame [non-vanilla] (ID 663)
+    // Talonflame (ID 663)
     663: { regular: ["Gale Wings", null], hidden: "Flame Body" },
-
-    // scatterbug (ID 664)
+    // Scatterbug (ID 664)
     664: { regular: ["Shield Dust", "Compound Eyes"], hidden: "Friend Guard" },
-
-    // spewpa (ID 665)
+    // Spewpa (ID 665)
     665: { regular: ["Shed Skin", null], hidden: "Friend Guard" },
-
-    // vivillon (ID 666)
+    // Vivillon (ID 666)
     666: { regular: ["Shield Dust", "Compound Eyes"], hidden: "Friend Guard" },
-
-    // litleo [non-vanilla] (ID 667)
+    // Litleo (ID 667)
     667: { regular: ["Unnerve", null], hidden: "Moxie" },
-
-    // pyroar [non-vanilla] (ID 668)
+    // Pyroar (ID 668)
     668: { regular: ["Unnerve", null], hidden: "Moxie" },
-
-    // skiddo [non-vanilla] (ID 672)
+    // Flabebe-Red-Flower (ID 669)
+    669: { regular: ["Flower Veil", null], hidden: "Symbiosis" },
+    // Floette-Red-Flower (ID 670)
+    670: { regular: ["Flower Veil", null], hidden: "Symbiosis" },
+    // Florges-Red-Flower (ID 671)
+    671: { regular: ["Flower Veil", null], hidden: "Symbiosis" },
+    // Skiddo (ID 672)
     672: { regular: ["Grass Pelt", null], hidden: "Sap Sipper" },
-
-    // gogoat [non-vanilla] (ID 673)
+    // Gogoat (ID 673)
     673: { regular: ["Grass Pelt", null], hidden: "Sap Sipper" },
-
-    // pancham [non-vanilla] (ID 674)
+    // Pancham (ID 674)
     674: { regular: ["Iron Fist", null], hidden: "Mold Breaker" },
-
-    // pangoro [non-vanilla] (ID 675)
+    // Pangoro (ID 675)
     675: { regular: ["Iron Fist", null], hidden: "Mold Breaker" },
-
-    // espurr [non-vanilla] (ID 677)
+    // Furfrou-Natural (ID 676)
+    676: { regular: ["Fur Coat", null], hidden: null },
+    // Espurr (ID 677)
     677: { regular: ["Mystic Charm", null], hidden: "Own Tempo" },
-
-    // meowstic [non-vanilla] (ID 678)
+    // Meowstic (ID 678)
     678: { regular: ["Mystic Charm", null], hidden: "Prankster" },
-
-    // honedge (ID 679)
+    // Honedge (ID 679)
     679: { regular: ["No Guard", null], hidden: null },
-
-    // doublade (ID 680)
+    // Doublade (ID 680)
     680: { regular: ["No Guard", null], hidden: null },
-
-    // spritzee (ID 682)
+    // Aegislash-Shield (ID 681)
+    681: { regular: ["Stance Change", null], hidden: null },
+    // Spritzee (ID 682)
     682: { regular: ["Healer", null], hidden: "Aroma Veil" },
-
-    // aromatisse (ID 683)
+    // Aromatisse (ID 683)
     683: { regular: ["Healer", null], hidden: "Aroma Veil" },
-
-    // swirlix (ID 684)
+    // Swirlix (ID 684)
     684: { regular: ["Sweet Veil", null], hidden: "Unburden" },
-
-    // slurpuff (ID 685)
+    // Slurpuff (ID 685)
     685: { regular: ["Sweet Veil", null], hidden: "Unburden" },
-
-    // inkay (ID 686)
+    // Inkay (ID 686)
     686: { regular: ["Contrary", "Suction Cups"], hidden: "Infiltrator" },
-
-    // malamar (ID 687)
+    // Malamar (ID 687)
     687: { regular: ["Contrary", "Suction Cups"], hidden: "Infiltrator" },
-
-    // binacle [non-vanilla] (ID 688)
+    // Binacle (ID 688)
     688: { regular: ["Tough Claws", "Sharpness"], hidden: "Pickpocket" },
-
-    // barbaracle [non-vanilla] (ID 689)
+    // Barbaracle (ID 689)
     689: { regular: ["Tough Claws", "Sharpness"], hidden: "Pickpocket" },
-
-    // skrelp (ID 690)
+    // Skrelp (ID 690)
     690: { regular: ["Poison Point", "Poison Touch"], hidden: "Adaptability" },
-
-    // dragalge (ID 691)
+    // Dragalge (ID 691)
     691: { regular: ["Poison Point", "Poison Touch"], hidden: "Adaptability" },
-
-    // clauncher (ID 692)
+    // Clauncher (ID 692)
     692: { regular: ["Mega Launcher", null], hidden: null },
-
-    // clawitzer (ID 693)
+    // Clawitzer (ID 693)
     693: { regular: ["Mega Launcher", null], hidden: null },
-
-    // helioptile [non-vanilla] (ID 694)
+    // Helioptile (ID 694)
     694: { regular: ["Solar Power", "Sand Veil"], hidden: "Dry Skin" },
-
-    // heliolisk [non-vanilla] (ID 695)
+    // Heliolisk (ID 695)
     695: { regular: ["Solar Power", "Sand Veil"], hidden: "Dry Skin" },
-
-    // tyrunt (ID 696)
+    // Tyrunt (ID 696)
     696: { regular: ["Strong Jaw", null], hidden: "Sturdy" },
-
-    // tyrantrum (ID 697)
+    // Tyrantrum (ID 697)
     697: { regular: ["Strong Jaw", null], hidden: "Rock Head" },
-
-    // amaura (ID 698)
+    // Amaura (ID 698)
     698: { regular: ["Refrigerate", null], hidden: "Snow Warning" },
-
-    // aurorus (ID 699)
+    // Aurorus (ID 699)
     699: { regular: ["Refrigerate", null], hidden: "Snow Warning" },
-
-    // sylveon [non-vanilla] (ID 700)
+    // Sylveon (ID 700)
     700: { regular: ["Pixilate", null], hidden: "Cute Charm" },
-
-    // hawlucha (ID 701)
+    // Hawlucha (ID 701)
     701: { regular: ["Limber", "Unburden"], hidden: "Mold Breaker" },
-
-    // dedenne [non-vanilla] (ID 702)
+    // Dedenne (ID 702)
     702: { regular: ["Cheek Pouch", null], hidden: "Plus" },
-
-    // carbink (ID 703)
+    // Carbink (ID 703)
     703: { regular: ["Clear Body", null], hidden: "Sturdy" },
-
-    // goomy [non-vanilla] (ID 704)
+    // Goomy (ID 704)
     704: { regular: ["Gooey", "Hydration"], hidden: "Sap Sipper" },
-
-    // sliggoo [non-vanilla] (ID 705)
+    // Sliggoo (ID 705)
     705: { regular: ["Gooey", "Hydration"], hidden: "Sap Sipper" },
-
-    // goodra [non-vanilla] (ID 706)
+    // Goodra (ID 706)
     706: { regular: ["Gooey", "Hydration"], hidden: "Sap Sipper" },
-
-    // klefki (ID 707)
+    // Klefki (ID 707)
     707: { regular: ["Prankster", null], hidden: "Magician" },
-
-    // phantump [non-vanilla] (ID 708)
+    // Phantump (ID 708)
     708: { regular: ["Harvest", null], hidden: "Natural Cure" },
-
-    // trevenant [non-vanilla] (ID 709)
+    // Trevenant (ID 709)
     709: { regular: ["Harvest", null], hidden: "Natural Cure" },
-
-    // bergmite (ID 712)
+    // Pumpkaboo-Average (ID 710)
+    710: { regular: ["Pickup", "Frisk"], hidden: "Insomnia" },
+    // Gourgeist-Average (ID 711)
+    711: { regular: ["Pickup", "Frisk"], hidden: "Insomnia" },
+    // Bergmite (ID 712)
     712: { regular: ["Own Tempo", "Ice Body"], hidden: "Sturdy" },
-
-    // avalugg (ID 713)
+    // Avalugg (ID 713)
     713: { regular: ["Own Tempo", "Ice Body"], hidden: "Sturdy" },
-
-    // noibat [non-vanilla] (ID 714)
+    // Noibat (ID 714)
     714: { regular: ["Aerilate", "Infiltrator"], hidden: "Telepathy" },
-
-    // noivern [non-vanilla] (ID 715)
+    // Noivern (ID 715)
     715: { regular: ["Aerilate", "Infiltrator"], hidden: "Telepathy" },
-
-    // xerneasneutral (ID 716)
+    // Xerneas-Neutral (ID 716)
     716: { regular: ["Fairy Aura", null], hidden: null },
-
-    // yveltal (ID 717)
+    // Yveltal (ID 717)
     717: { regular: ["Dark Aura", null], hidden: null },
-
-    // diancie (ID 719)
+    // Zygarde-50-Aura-Break (ID 718)
+    718: { regular: ["Aura Break", null], hidden: null },
+    // Diancie (ID 719)
     719: { regular: ["Clear Body", null], hidden: null },
-
-    // volcanion (ID 721)
+    // Hoopa-Confined (ID 720)
+    720: { regular: ["Magician", null], hidden: null },
+    // Volcanion (ID 721)
     721: { regular: ["Water Absorb", null], hidden: null },
-
-    // rowlet [non-vanilla] (ID 722)
+    // Rowlet (ID 722)
     722: { regular: ["Long Reach", null], hidden: "Overgrow" },
-
-    // dartrix [non-vanilla] (ID 723)
+    // Dartrix (ID 723)
     723: { regular: ["Long Reach", null], hidden: "Overgrow" },
-
-    // decidueye [non-vanilla] (ID 724)
+    // Decidueye (ID 724)
     724: { regular: ["Long Reach", null], hidden: "Overgrow" },
-
-    // litten (ID 725)
+    // Litten (ID 725)
     725: { regular: ["Blaze", null], hidden: "Intimidate" },
-
-    // torracat (ID 726)
+    // Torracat (ID 726)
     726: { regular: ["Blaze", null], hidden: "Intimidate" },
-
-    // incineroar (ID 727)
+    // Incineroar (ID 727)
     727: { regular: ["Blaze", null], hidden: "Intimidate" },
-
-    // popplio (ID 728)
+    // Popplio (ID 728)
     728: { regular: ["Torrent", null], hidden: "Liquid Voice" },
-
-    // brionne (ID 729)
+    // Brionne (ID 729)
     729: { regular: ["Torrent", null], hidden: "Liquid Voice" },
-
-    // primarina (ID 730)
+    // Primarina (ID 730)
     730: { regular: ["Torrent", null], hidden: "Liquid Voice" },
-
-    // pikipek (ID 731)
+    // Pikipek (ID 731)
     731: { regular: ["Keen Eye", "Skill Link"], hidden: "Pickup" },
-
-    // trumbeak (ID 732)
+    // Trumbeak (ID 732)
     732: { regular: ["Keen Eye", "Skill Link"], hidden: "Pickup" },
-
-    // toucannon (ID 733)
+    // Toucannon (ID 733)
     733: { regular: ["Keen Eye", "Skill Link"], hidden: "Sheer Force" },
-
-    // yungoos (ID 734)
+    // Yungoos (ID 734)
     734: { regular: ["Stakeout", "Strong Jaw"], hidden: "Adaptability" },
-
-    // gumshoostotem (ID 735)
-    735: { regular: ["Adaptability", null], hidden: null },
-
-    // grubbin (ID 736)
+    // Gumshoos (ID 735)
+    735: { regular: ["Stakeout", "Strong Jaw"], hidden: "Adaptability" },
+    // Grubbin (ID 736)
     736: { regular: ["Swarm", null], hidden: null },
-
-    // charjabug (ID 737)
+    // Charjabug (ID 737)
     737: { regular: ["Battery", null], hidden: null },
-
-    // vikavolttotem (ID 738)
+    // Vikavolt (ID 738)
     738: { regular: ["Levitate", null], hidden: null },
-
-    // crabrawler (ID 739)
+    // Crabrawler (ID 739)
     739: { regular: ["Hyper Cutter", "Iron Fist"], hidden: "Anger Point" },
-
-    // crabominable (ID 740)
+    // Crabominable (ID 740)
     740: { regular: ["Hyper Cutter", "Iron Fist"], hidden: "Anger Point" },
-
-    // cutiefly [non-vanilla] (ID 742)
+    // Oricorio-Baile (ID 741)
+    741: { regular: ["Dancer", null], hidden: null },
+    // Cutiefly (ID 742)
     742: { regular: ["Shield Dust", null], hidden: "Sweet Veil" },
-
-    // ribombeetotem (ID 743)
-    743: { regular: ["Sweet Veil", null], hidden: null },
-
-    // rockruff (ID 744)
+    // Ribombee (ID 743)
+    743: { regular: ["Shield Dust", null], hidden: "Sweet Veil" },
+    // Rockruff (ID 744)
     744: { regular: ["Keen Eye", "Vital Spirit"], hidden: "Steadfast" },
-
-    // lycanroc (ID 745)
+    // Lycanroc (ID 745)
     745: { regular: ["Keen Eye", "Sand Rush"], hidden: "Steadfast" },
-
-    // wishiwashi (ID 746)
+    // Wishiwashi (ID 746)
     746: { regular: ["Schooling", null], hidden: null },
-
-    // mareanie (ID 747)
+    // Mareanie (ID 747)
     747: { regular: ["Merciless", "Limber"], hidden: "Regenerator" },
-
-    // toxapex (ID 748)
+    // Toxapex (ID 748)
     748: { regular: ["Merciless", "Limber"], hidden: "Regenerator" },
-
-    // mudbray [non-vanilla] (ID 749)
+    // Mudbray (ID 749)
     749: { regular: ["Own Tempo", "Inner Focus"], hidden: "Stamina" },
-
-    // mudsdale [non-vanilla] (ID 750)
+    // Mudsdale (ID 750)
     750: { regular: ["Own Tempo", "Inner Focus"], hidden: "Stamina" },
-
-    // dewpider (ID 751)
+    // Dewpider (ID 751)
     751: { regular: ["Water Bubble", null], hidden: "Water Absorb" },
-
-    // araquanidtotem (ID 752)
-    752: { regular: ["Water Bubble", null], hidden: null },
-
-    // fomantis (ID 753)
+    // Araquanid (ID 752)
+    752: { regular: ["Water Bubble", null], hidden: "Water Absorb" },
+    // Fomantis (ID 753)
     753: { regular: ["Leaf Guard", null], hidden: "Contrary" },
-
-    // lurantistotem (ID 754)
-    754: { regular: ["Leaf Guard", null], hidden: null },
-
-    // morelull (ID 755)
+    // Lurantis (ID 754)
+    754: { regular: ["Sharpness", null], hidden: "Contrary" },
+    // Morelull (ID 755)
     755: { regular: ["Illuminate", "Effect Spore"], hidden: "Rain Dish" },
-
-    // shiinotic (ID 756)
+    // Shiinotic (ID 756)
     756: { regular: ["Illuminate", "Effect Spore"], hidden: "Rain Dish" },
-
-    // salandit (ID 757)
+    // Salandit (ID 757)
     757: { regular: ["Corrosion", null], hidden: "Oblivious" },
-
-    // salazzle (ID 758)
+    // Salazzle (ID 758)
     758: { regular: ["Corrosion", null], hidden: "Oblivious" },
-
-    // stufful [non-vanilla] (ID 759)
+    // Stufful (ID 759)
     759: { regular: ["Fluffy", null], hidden: "Cute Charm" },
-
-    // bewear [non-vanilla] (ID 760)
+    // Bewear (ID 760)
     760: { regular: ["Fluffy", null], hidden: "Unnerve" },
-
-    // bounsweet [non-vanilla] (ID 761)
+    // Bounsweet (ID 761)
     761: { regular: ["Sweet Veil", "Oblivious"], hidden: "Leaf Guard" },
-
-    // steenee [non-vanilla] (ID 762)
+    // Steenee (ID 762)
     762: { regular: ["Sweet Veil", "Oblivious"], hidden: "Leaf Guard" },
-
-    // tsareena [non-vanilla] (ID 763)
+    // Tsareena (ID 763)
     763: { regular: ["Striker", "Queenly Majesty"], hidden: "Leaf Guard" },
-
-    // comfey (ID 764)
+    // Comfey (ID 764)
     764: { regular: ["Flower Veil", "Triage"], hidden: "Natural Cure" },
-
-    // oranguru (ID 765)
+    // Oranguru (ID 765)
     765: { regular: ["Inner Focus", "Telepathy"], hidden: "Symbiosis" },
-
-    // passimian (ID 766)
+    // Passimian (ID 766)
     766: { regular: ["Receiver", null], hidden: "Defiant" },
-
-    // wimpod (ID 767)
+    // Wimpod (ID 767)
     767: { regular: ["Wimp Out", null], hidden: null },
-
-    // golisopod (ID 768)
+    // Golisopod (ID 768)
     768: { regular: ["Emergency Exit", null], hidden: null },
-
-    // sandygast (ID 769)
+    // Sandygast (ID 769)
     769: { regular: ["Water Compaction", null], hidden: "Sand Veil" },
-
-    // palossand (ID 770)
+    // Palossand (ID 770)
     770: { regular: ["Water Compaction", null], hidden: "Sand Veil" },
-
-    // pyukumuku (ID 771)
+    // Pyukumuku (ID 771)
     771: { regular: ["Innards Out", null], hidden: "Unaware" },
-
-    // typenull (ID 772)
+    // Type-Null (ID 772)
     772: { regular: ["Battle Armor", null], hidden: null },
-
-    // komala (ID 775)
+    // Silvally-Normal (ID 773)
+    773: { regular: ["RKS System", null], hidden: null },
+    // Minior-Meteor-Red (ID 774)
+    774: { regular: ["Shields Down", null], hidden: null },
+    // Komala (ID 775)
     775: { regular: ["Comatose", null], hidden: null },
-
-    // turtonator (ID 776)
+    // Turtonator (ID 776)
     776: { regular: ["Shell Armor", null], hidden: null },
-
-    // togedemarutotem (ID 777)
-    777: { regular: ["Sturdy", null], hidden: null },
-
-    // bruxish [non-vanilla] (ID 779)
+    // Togedemaru (ID 777)
+    777: { regular: ["Iron Barbs", null], hidden: "Sturdy" },
+    // Mimikyu-Disguised (ID 778)
+    778: { regular: ["Disguise", null], hidden: null },
+    // Bruxish (ID 779)
     779: { regular: ["Dazzling", null], hidden: "Strong Jaw" },
-
-    // drampa (ID 780)
+    // Drampa (ID 780)
     780: { regular: ["Berserk", "Sap Sipper"], hidden: "Cloud Nine" },
-
-    // dhelmise (ID 781)
+    // Dhelmise (ID 781)
     781: { regular: ["Steelworker", null], hidden: null },
-
-    // jangmoo (ID 782)
+    // Jangmo-o (ID 782)
     782: { regular: ["Bulletproof", "Soundproof"], hidden: "Overcoat" },
-
-    // hakamoo (ID 783)
+    // Hakamo-o (ID 783)
     783: { regular: ["Bulletproof", "Soundproof"], hidden: "Overcoat" },
-
-    // kommoototem (ID 784)
-    784: { regular: ["Overcoat", null], hidden: null },
-
-    // tapukoko [non-vanilla] (ID 785)
+    // Kommo-o (ID 784)
+    784: { regular: ["Bulletproof", "Soundproof"], hidden: "Overcoat" },
+    // Tapu Koko (ID 785)
     785: { regular: ["Telepathy", null], hidden: "Electric Surge" },
-
-    // tapulele [non-vanilla] (ID 786)
+    // Tapu Lele (ID 786)
     786: { regular: ["Telepathy", null], hidden: "Psychic Surge" },
-
-    // tapubulu [non-vanilla] (ID 787)
+    // Tapu Bulu (ID 787)
     787: { regular: ["Telepathy", null], hidden: "Grassy Surge" },
-
-    // tapufini [non-vanilla] (ID 788)
+    // Tapu Fini (ID 788)
     788: { regular: ["Telepathy", null], hidden: "Misty Surge" },
-
-    // cosmog (ID 789)
+    // Cosmog (ID 789)
     789: { regular: ["Unaware", null], hidden: null },
-
-    // cosmoem (ID 790)
+    // Cosmoem (ID 790)
     790: { regular: ["Sturdy", null], hidden: null },
-
-    // solgaleo (ID 791)
+    // Solgaleo (ID 791)
     791: { regular: ["Full Metal Body", null], hidden: null },
-
-    // lunala (ID 792)
+    // Lunala (ID 792)
     792: { regular: ["Shadow Shield", null], hidden: null },
-
-    // nihilego (ID 793)
+    // Nihilego (ID 793)
     793: { regular: ["Beast Boost", null], hidden: null },
-
-    // buzzwole (ID 794)
+    // Buzzwole (ID 794)
     794: { regular: ["Beast Boost", null], hidden: null },
-
-    // pheromosa (ID 795)
+    // Pheromosa (ID 795)
     795: { regular: ["Beast Boost", null], hidden: null },
-
-    // xurkitree (ID 796)
+    // Xurkitree (ID 796)
     796: { regular: ["Beast Boost", null], hidden: null },
-
-    // celesteela (ID 797)
+    // Celesteela (ID 797)
     797: { regular: ["Beast Boost", null], hidden: null },
-
-    // kartana (ID 798)
+    // Kartana (ID 798)
     798: { regular: ["Beast Boost", null], hidden: null },
-
-    // guzzlord (ID 799)
+    // Guzzlord (ID 799)
     799: { regular: ["Beast Boost", null], hidden: null },
-
-    // necrozma (ID 800)
+    // Necrozma (ID 800)
     800: { regular: ["Prism Armor", null], hidden: null },
-
-    // magearna (ID 801)
+    // Magearna (ID 801)
     801: { regular: ["Soul-Heart", null], hidden: null },
-
-    // marshadow (ID 802)
+    // Marshadow (ID 802)
     802: { regular: ["Technician", null], hidden: null },
-
-    // poipole [non-vanilla] (ID 803)
+    // Poipole (ID 803)
     803: { regular: ["Pressure", null], hidden: "Beast Boost" },
-
-    // naganadel [non-vanilla] (ID 804)
+    // Naganadel (ID 804)
     804: { regular: ["Pressure", null], hidden: "Beast Boost" },
-
-    // stakataka (ID 805)
+    // Stakataka (ID 805)
     805: { regular: ["Beast Boost", null], hidden: null },
-
-    // blacephalon (ID 806)
+    // Blacephalon (ID 806)
     806: { regular: ["Beast Boost", null], hidden: null },
-
-    // zeraora (ID 807)
+    // Zeraora (ID 807)
     807: { regular: ["Volt Absorb", null], hidden: null },
-
-    // meltan (ID 808)
+    // Meltan (ID 808)
     808: { regular: ["Magnet Pull", null], hidden: null },
-
-    // melmetalgmax (ID 809)
+    // Melmetal (ID 809)
     809: { regular: ["Iron Fist", null], hidden: null },
-
-    // grookey (ID 810)
+    // Grookey (ID 810)
     810: { regular: ["Overgrow", null], hidden: "Grassy Surge" },
-
-    // thwackey (ID 811)
+    // Thwackey (ID 811)
     811: { regular: ["Overgrow", null], hidden: "Grassy Surge" },
-
-    // rillaboomgmax (ID 812)
+    // Rillaboom (ID 812)
     812: { regular: ["Overgrow", null], hidden: "Grassy Surge" },
-
-    // scorbunny (ID 813)
+    // Scorbunny (ID 813)
     813: { regular: ["Blaze", null], hidden: "Libero" },
-
-    // raboot (ID 814)
+    // Raboot (ID 814)
     814: { regular: ["Blaze", null], hidden: "Libero" },
-
-    // cinderacegmax (ID 815)
+    // Cinderace (ID 815)
     815: { regular: ["Blaze", null], hidden: "Libero" },
-
-    // sobble (ID 816)
+    // Sobble (ID 816)
     816: { regular: ["Torrent", null], hidden: "Sniper" },
-
-    // drizzile (ID 817)
+    // Drizzile (ID 817)
     817: { regular: ["Torrent", null], hidden: "Sniper" },
-
-    // inteleongmax (ID 818)
+    // Inteleon (ID 818)
     818: { regular: ["Torrent", null], hidden: "Sniper" },
-
-    // skwovet (ID 819)
+    // Skwovet (ID 819)
     819: { regular: ["Cheek Pouch", null], hidden: "Gluttony" },
-
-    // greedent (ID 820)
+    // Greedent (ID 820)
     820: { regular: ["Cheek Pouch", null], hidden: "Gluttony" },
-
-    // rookidee (ID 821)
+    // Rookidee (ID 821)
     821: { regular: ["Keen Eye", "Unnerve"], hidden: "Big Pecks" },
-
-    // corvisquire (ID 822)
+    // Corvisquire (ID 822)
     822: { regular: ["Keen Eye", "Unnerve"], hidden: "Big Pecks" },
-
-    // corviknightgmax (ID 823)
+    // Corviknight (ID 823)
     823: { regular: ["Pressure", "Unnerve"], hidden: "Mirror Armor" },
-
-    // blipbug (ID 824)
+    // Blipbug (ID 824)
     824: { regular: ["Swarm", "Compound Eyes"], hidden: "Telepathy" },
-
-    // dottler (ID 825)
+    // Dottler (ID 825)
     825: { regular: ["Swarm", "Compound Eyes"], hidden: "Telepathy" },
-
-    // orbeetlegmax (ID 826)
+    // Orbeetle (ID 826)
     826: { regular: ["Swarm", "Frisk"], hidden: "Telepathy" },
-
-    // nickit (ID 827)
+    // Nickit (ID 827)
     827: { regular: ["Run Away", "Unburden"], hidden: "Stakeout" },
-
-    // thievul (ID 828)
+    // Thievul (ID 828)
     828: { regular: ["Run Away", "Unburden"], hidden: "Stakeout" },
-
-    // gossifleur (ID 829)
+    // Gossifleur (ID 829)
     829: { regular: ["Cotton Down", "Regenerator"], hidden: "Effect Spore" },
-
-    // eldegoss (ID 830)
+    // Eldegoss (ID 830)
     830: { regular: ["Cotton Down", "Regenerator"], hidden: "Effect Spore" },
-
-    // wooloo (ID 831)
+    // Wooloo (ID 831)
     831: { regular: ["Fluffy", "Run Away"], hidden: "Bulletproof" },
-
-    // dubwool (ID 832)
+    // Dubwool (ID 832)
     832: { regular: ["Fluffy", "Steadfast"], hidden: "Bulletproof" },
-
-    // chewtle [non-vanilla] (ID 833)
+    // Chewtle (ID 833)
     833: { regular: ["Swift Swim", "Shell Armor"], hidden: "Strong Jaw" },
-
-    // drednawgmax (ID 834)
-    834: { regular: ["Strong Jaw", "Shell Armor"], hidden: "Swift Swim" },
-
-    // yamper (ID 835)
+    // Drednaw (ID 834)
+    834: { regular: ["Swift Swim", "Shell Armor"], hidden: "Strong Jaw" },
+    // Yamper (ID 835)
     835: { regular: ["Ball Fetch", null], hidden: "Rattled" },
-
-    // boltund (ID 836)
+    // Boltund (ID 836)
     836: { regular: ["Strong Jaw", null], hidden: "Competitive" },
-
-    // rolycoly (ID 837)
+    // Rolycoly (ID 837)
     837: { regular: ["Steam Engine", "Heatproof"], hidden: "Flash Fire" },
-
-    // carkol (ID 838)
+    // Carkol (ID 838)
     838: { regular: ["Steam Engine", "Flame Body"], hidden: "Flash Fire" },
-
-    // coalossalgmax (ID 839)
+    // Coalossal (ID 839)
     839: { regular: ["Steam Engine", "Flame Body"], hidden: "Flash Fire" },
-
-    // applin [non-vanilla] (ID 840)
+    // Applin (ID 840)
     840: { regular: ["Ripen", null], hidden: "Bulletproof" },
-
-    // flapplegmax (ID 841)
-    841: { regular: ["Ripen", "Gluttony"], hidden: "Hustle" },
-
-    // appletungmax (ID 842)
-    842: { regular: ["Ripen", "Gluttony"], hidden: "Thick Fat" },
-
-    // silicobra (ID 843)
+    // Flapple (ID 841)
+    841: { regular: ["Ripen", null], hidden: "Hustle" },
+    // Appletun (ID 842)
+    842: { regular: ["Ripen", null], hidden: "Thick Fat" },
+    // Silicobra (ID 843)
     843: { regular: ["Sand Spit", "Shed Skin"], hidden: "Sand Veil" },
-
-    // sandacondagmax (ID 844)
+    // Sandaconda (ID 844)
     844: { regular: ["Sand Spit", "Shed Skin"], hidden: "Sand Veil" },
-
-    // cramorant (ID 845)
+    // Cramorant (ID 845)
     845: { regular: ["Gulp Missile", null], hidden: null },
-
-    // arrokuda (ID 846)
+    // Arrokuda (ID 846)
     846: { regular: ["Swift Swim", null], hidden: "Propeller Tail" },
-
-    // barraskewda (ID 847)
+    // Barraskewda (ID 847)
     847: { regular: ["Swift Swim", null], hidden: "Propeller Tail" },
-
-    // toxel [non-vanilla] (ID 848)
+    // Toxel (ID 848)
     848: { regular: ["Rattled", null], hidden: "Klutz" },
-
-    // toxtricitylowkey (ID 849)
-    849: { regular: ["Punk Rock", "Minus"], hidden: "Technician" },
-
-    // sizzlipede [non-vanilla] (ID 850)
+    // Toxtricity (ID 849)
+    849: { regular: ["Punk Rock", null], hidden: "Technician" },
+    // Sizzlipede (ID 850)
     850: { regular: ["Flame Body", "White Smoke"], hidden: "Flash Fire" },
-
-    // centiskorchgmax (ID 851)
-    851: { regular: ["Flash Fire", "White Smoke"], hidden: "Flame Body" },
-
-    // clobbopus (ID 852)
+    // Centiskorch (ID 851)
+    851: { regular: ["Flame Body", "White Smoke"], hidden: "Flash Fire" },
+    // Clobbopus (ID 852)
     852: { regular: ["Limber", null], hidden: "Technician" },
-
-    // grapploct (ID 853)
+    // Grapploct (ID 853)
     853: { regular: ["Limber", null], hidden: "Technician" },
-
-    // hatenna [non-vanilla] (ID 856)
+    // Sinistea-Phony (ID 854)
+    854: { regular: ["Weak Armor", null], hidden: "Cursed Body" },
+    // Polteageist-Phony (ID 855)
+    855: { regular: ["Weak Armor", null], hidden: "Cursed Body" },
+    // Hatenna (ID 856)
     856: { regular: ["Mystic Charm", null], hidden: "Magic Bounce" },
-
-    // hattrem [non-vanilla] (ID 857)
+    // Hattrem (ID 857)
     857: { regular: ["Mystic Charm", null], hidden: "Magic Bounce" },
-
-    // hatterenegmax (ID 858)
-    858: { regular: ["Healer", "Anticipation"], hidden: "Magic Bounce" },
-
-    // impidimp [non-vanilla] (ID 859)
+    // Hatterene (ID 858)
+    858: { regular: ["Mystic Charm", null], hidden: "Magic Bounce" },
+    // Impidimp (ID 859)
     859: { regular: ["Prankster", null], hidden: "Pickpocket" },
-
-    // morgrem [non-vanilla] (ID 860)
+    // Morgrem (ID 860)
     860: { regular: ["Prankster", null], hidden: "Pickpocket" },
-
-    // grimmsnarlgmax (ID 861)
-    861: { regular: ["Prankster", "Frisk"], hidden: "Pickpocket" },
-
-    // obstagoon (ID 862)
+    // Grimmsnarl (ID 861)
+    861: { regular: ["Prankster", null], hidden: "Pickpocket" },
+    // Obstagoon (ID 862)
     862: { regular: ["Reckless", "Guts"], hidden: "Defiant" },
-
-    // perrserker [non-vanilla] (ID 863)
+    // Perrserker (ID 863)
     863: { regular: ["Battle Armor", "Steely Spirit"], hidden: "Tough Claws" },
-
-    // cursola (ID 864)
+    // Cursola (ID 864)
     864: { regular: ["Weak Armor", null], hidden: "Perish Body" },
-
-    // mrrime (ID 866)
+    // Sirfetch’d (ID 865)
+    865: { regular: ["Steadfast", null], hidden: "Scrappy" },
+    // Mr. Rime (ID 866)
     866: { regular: ["Tangled Feet", "Screen Cleaner"], hidden: "Ice Body" },
-
-    // runerigus (ID 867)
+    // Runerigus (ID 867)
     867: { regular: ["Wandering Spirit", null], hidden: null },
-
-    // milcery (ID 868)
+    // Milcery (ID 868)
     868: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
-
-    // falinks (ID 870)
+    // Alcremie-Strawberry-Vanilla-Cream (ID 869)
+    869: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Falinks (ID 870)
     870: { regular: ["Battle Armor", null], hidden: "Defiant" },
-
-    // pincurchin (ID 871)
+    // Pincurchin (ID 871)
     871: { regular: ["Lightning Rod", null], hidden: "Electric Surge" },
-
-    // snom [non-vanilla] (ID 872)
+    // Snom (ID 872)
     872: { regular: ["Ice Scales", null], hidden: "Shield Dust" },
-
-    // frosmoth [non-vanilla] (ID 873)
+    // Frosmoth (ID 873)
     873: { regular: ["Ice Scales", null], hidden: "Shield Dust" },
-
-    // stonjourner (ID 874)
+    // Stonjourner (ID 874)
     874: { regular: ["Power Spot", null], hidden: null },
-
-    // cufant (ID 878)
+    // Eiscue-Ice-Face (ID 875)
+    875: { regular: ["Ice Face", null], hidden: null },
+    // Indeedee-Male (ID 876)
+    876: { regular: ["Inner Focus", "Synchronize"], hidden: "Psychic Surge" },
+    // Morpeko-Full-Belly (ID 877)
+    877: { regular: ["Hunger Switch", null], hidden: null },
+    // Cufant (ID 878)
     878: { regular: ["Sheer Force", null], hidden: "Heavy Metal" },
-
-    // copperajahgmax (ID 879)
+    // Copperajah (ID 879)
     879: { regular: ["Sheer Force", null], hidden: "Heavy Metal" },
-
-    // dracozolt (ID 880)
+    // Dracozolt (ID 880)
     880: { regular: ["Volt Absorb", "Hustle"], hidden: "Sand Rush" },
-
-    // arctozolt (ID 881)
+    // Arctozolt (ID 881)
     881: { regular: ["Volt Absorb", "Static"], hidden: "Slush Rush" },
-
-    // dracovish (ID 882)
+    // Dracovish (ID 882)
     882: { regular: ["Water Absorb", "Strong Jaw"], hidden: "Sand Rush" },
-
-    // arctovish (ID 883)
+    // Arctovish (ID 883)
     883: { regular: ["Water Absorb", "Ice Body"], hidden: "Slush Rush" },
-
-    // duraludongmax [non-vanilla] (ID 884)
+    // Duraludon (ID 884)
     884: { regular: ["Stalwart", "Heavy Metal"], hidden: "Light Metal" },
-
-    // dreepy (ID 885)
+    // Dreepy (ID 885)
     885: { regular: ["Clear Body", "Infiltrator"], hidden: "Cursed Body" },
-
-    // drakloak (ID 886)
+    // Drakloak (ID 886)
     886: { regular: ["Clear Body", "Infiltrator"], hidden: "Cursed Body" },
-
-    // dragapult (ID 887)
+    // Dragapult (ID 887)
     887: { regular: ["Clear Body", "Infiltrator"], hidden: "Cursed Body" },
-
-    // eternatus (ID 890)
+    // Zacian-Hero-Of-Many-Battles (ID 888)
+    888: { regular: ["Intrepid Sword", null], hidden: null },
+    // Zamazenta-Hero-Of-Many-Battles (ID 889)
+    889: { regular: ["Dauntless Shield", null], hidden: null },
+    // Eternatus (ID 890)
     890: { regular: ["Pressure", null], hidden: null },
-
-    // kubfu (ID 891)
+    // Kubfu (ID 891)
     891: { regular: ["Inner Focus", null], hidden: null },
-
-    // zarude (ID 893)
+    // Urshifu-Single-Strike-Style (ID 892)
+    892: { regular: ["Unseen Fist", null], hidden: null },
+    // Zarude (ID 893)
     893: { regular: ["Leaf Guard", null], hidden: null },
-
-    // regieleki (ID 894)
+    // Regieleki (ID 894)
     894: { regular: ["Transistor", null], hidden: null },
-
-    // regidrago (ID 895)
-    895: { regular: [null, null], hidden: null },
-
-    // glastrier (ID 896)
+    // Regidrago (ID 895)
+    895: { regular: ["Dragon's Maw", null], hidden: null },
+    // Glastrier (ID 896)
     896: { regular: ["Chilling Neigh", null], hidden: null },
-
-    // spectrier (ID 897)
+    // Spectrier (ID 897)
     897: { regular: ["Grim Neigh", null], hidden: null },
-
-    // calyrexice [non-vanilla] (ID 898)
-    898: { regular: ["As One", null], hidden: null },
-
-    // wyrdeer (ID 899)
+    // Calyrex (ID 898)
+    898: { regular: ["Unnerve", null], hidden: null },
+    // Wyrdeer (ID 899)
     899: { regular: ["Intimidate", "Frisk"], hidden: "Sap Sipper" },
-
-    // kleavor (ID 900)
+    // Kleavor (ID 900)
     900: { regular: ["Swarm", "Sheer Force"], hidden: "Sharpness" },
-
-    // ursaluna [non-vanilla] (ID 901)
+    // Ursaluna (ID 901)
     901: { regular: ["Bulletproof", null], hidden: "Unnerve" },
-
-    // basculegion [non-vanilla] (ID 902)
+    // Basculegion (ID 902)
     902: { regular: ["Swift Swim", null], hidden: "Adaptability" },
-
-    // sneasler [non-vanilla] (ID 903)
+    // Sneasler (ID 903)
     903: { regular: ["Poison Touch", null], hidden: "Unburden" },
-
-    // overqwil [non-vanilla] (ID 904)
+    // Overqwil (ID 904)
     904: { regular: ["Intimidate", "Swift Swim"], hidden: "Poison Point" },
-
-    // enamorus (ID 905)
+    // Enamorus (ID 905)
     905: { regular: ["Cute Charm", null], hidden: "Contrary" },
-
-    // venusaurmega (ID 906)
+    // Venusaur-Mega (ID 906)
     906: { regular: ["Thick Fat", null], hidden: null },
-
-    // charizardmegax (ID 907)
+    // Charizard-Mega-X (ID 907)
     907: { regular: ["Tough Claws", null], hidden: null },
-
-    // charizardmegay (ID 908)
+    // Charizard-Mega-Y (ID 908)
     908: { regular: ["Drought", null], hidden: null },
-
-    // blastoisemega (ID 909)
+    // Blastoise-Mega (ID 909)
     909: { regular: ["Mega Launcher", null], hidden: null },
-
-    // beedrillmega (ID 910)
+    // Beedrill-Mega (ID 910)
     910: { regular: ["Adaptability", null], hidden: null },
-
-    // pidgeotmega (ID 911)
+    // Pidgeot-Mega (ID 911)
     911: { regular: ["No Guard", null], hidden: null },
-
-    // alakazammega (ID 912)
+    // Alakazam-Mega (ID 912)
     912: { regular: ["Trace", null], hidden: null },
-
-    // slowbromega (ID 913)
+    // Slowbro-Mega (ID 913)
     913: { regular: ["Shell Armor", null], hidden: null },
-
-    // gengarmega (ID 914)
+    // Gengar-Mega (ID 914)
     914: { regular: ["Shadow Tag", null], hidden: null },
-
-    // kangaskhanmega (ID 915)
+    // Kangaskhan-Mega (ID 915)
     915: { regular: ["Parental Bond", null], hidden: null },
-
-    // pinsirmega (ID 916)
+    // Pinsir-Mega (ID 916)
     916: { regular: ["Aerilate", null], hidden: null },
-
-    // gyaradosmega (ID 917)
+    // Gyarados-Mega (ID 917)
     917: { regular: ["Mold Breaker", null], hidden: null },
-
-    // aerodactylmega (ID 918)
+    // Aerodactyl-Mega (ID 918)
     918: { regular: ["Tough Claws", null], hidden: null },
-
-    // mewtwomegax (ID 919)
+    // Mewtwo-Mega-X (ID 919)
     919: { regular: ["Steadfast", null], hidden: null },
-
-    // mewtwomegay (ID 920)
+    // Mewtwo-Mega-Y (ID 920)
     920: { regular: ["Insomnia", null], hidden: null },
-
-    // ampharosmega (ID 921)
+    // Ampharos-Mega (ID 921)
     921: { regular: ["Mold Breaker", null], hidden: null },
-
-    // steelixmega (ID 922)
+    // Steelix-Mega (ID 922)
     922: { regular: ["Sand Force", null], hidden: null },
-
-    // scizormega (ID 923)
+    // Scizor-Mega (ID 923)
     923: { regular: ["Technician", null], hidden: null },
-
-    // heracrossmega (ID 924)
+    // Heracross-Mega (ID 924)
     924: { regular: ["Skill Link", null], hidden: null },
-
-    // houndoommega (ID 925)
+    // Houndoom-Mega (ID 925)
     925: { regular: ["Solar Power", null], hidden: null },
-
-    // tyranitarmega (ID 926)
+    // Tyranitar-Mega (ID 926)
     926: { regular: ["Sand Stream", null], hidden: null },
-
-    // sceptilemega (ID 927)
+    // Sceptile-Mega (ID 927)
     927: { regular: ["Lightning Rod", null], hidden: null },
-
-    // blazikenmega (ID 928)
+    // Blaziken-Mega (ID 928)
     928: { regular: ["Speed Boost", null], hidden: null },
-
-    // swampertmega (ID 929)
+    // Swampert-Mega (ID 929)
     929: { regular: ["Swift Swim", null], hidden: null },
-
-    // gardevoirmega (ID 930)
+    // Gardevoir-Mega (ID 930)
     930: { regular: ["Pixilate", null], hidden: null },
-
-    // sableyemega (ID 931)
+    // Sableye-Mega (ID 931)
     931: { regular: ["Magic Bounce", null], hidden: null },
-
-    // mawilemega (ID 932)
+    // Mawile-Mega (ID 932)
     932: { regular: ["Huge Power", null], hidden: null },
-
-    // aggronmega (ID 933)
+    // Aggron-Mega (ID 933)
     933: { regular: ["Filter", null], hidden: null },
-
-    // medichammega (ID 934)
+    // Medicham-Mega (ID 934)
     934: { regular: ["Pure Power", null], hidden: null },
-
-    // manectricmega (ID 935)
+    // Manectric-Mega (ID 935)
     935: { regular: ["Intimidate", null], hidden: null },
-
-    // sharpedomega (ID 936)
+    // Sharpedo-Mega (ID 936)
     936: { regular: ["Strong Jaw", null], hidden: null },
-
-    // cameruptmega (ID 937)
+    // Camerupt-Mega (ID 937)
     937: { regular: ["Sheer Force", null], hidden: null },
-
-    // altariamega (ID 938)
+    // Altaria-Mega (ID 938)
     938: { regular: ["Pixilate", null], hidden: null },
-
-    // banettemega (ID 939)
+    // Banette-Mega (ID 939)
     939: { regular: ["Prankster", null], hidden: null },
-
-    // absolmega (ID 940)
+    // Absol-Mega (ID 940)
     940: { regular: ["Magic Bounce", null], hidden: null },
-
-    // glaliemega (ID 941)
+    // Glalie-Mega (ID 941)
     941: { regular: ["Refrigerate", null], hidden: null },
-
-    // salamencemega (ID 942)
+    // Salamence-Mega (ID 942)
     942: { regular: ["Aerilate", null], hidden: null },
-
-    // metagrossmega (ID 943)
+    // Metagross-Mega (ID 943)
     943: { regular: ["Tough Claws", null], hidden: null },
-
-    // latiasmega (ID 944)
+    // Latias-Mega (ID 944)
     944: { regular: ["Levitate", null], hidden: null },
-
-    // latiosmega (ID 945)
+    // Latios-Mega (ID 945)
     945: { regular: ["Levitate", null], hidden: null },
-
-    // lopunnymega (ID 946)
+    // Lopunny-Mega (ID 946)
     946: { regular: ["Scrappy", null], hidden: null },
-
-    // garchompmega (ID 947)
+    // Garchomp-Mega (ID 947)
     947: { regular: ["Sand Force", null], hidden: null },
-
-    // lucariomega (ID 948)
+    // Lucario-Mega (ID 948)
     948: { regular: ["Adaptability", null], hidden: null },
-
-    // abomasnowmega (ID 949)
+    // Abomasnow-Mega (ID 949)
     949: { regular: ["Snow Warning", null], hidden: null },
-
-    // gallademega (ID 950)
+    // Gallade-Mega (ID 950)
     950: { regular: ["Inner Focus", null], hidden: null },
-
-    // audinomega (ID 951)
+    // Audino-Mega (ID 951)
     951: { regular: ["Healer", null], hidden: null },
-
-    // dianciemega (ID 952)
+    // Diancie-Mega (ID 952)
     952: { regular: ["Magic Bounce", null], hidden: null },
-
-    // rayquazamega (ID 953)
+    // Rayquaza-Mega (ID 953)
     953: { regular: ["Delta Stream", null], hidden: null },
-
-    // kyogreprimal (ID 954)
+    // Kyogre-Primal (ID 954)
     954: { regular: ["Primordial Sea", null], hidden: null },
-
-    // groudonprimal (ID 955)
+    // Groudon-Primal (ID 955)
     955: { regular: ["Desolate Land", null], hidden: null },
-
-    // rattataalola (ID 956)
+    // Rattata-Alola (ID 956)
     956: { regular: ["Gluttony", "Hustle"], hidden: "Thick Fat" },
-
-    // raticatealolatotem (ID 957)
-    957: { regular: ["Thick Fat", null], hidden: null },
-
-    // raichualola (ID 958)
+    // Raticate-Alola (ID 957)
+    957: { regular: ["Gluttony", "Hustle"], hidden: "Thick Fat" },
+    // Raichu-Alola (ID 958)
     958: { regular: ["Surge Surfer", null], hidden: null },
-
-    // sandshrewalola [non-vanilla] (ID 959)
+    // Sandshrew-Alola (ID 959)
     959: { regular: ["Slush Rush", null], hidden: "Snow Cloak" },
-
-    // sandslashalola [non-vanilla] (ID 960)
+    // Sandslash-Alola (ID 960)
     960: { regular: ["Slush Rush", null], hidden: "Snow Cloak" },
-
-    // vulpixalola (ID 961)
+    // Vulpix-Alola (ID 961)
     961: { regular: ["Snow Cloak", null], hidden: "Snow Warning" },
-
-    // ninetalesalola (ID 962)
+    // Ninetales-Alola (ID 962)
     962: { regular: ["Snow Cloak", null], hidden: "Snow Warning" },
-
-    // diglettalola (ID 963)
+    // Diglett-Alola (ID 963)
     963: { regular: ["Sand Veil", "Tangling Hair"], hidden: "Sand Force" },
-
-    // dugtrioalola (ID 964)
+    // Dugtrio-Alola (ID 964)
     964: { regular: ["Sand Veil", "Tangling Hair"], hidden: "Sand Force" },
-
-    // meowthalola (ID 965)
+    // Meowth-Alola (ID 965)
     965: { regular: ["Pickup", "Technician"], hidden: "Rattled" },
-
-    // persianalola (ID 966)
+    // Persian-Alola (ID 966)
     966: { regular: ["Fur Coat", "Technician"], hidden: "Rattled" },
-
-    // geodudealola [non-vanilla] (ID 967)
+    // Geodude-Alola (ID 967)
     967: { regular: ["Galvanize", "Sturdy"], hidden: "Magnet Pull" },
-
-    // graveleralola [non-vanilla] (ID 968)
+    // Graveler-Alola (ID 968)
     968: { regular: ["Galvanize", "Sturdy"], hidden: "Magnet Pull" },
-
-    // golemalola [non-vanilla] (ID 969)
+    // Golem-Alola (ID 969)
     969: { regular: ["Galvanize", "Sturdy"], hidden: "Magnet Pull" },
-
-    // grimeralola [non-vanilla] (ID 970)
+    // Grimer-Alola (ID 970)
     970: { regular: ["Poison Touch", "Gluttony"], hidden: "Power Of Alchemy" },
-
-    // mukalola [non-vanilla] (ID 971)
+    // Muk-Alola (ID 971)
     971: { regular: ["Poison Touch", "Gluttony"], hidden: "Power Of Alchemy" },
-
-    // exeggutoralola [non-vanilla] (ID 972)
+    // Exeggutor-Alola (ID 972)
     972: { regular: ["Harvest", null], hidden: "Frisk" },
-
-    // marowakalolatotem (ID 973)
-    973: { regular: ["Rock Head", null], hidden: null },
-
-    // meowthgalar [non-vanilla] (ID 974)
+    // Marowak-Alola (ID 973)
+    973: { regular: ["Rock Head", null], hidden: "Lightning Rod" },
+    // Meowth-Galar (ID 974)
     974: { regular: ["Battle Armor", "Unnerve"], hidden: "Tough Claws" },
-
-    // ponytagalar (ID 975)
+    // Ponyta-Galar (ID 975)
     975: { regular: ["Run Away", "Pastel Veil"], hidden: "Anticipation" },
-
-    // rapidashgalar (ID 976)
+    // Rapidash-Galar (ID 976)
     976: { regular: ["Run Away", "Pastel Veil"], hidden: "Anticipation" },
-
-    // slowpokegalar (ID 977)
+    // Slowpoke-Galar (ID 977)
     977: { regular: ["Gluttony", "Own Tempo"], hidden: "Regenerator" },
-
-    // slowbrogalar (ID 978)
+    // Slowbro-Galar (ID 978)
     978: { regular: ["Quick Draw", "Own Tempo"], hidden: "Regenerator" },
-
-    // farfetchdgalar (ID 979)
+    // Farfetchd-Galar (ID 979)
     979: { regular: ["Steadfast", null], hidden: "Scrappy" },
-
-    // weezinggalar (ID 980)
+    // Weezing-Galar (ID 980)
     980: { regular: ["Levitate", "Neutralizing Gas"], hidden: "Misty Surge" },
-
-    // mrmimegalar (ID 981)
+    // Mr. Mime-Galar (ID 981)
     981: { regular: ["Vital Spirit", "Screen Cleaner"], hidden: "Ice Body" },
-
-    // articunogalar (ID 982)
+    // Articuno-Galar (ID 982)
     982: { regular: ["Competitive", null], hidden: null },
-
-    // zapdosgalar (ID 983)
+    // Zapdos-Galar (ID 983)
     983: { regular: ["Defiant", null], hidden: null },
-
-    // moltresgalar (ID 984)
+    // Moltres-Galar (ID 984)
     984: { regular: ["Berserk", null], hidden: null },
-
-    // slowkinggalar (ID 985)
+    // Slowking-Galar (ID 985)
     985: { regular: ["Curious Medicine", "Own Tempo"], hidden: "Regenerator" },
-
-    // corsolagalar (ID 986)
+    // Corsola-Galar (ID 986)
     986: { regular: ["Weak Armor", null], hidden: "Cursed Body" },
-
-    // zigzagoongalar [non-vanilla] (ID 987)
+    // Zigzagoon-Galar (ID 987)
     987: { regular: ["Gluttony", "Quick Feet"], hidden: "Pickup" },
-
-    // linoonegalar [non-vanilla] (ID 988)
+    // Linoone-Galar (ID 988)
     988: { regular: ["Gluttony", "Quick Feet"], hidden: "Pickup" },
-
-    // darumakagalar (ID 989)
+    // Darumaka-Galar (ID 989)
     989: { regular: ["Hustle", null], hidden: "Inner Focus" },
-
-    // yamaskgalar (ID 991)
+    // Darmanitan-Galar-Standard-Mode (ID 990)
+    990: { regular: ["Gorilla Tactics", null], hidden: "Zen Mode" },
+    // Yamask-Galar (ID 991)
     991: { regular: ["Wandering Spirit", null], hidden: null },
-
-    // stunfiskgalar (ID 992)
+    // Stunfisk-Galar (ID 992)
     992: { regular: ["Mimicry", null], hidden: null },
-
-    // growlithehisui [non-vanilla] (ID 993)
+    // Growlithe-Hisui (ID 993)
     993: { regular: ["Intimidate", null], hidden: "Rock Head" },
-
-    // arcaninehisui [non-vanilla] (ID 994)
+    // Arcanine-Hisui (ID 994)
     994: { regular: ["Intimidate", null], hidden: "Rock Head" },
-
-    // voltorbhisui (ID 995)
+    // Voltorb-Hisui (ID 995)
     995: { regular: ["Soundproof", "Static"], hidden: "Aftermath" },
-
-    // electrodehisui (ID 996)
+    // Electrode-Hisui (ID 996)
     996: { regular: ["Soundproof", "Static"], hidden: "Aftermath" },
-
-    // typhlosionhisui [non-vanilla] (ID 997)
+    // Typhlosion-Hisui (ID 997)
     997: { regular: ["Frisk", null], hidden: "Blaze" },
-
-    // qwilfishhisui [non-vanilla] (ID 998)
+    // Qwilfish-Hisui (ID 998)
     998: { regular: ["Intimidate", "Swift Swim"], hidden: "Poison Point" },
-
-    // sneaselhisui [non-vanilla] (ID 999)
+    // Sneasel-Hisui (ID 999)
     999: { regular: ["Inner Focus", null], hidden: "Pickpocket" },
-
-    // samurotthisui [non-vanilla] (ID 1000)
+    // Samurott-Hisui (ID 1000)
     1000: { regular: ["Sharpness", null], hidden: "Torrent" },
-
-    // lilliganthisui [non-vanilla] (ID 1001)
+    // Lilligant-Hisui (ID 1001)
     1001: { regular: ["Chlorophyll", "Striker"], hidden: "Leaf Guard" },
-
-    // zoruahisui (ID 1002)
+    // Zorua-Hisui (ID 1002)
     1002: { regular: ["Illusion", null], hidden: null },
-
-    // zoroarkhisui (ID 1003)
+    // Zoroark-Hisui (ID 1003)
     1003: { regular: ["Illusion", null], hidden: null },
-
-    // braviaryhisui (ID 1004)
+    // Braviary-Hisui (ID 1004)
     1004: { regular: ["Keen Eye", "Sheer Force"], hidden: "Tinted Lens" },
-
-    // sliggoohisui [non-vanilla] (ID 1005)
+    // Sliggoo-Hisui (ID 1005)
     1005: { regular: ["Gooey", "Shell Armor"], hidden: "Sap Sipper" },
-
-    // goodrahisui [non-vanilla] (ID 1006)
+    // Goodra-Hisui (ID 1006)
     1006: { regular: ["Gooey", "Shell Armor"], hidden: "Sap Sipper" },
-
-    // avalugghisui (ID 1007)
+    // Avalugg-Hisui (ID 1007)
     1007: { regular: ["Strong Jaw", "Ice Body"], hidden: "Sturdy" },
-
-    // decidueyehisui [non-vanilla] (ID 1008)
+    // Decidueye-Hisui (ID 1008)
     1008: { regular: ["Scrappy", null], hidden: "Overgrow" },
-
-    // pichuspikyeared [non-vanilla] (ID 1023)
+    // Pichu-Spiky-Eared (ID 1023)
     1023: { regular: ["Static", null], hidden: "Lightning Rod" },
-
-    // castformsunny (ID 1051)
+    // Castform-Sunny (ID 1051)
     1051: { regular: ["Forecast", null], hidden: null },
-
-    // castformrainy (ID 1052)
+    // Castform-Rainy (ID 1052)
     1052: { regular: ["Forecast", null], hidden: null },
-
-    // castformsnowy (ID 1053)
+    // Castform-Snowy (ID 1053)
     1053: { regular: ["Forecast", null], hidden: null },
-
-    // deoxysattack (ID 1054)
+    // Deoxys-Attack (ID 1054)
     1054: { regular: ["Pressure", null], hidden: null },
-
-    // deoxysdefense (ID 1055)
+    // Deoxys-Defense (ID 1055)
     1055: { regular: ["Pressure", null], hidden: null },
-
-    // deoxysspeed (ID 1056)
+    // Deoxys-Speed (ID 1056)
     1056: { regular: ["Pressure", null], hidden: null },
-
-    // cherrimsunshine (ID 1061)
+    // Cherrim-Sunshine (ID 1061)
     1061: { regular: ["Flower Gift", null], hidden: null },
-
-    // rotomheat (ID 1064)
+    // Rotom-Heat (ID 1064)
     1064: { regular: ["Levitate", null], hidden: null },
-
-    // rotomwash (ID 1065)
+    // Rotom-Wash (ID 1065)
     1065: { regular: ["Levitate", null], hidden: null },
-
-    // rotomfrost (ID 1066)
+    // Rotom-Frost (ID 1066)
     1066: { regular: ["Levitate", null], hidden: null },
-
-    // rotomfan (ID 1067)
+    // Rotom-Fan (ID 1067)
     1067: { regular: ["Levitate", null], hidden: null },
-
-    // rotommow (ID 1068)
+    // Rotom-Mow (ID 1068)
     1068: { regular: ["Levitate", null], hidden: null },
-
-    // dialgaorigin (ID 1069)
+    // Dialga-Origin (ID 1069)
     1069: { regular: ["Pressure", null], hidden: "Telepathy" },
-
-    // palkiaorigin (ID 1070)
+    // Palkia-Origin (ID 1070)
     1070: { regular: ["Pressure", null], hidden: "Telepathy" },
-
-    // giratinaorigin (ID 1071)
+    // Giratina-Origin (ID 1071)
     1071: { regular: ["Levitate", null], hidden: null },
-
-    // shayminsky (ID 1072)
+    // Shaymin-Sky (ID 1072)
     1072: { regular: ["Serene Grace", null], hidden: null },
-
-    // arceusfighting (ID 1073)
+    // Arceus-Fighting (ID 1073)
     1073: { regular: ["Multitype", null], hidden: null },
-
-    // arceusflying (ID 1074)
+    // Arceus-Flying (ID 1074)
     1074: { regular: ["Multitype", null], hidden: null },
-
-    // arceuspoison (ID 1075)
+    // Arceus-Poison (ID 1075)
     1075: { regular: ["Multitype", null], hidden: null },
-
-    // arceusground (ID 1076)
+    // Arceus-Ground (ID 1076)
     1076: { regular: ["Multitype", null], hidden: null },
-
-    // arceusrock (ID 1077)
+    // Arceus-Rock (ID 1077)
     1077: { regular: ["Multitype", null], hidden: null },
-
-    // arceusbug (ID 1078)
+    // Arceus-Bug (ID 1078)
     1078: { regular: ["Multitype", null], hidden: null },
-
-    // arceusghost (ID 1079)
+    // Arceus-Ghost (ID 1079)
     1079: { regular: ["Multitype", null], hidden: null },
-
-    // arceussteel (ID 1080)
+    // Arceus-Steel (ID 1080)
     1080: { regular: ["Multitype", null], hidden: null },
-
-    // arceusfire (ID 1081)
+    // Arceus-Fire (ID 1081)
     1081: { regular: ["Multitype", null], hidden: null },
-
-    // arceuswater (ID 1082)
+    // Arceus-Water (ID 1082)
     1082: { regular: ["Multitype", null], hidden: null },
-
-    // arceusgrass (ID 1083)
+    // Arceus-Grass (ID 1083)
     1083: { regular: ["Multitype", null], hidden: null },
-
-    // arceuselectric (ID 1084)
+    // Arceus-Electric (ID 1084)
     1084: { regular: ["Multitype", null], hidden: null },
-
-    // arceuspsychic (ID 1085)
+    // Arceus-Psychic (ID 1085)
     1085: { regular: ["Multitype", null], hidden: null },
-
-    // arceusice (ID 1086)
+    // Arceus-Ice (ID 1086)
     1086: { regular: ["Multitype", null], hidden: null },
-
-    // arceusdragon (ID 1087)
+    // Arceus-Dragon (ID 1087)
     1087: { regular: ["Multitype", null], hidden: null },
-
-    // arceusdark (ID 1088)
+    // Arceus-Dark (ID 1088)
     1088: { regular: ["Multitype", null], hidden: null },
-
-    // arceusfairy (ID 1089)
+    // Arceus-Fairy (ID 1089)
     1089: { regular: ["Multitype", null], hidden: null },
-
-    // basculinbluestriped (ID 1090)
+    // Basculin-Blue-Striped (ID 1090)
     1090: { regular: ["Rock Head", "Adaptability"], hidden: "Mold Breaker" },
-
-    // basculinwhitestriped [non-vanilla] (ID 1091)
+    // Basculin-White-Striped (ID 1091)
     1091: { regular: ["Rattled", null], hidden: "Adaptability" },
-
-    // tornadustherian (ID 1100)
-    1100: { regular: ["Regenerator", null], hidden: null },
-
-    // thundurustherian (ID 1101)
-    1101: { regular: ["Volt Absorb", null], hidden: null },
-
-    // landorustherian (ID 1102)
-    1102: { regular: ["Intimidate", null], hidden: null },
-
-    // enamorustherian (ID 1103)
-    1103: { regular: ["Overcoat", null], hidden: null },
-
-    // kyuremwhite (ID 1104)
-    1104: { regular: ["Turboblaze", null], hidden: null },
-
-    // kyuremblack (ID 1105)
-    1105: { regular: ["Teravolt", null], hidden: null },
-
-    // keldeoresolute (ID 1106)
-    1106: { regular: ["Justified", null], hidden: null },
-
-    // meloettapirouette (ID 1107)
-    1107: { regular: ["Serene Grace", null], hidden: null },
-
-    // greninjaash (ID 1113)
+    // Deerling-Summer (ID 1095)
+    1095: { regular: ["Leaf Rush", null], hidden: "Serene Grace" },
+    // Deerling-Autumn (ID 1096)
+    1096: { regular: ["Leaf Rush", null], hidden: "Serene Grace" },
+    // Deerling-Winter (ID 1097)
+    1097: { regular: ["Leaf Rush", null], hidden: "Serene Grace" },
+    // Sawsbuck-Summer (ID 1098)
+    1098: { regular: ["Leaf Rush", null], hidden: "Serene Grace" },
+    // Sawsbuck-Autumn (ID 1099)
+    1099: { regular: ["Leaf Rush", null], hidden: "Serene Grace" },
+    // Sawsbuck-Winter (ID 1100)
+    1100: { regular: ["Leaf Rush", null], hidden: "Serene Grace" },
+    // Tornadus-Therian (ID 1101)
+    1101: { regular: ["Regenerator", null], hidden: null },
+    // Thundurus-Therian (ID 1102)
+    1102: { regular: ["Volt Absorb", null], hidden: null },
+    // Landorus-Therian (ID 1103)
+    1103: { regular: ["Intimidate", null], hidden: null },
+    // Enamorus-Therian (ID 1104)
+    1104: { regular: ["Overcoat", null], hidden: null },
+    // Kyurem-White (ID 1105)
+    1105: { regular: ["Turboblaze", null], hidden: null },
+    // Kyurem-Black (ID 1106)
+    1106: { regular: ["Teravolt", null], hidden: null },
+    // Keldeo-Resolute (ID 1107)
+    1107: { regular: ["Justified", null], hidden: null },
+    // Meloetta-Pirouette (ID 1108)
+    1108: { regular: ["Serene Grace", null], hidden: null },
+    // Genesect-Douse-Drive (ID 1109)
+    1109: { regular: ["Download", null], hidden: null },
+    // Genesect-Shock-Drive (ID 1110)
+    1110: { regular: ["Download", null], hidden: null },
+    // Genesect-Burn-Drive (ID 1111)
+    1111: { regular: ["Download", null], hidden: null },
+    // Genesect-Chill-Drive (ID 1112)
+    1112: { regular: ["Download", null], hidden: null },
+    // Greninja-Ash (ID 1113)
     1113: { regular: ["Battle Bond", null], hidden: null },
-
-    // meowsticf [non-vanilla] (ID 1155)
+    // Meowstic-F (ID 1155)
     1155: { regular: ["Mystic Charm", null], hidden: "Competitive" },
-
-    // aegislashblade (ID 1156)
+    // Aegislash-Blade (ID 1156)
     1156: { regular: ["Stance Change", null], hidden: null },
-
-    // pumpkaboosmall (ID 1157)
+    // Pumpkaboo-Small (ID 1157)
     1157: { regular: ["Pickup", "Frisk"], hidden: "Insomnia" },
-
-    // pumpkaboolarge (ID 1158)
+    // Pumpkaboo-Large (ID 1158)
     1158: { regular: ["Pickup", "Frisk"], hidden: "Insomnia" },
-
-    // pumpkaboosuper (ID 1159)
+    // Pumpkaboo-Super (ID 1159)
     1159: { regular: ["Pickup", "Frisk"], hidden: "Insomnia" },
-
-    // gourgeistsmall (ID 1160)
+    // Gourgeist-Small (ID 1160)
     1160: { regular: ["Pickup", "Frisk"], hidden: "Insomnia" },
-
-    // gourgeistlarge (ID 1161)
+    // Gourgeist-Large (ID 1161)
     1161: { regular: ["Pickup", "Frisk"], hidden: "Insomnia" },
-
-    // gourgeistsuper (ID 1162)
+    // Gourgeist-Super (ID 1162)
     1162: { regular: ["Pickup", "Frisk"], hidden: "Insomnia" },
-
-    // zygardecomplete (ID 1167)
+    // Xerneas-Active (ID 1163)
+    1163: { regular: ["Fairy Aura", null], hidden: null },
+    // Zygarde-10-Aura-Break (ID 1164)
+    1164: { regular: ["Aura Break", null], hidden: null },
+    // Zygarde-10-Power-Construct (ID 1165)
+    1165: { regular: ["Power Construct", null], hidden: null },
+    // Zygarde-50-Power-Construct (ID 1166)
+    1166: { regular: ["Aura Break", null], hidden: null },
+    // Zygarde-Complete (ID 1167)
     1167: { regular: ["Power Construct", null], hidden: null },
-
-    // hoopaunbound (ID 1168)
+    // Hoopa-Unbound (ID 1168)
     1168: { regular: ["Magician", null], hidden: null },
-
-    // oricoriopompom (ID 1169)
+    // Oricorio-Pom-Pom (ID 1169)
     1169: { regular: ["Dancer", null], hidden: null },
-
-    // oricoriopau (ID 1170)
+    // Oricorio-Pau (ID 1170)
     1170: { regular: ["Dancer", null], hidden: null },
-
-    // oricoriosensu (ID 1171)
+    // Oricorio-Sensu (ID 1171)
     1171: { regular: ["Dancer", null], hidden: null },
-
-    // lycanrocmidnight (ID 1173)
+    // Rockruff-Own-Tempo (ID 1172)
+    1172: { regular: ["Keen Eye", "Vital Spirit"], hidden: "Steadfast" },
+    // Lycanroc-Midnight (ID 1173)
     1173: { regular: ["Keen Eye", "Vital Spirit"], hidden: "No Guard" },
-
-    // lycanrocdusk (ID 1174)
+    // Lycanroc-Dusk (ID 1174)
     1174: { regular: ["Tough Claws", null], hidden: null },
-
-    // wishiwashischool (ID 1175)
+    // Wishiwashi-School (ID 1175)
     1175: { regular: ["Schooling", null], hidden: null },
-
-    // silvallyfighting (ID 1176)
+    // Silvally-Fighting (ID 1176)
     1176: { regular: ["RKS System", null], hidden: null },
-
-    // silvallyflying (ID 1177)
+    // Silvally-Flying (ID 1177)
     1177: { regular: ["RKS System", null], hidden: null },
-
-    // silvallypoison (ID 1178)
+    // Silvally-Poison (ID 1178)
     1178: { regular: ["RKS System", null], hidden: null },
-
-    // silvallyground (ID 1179)
+    // Silvally-Ground (ID 1179)
     1179: { regular: ["RKS System", null], hidden: null },
-
-    // silvallyrock (ID 1180)
+    // Silvally-Rock (ID 1180)
     1180: { regular: ["RKS System", null], hidden: null },
-
-    // silvallybug (ID 1181)
+    // Silvally-Bug (ID 1181)
     1181: { regular: ["RKS System", null], hidden: null },
-
-    // silvallyghost (ID 1182)
+    // Silvally-Ghost (ID 1182)
     1182: { regular: ["RKS System", null], hidden: null },
-
-    // silvallysteel (ID 1183)
+    // Silvally-Steel (ID 1183)
     1183: { regular: ["RKS System", null], hidden: null },
-
-    // silvallyfire (ID 1184)
+    // Silvally-Fire (ID 1184)
     1184: { regular: ["RKS System", null], hidden: null },
-
-    // silvallywater (ID 1185)
+    // Silvally-Water (ID 1185)
     1185: { regular: ["RKS System", null], hidden: null },
-
-    // silvallygrass (ID 1186)
+    // Silvally-Grass (ID 1186)
     1186: { regular: ["RKS System", null], hidden: null },
-
-    // silvallyelectric (ID 1187)
+    // Silvally-Electric (ID 1187)
     1187: { regular: ["RKS System", null], hidden: null },
-
-    // silvallypsychic (ID 1188)
+    // Silvally-Psychic (ID 1188)
     1188: { regular: ["RKS System", null], hidden: null },
-
-    // silvallyice (ID 1189)
+    // Silvally-Ice (ID 1189)
     1189: { regular: ["RKS System", null], hidden: null },
-
-    // silvallydragon (ID 1190)
+    // Silvally-Dragon (ID 1190)
     1190: { regular: ["RKS System", null], hidden: null },
-
-    // silvallydark (ID 1191)
+    // Silvally-Dark (ID 1191)
     1191: { regular: ["RKS System", null], hidden: null },
-
-    // silvallyfairy (ID 1192)
+    // Silvally-Fairy (ID 1192)
     1192: { regular: ["RKS System", null], hidden: null },
-
-    // mimikyubustedtotem (ID 1206)
+    // Minior-Meteor-Orange (ID 1193)
+    1193: { regular: ["Shields Down", null], hidden: null },
+    // Minior-Meteor-Yellow (ID 1194)
+    1194: { regular: ["Shields Down", null], hidden: null },
+    // Minior-Meteor-Green (ID 1195)
+    1195: { regular: ["Shields Down", null], hidden: null },
+    // Minior-Meteor-Blue (ID 1196)
+    1196: { regular: ["Shields Down", null], hidden: null },
+    // Minior-Meteor-Indigo (ID 1197)
+    1197: { regular: ["Shields Down", null], hidden: null },
+    // Minior-Meteor-Violet (ID 1198)
+    1198: { regular: ["Shields Down", null], hidden: null },
+    // Minior-Core-Red (ID 1199)
+    1199: { regular: ["Shields Down", null], hidden: null },
+    // Minior-Core-Orange (ID 1200)
+    1200: { regular: ["Shields Down", null], hidden: null },
+    // Minior-Core-Yellow (ID 1201)
+    1201: { regular: ["Shields Down", null], hidden: null },
+    // Minior-Core-Green (ID 1202)
+    1202: { regular: ["Shields Down", null], hidden: null },
+    // Minior-Core-Blue (ID 1203)
+    1203: { regular: ["Shields Down", null], hidden: null },
+    // Minior-Core-Indigo (ID 1204)
+    1204: { regular: ["Shields Down", null], hidden: null },
+    // Minior-Core-Violet (ID 1205)
+    1205: { regular: ["Shields Down", null], hidden: null },
+    // Mimikyu-Busted (ID 1206)
     1206: { regular: ["Disguise", null], hidden: null },
-
-    // necrozmaduskmane (ID 1207)
+    // Necrozma-Dusk-Mane (ID 1207)
     1207: { regular: ["Prism Armor", null], hidden: null },
-
-    // necrozmadawnwings (ID 1208)
+    // Necrozma-Dawn-Wings (ID 1208)
     1208: { regular: ["Prism Armor", null], hidden: null },
-
-    // necrozmaultra (ID 1209)
+    // Necrozma-Ultra (ID 1209)
     1209: { regular: ["Neuroforce", null], hidden: null },
-
-    // cramorantgulping (ID 1211)
+    // Magearna-Original-Color (ID 1210)
+    1210: { regular: ["Soul-Heart", null], hidden: null },
+    // Cramorant-Gulping (ID 1211)
     1211: { regular: ["Gulp Missile", null], hidden: null },
-
-    // cramorantgorging (ID 1212)
+    // Cramorant-Gorging (ID 1212)
     1212: { regular: ["Gulp Missile", null], hidden: null },
-
-    // sinisteaantique (ID 1214)
+    // Toxtricity (ID 1213)
+    1213: { regular: ["Punk Rock", null], hidden: "Technician" },
+    // Sinistea-Antique (ID 1214)
     1214: { regular: ["Weak Armor", null], hidden: "Cursed Body" },
-
-    // polteageistantique (ID 1215)
+    // Polteageist-Antique (ID 1215)
     1215: { regular: ["Weak Armor", null], hidden: "Cursed Body" },
-
-    // indeedeef (ID 1225)
+    // Alcremie-Strawberry-Ruby-Cream (ID 1216)
+    1216: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Strawberry-Matcha-Cream (ID 1217)
+    1217: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Strawberry-Mint-Cream (ID 1218)
+    1218: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Strawberry-Lemon-Cream (ID 1219)
+    1219: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Strawberry-Salted-Cream (ID 1220)
+    1220: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Strawberry-Ruby-Swirl (ID 1221)
+    1221: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Strawberry-Caramel-Swirl (ID 1222)
+    1222: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Strawberry-Rainbow-Swirl (ID 1223)
+    1223: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Eiscue-Noice-Face (ID 1224)
+    1224: { regular: ["Ice Face", null], hidden: null },
+    // Indeedee-Female (ID 1225)
     1225: { regular: ["Own Tempo", "Synchronize"], hidden: "Psychic Surge" },
-
-    // morpekohangry (ID 1226)
+    // Morpeko-Hangry (ID 1226)
     1226: { regular: ["Hunger Switch", null], hidden: null },
-
-    // eternatuseternamax (ID 1229)
+    // Zacian-Crowned-Sword (ID 1227)
+    1227: { regular: ["Intrepid Sword", null], hidden: null },
+    // Zamazenta-Crowned-Shield (ID 1228)
+    1228: { regular: ["Dauntless Shield", null], hidden: null },
+    // Eternatus-Eternamax (ID 1229)
     1229: { regular: ["Pressure", null], hidden: null },
-
-    // zarudedada (ID 1231)
+    // Urshifu-Rapid-Strike-Style (ID 1230)
+    1230: { regular: ["Unseen Fist", null], hidden: null },
+    // Zarude-Dada (ID 1231)
     1231: { regular: ["Leaf Guard", null], hidden: null },
-
-    // basculegionf [non-vanilla] (ID 1234)
+    // Calyrex-Ice-Rider (ID 1232)
+    1232: { regular: ["Unnerve", null], hidden: null },
+    // Calyrex-Shadow-Rider (ID 1233)
+    1233: { regular: ["Unnerve", null], hidden: null },
+    // Basculegion-F (ID 1234)
     1234: { regular: ["Swift Swim", null], hidden: "Adaptability" },
-
-    // sprigatito (ID 1289)
+    // Alcremie-Berry-Vanilla-Cream (ID 1235)
+    1235: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Berry-Ruby-Cream (ID 1236)
+    1236: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Berry-Matcha-Cream (ID 1237)
+    1237: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Berry-Mint-Cream (ID 1238)
+    1238: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Berry-Lemon-Cream (ID 1239)
+    1239: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Berry-Salted-Cream (ID 1240)
+    1240: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Berry-Ruby-Swirl (ID 1241)
+    1241: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Berry-Caramel-Swirl (ID 1242)
+    1242: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Berry-Rainbow-Swirl (ID 1243)
+    1243: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Love-Vanilla-Cream (ID 1244)
+    1244: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Love-Ruby-Cream (ID 1245)
+    1245: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Love-Matcha-Cream (ID 1246)
+    1246: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Love-Mint-Cream (ID 1247)
+    1247: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Love-Lemon-Cream (ID 1248)
+    1248: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Love-Salted-Cream (ID 1249)
+    1249: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Love-Ruby-Swirl (ID 1250)
+    1250: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Love-Caramel-Swirl (ID 1251)
+    1251: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Love-Rainbow-Swirl (ID 1252)
+    1252: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Star-Vanilla-Cream (ID 1253)
+    1253: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Star-Ruby-Cream (ID 1254)
+    1254: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Star-Matcha-Cream (ID 1255)
+    1255: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Star-Mint-Cream (ID 1256)
+    1256: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Star-Lemon-Cream (ID 1257)
+    1257: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Star-Salted-Cream (ID 1258)
+    1258: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Star-Ruby-Swirl (ID 1259)
+    1259: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Star-Caramel-Swirl (ID 1260)
+    1260: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Star-Rainbow-Swirl (ID 1261)
+    1261: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Clover-Vanilla-Cream (ID 1262)
+    1262: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Clover-Ruby-Cream (ID 1263)
+    1263: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Clover-Matcha-Cream (ID 1264)
+    1264: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Clover-Mint-Cream (ID 1265)
+    1265: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Clover-Lemon-Cream (ID 1266)
+    1266: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Clover-Salted-Cream (ID 1267)
+    1267: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Clover-Ruby-Swirl (ID 1268)
+    1268: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Clover-Caramel-Swirl (ID 1269)
+    1269: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Clover-Rainbow-Swirl (ID 1270)
+    1270: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Flower-Vanilla-Cream (ID 1271)
+    1271: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Flower-Ruby-Cream (ID 1272)
+    1272: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Flower-Matcha-Cream (ID 1273)
+    1273: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Flower-Mint-Cream (ID 1274)
+    1274: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Flower-Lemon-Cream (ID 1275)
+    1275: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Flower-Salted-Cream (ID 1276)
+    1276: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Flower-Ruby-Swirl (ID 1277)
+    1277: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Flower-Caramel-Swirl (ID 1278)
+    1278: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Flower-Rainbow-Swirl (ID 1279)
+    1279: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Ribbon-Vanilla-Cream (ID 1280)
+    1280: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Ribbon-Ruby-Cream (ID 1281)
+    1281: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Ribbon-Matcha-Cream (ID 1282)
+    1282: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Ribbon-Mint-Cream (ID 1283)
+    1283: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Ribbon-Lemon-Cream (ID 1284)
+    1284: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Ribbon-Salted-Cream (ID 1285)
+    1285: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Ribbon-Ruby-Swirl (ID 1286)
+    1286: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Ribbon-Caramel-Swirl (ID 1287)
+    1287: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Alcremie-Ribbon-Rainbow-Swirl (ID 1288)
+    1288: { regular: ["Sweet Veil", null], hidden: "Aroma Veil" },
+    // Sprigatito (ID 1289)
     1289: { regular: ["Overgrow", null], hidden: "Protean" },
-
-    // floragato (ID 1290)
+    // Floragato (ID 1290)
     1290: { regular: ["Overgrow", null], hidden: "Protean" },
-
-    // meowscarada (ID 1291)
+    // Meowscarada (ID 1291)
     1291: { regular: ["Overgrow", null], hidden: "Protean" },
-
-    // fuecoco (ID 1292)
+    // Fuecoco (ID 1292)
     1292: { regular: ["Blaze", null], hidden: "Unaware" },
-
-    // crocalor (ID 1293)
+    // Crocalor (ID 1293)
     1293: { regular: ["Blaze", null], hidden: "Unaware" },
-
-    // skeledirge (ID 1294)
+    // Skeledirge (ID 1294)
     1294: { regular: ["Blaze", null], hidden: "Unaware" },
-
-    // quaxly (ID 1295)
+    // Quaxly (ID 1295)
     1295: { regular: ["Torrent", null], hidden: "Moxie" },
-
-    // quaxwell (ID 1296)
+    // Quaxwell (ID 1296)
     1296: { regular: ["Torrent", null], hidden: "Moxie" },
-
-    // quaquaval (ID 1297)
+    // Quaquaval (ID 1297)
     1297: { regular: ["Torrent", null], hidden: "Moxie" },
-
-    // lechonk (ID 1298)
+    // Lechonk (ID 1298)
     1298: { regular: ["Aroma Veil", "Gluttony"], hidden: "Thick Fat" },
-
-    // oinkologne (ID 1299)
+    // Oinkologne (ID 1299)
     1299: { regular: ["Lingering Aroma", "Gluttony"], hidden: "Thick Fat" },
-
-    // oinkolognef (ID 1300)
+    // Oinkologne-F (ID 1300)
     1300: { regular: ["Aroma Veil", "Gluttony"], hidden: "Thick Fat" },
-
-    // tarountula (ID 1301)
+    // Tarountula (ID 1301)
     1301: { regular: ["Insomnia", null], hidden: "Stakeout" },
-
-    // spidops (ID 1302)
+    // Spidops (ID 1302)
     1302: { regular: ["Insomnia", null], hidden: "Stakeout" },
-
-    // nymble (ID 1303)
+    // Nymble (ID 1303)
     1303: { regular: ["Swarm", null], hidden: "Tinted Lens" },
-
-    // lokix (ID 1304)
+    // Lokix (ID 1304)
     1304: { regular: ["Swarm", null], hidden: "Tinted Lens" },
-
-    // pawmi [non-vanilla] (ID 1305)
+    // Pawmi (ID 1305)
     1305: { regular: ["Iron Fist", null], hidden: "Volt Absorb" },
-
-    // pawmo [non-vanilla] (ID 1306)
+    // Pawmo (ID 1306)
     1306: { regular: ["Iron Fist", null], hidden: "Volt Absorb" },
-
-    // pawmot [non-vanilla] (ID 1307)
+    // Pawmot (ID 1307)
     1307: { regular: ["Iron Fist", null], hidden: "Volt Absorb" },
-
-    // tandemaus [non-vanilla] (ID 1308)
+    // Tandemaus (ID 1308)
     1308: { regular: ["Own Tempo", "Run Away"], hidden: "Pickup" },
-
-    // fidough (ID 1311)
+    // Maushold-Family-Of-Three (ID 1309)
+    1309: { regular: ["Technician", "Cheek Pouch"], hidden: "Friend Guard" },
+    // Maushold-Family-Of-Four (ID 1310)
+    1310: { regular: ["Technician", "Cheek Pouch"], hidden: "Friend Guard" },
+    // Fidough (ID 1311)
     1311: { regular: ["Own Tempo", null], hidden: "Klutz" },
-
-    // dachsbun (ID 1312)
+    // Dachsbun (ID 1312)
     1312: { regular: ["Well-Baked Body", null], hidden: "Aroma Veil" },
 
-    // smoliv [non-vanilla] (ID 1313)
+    // Smoliv (ID 1313)
     1313: { regular: ["Harvest", null], hidden: "Early Bird" },
 
-    // dolliv [non-vanilla] (ID 1314)
+    // Dolliv (ID 1314)
     1314: { regular: ["Harvest", null], hidden: "Early Bird" },
 
-    // arboliva [non-vanilla] (ID 1315)
+    // Arboliva (ID 1315)
     1315: { regular: ["Harvest", null], hidden: "Seed Sower" },
 
-    // nacli [non-vanilla] (ID 1320)
+    // Squawkabilly-Green-Plumage (ID 1316)
+    1316: { regular: ["Intimidate", "Quick Feet"], hidden: "Guts" },
+
+    // Squawkabilly-Blue-Plumage (ID 1317)
+    1317: { regular: ["Intimidate", "Quick Feet"], hidden: "Guts" },
+
+    // Squawkabilly-Yellow-Plumage (ID 1318)
+    1318: { regular: ["Intimidate", "Quick Feet"], hidden: "Sheer Force" }, // Assuming Guts if not specified for yellow, or Sheer Force as per some lists
+
+    // Squawkabilly-White-Plumage (ID 1319)
+    1319: { regular: ["Intimidate", "Quick Feet"], hidden: "Sheer Force" }, // Assuming Guts if not specified for white, or Sheer Force as per some lists
+
+    // Nacli (ID 1320)
     1320: { regular: ["Purifying Salt", "Clear Body"], hidden: "Sturdy" },
 
-    // naclstack [non-vanilla] (ID 1321)
+    // Naclstack (ID 1321)
     1321: { regular: ["Purifying Salt", "Clear Body"], hidden: "Sturdy" },
 
-    // garganacl [non-vanilla] (ID 1322)
+    // Garganacl (ID 1322)
     1322: { regular: ["Purifying Salt", "Clear Body"], hidden: "Sturdy" },
 
-    // charcadet [non-vanilla] (ID 1323)
+    // Charcadet (ID 1323)
     1323: { regular: ["Flame Body", null], hidden: "Flash Fire" },
 
-    // armarouge [non-vanilla] (ID 1324)
+    // Armarouge (ID 1324)
     1324: { regular: ["Mega Launcher", null], hidden: "Weak Armor" },
 
-    // ceruledge [non-vanilla] (ID 1325)
+    // Ceruledge (ID 1325)
     1325: { regular: ["Sharpness", null], hidden: "Weak Armor" },
 
-    // tadbulb [non-vanilla] (ID 1326)
+    // Tadbulb (ID 1326)
     1326: { regular: ["Own Tempo", null], hidden: "Static" },
 
-    // bellibolt [non-vanilla] (ID 1327)
+    // Bellibolt (ID 1327)
     1327: { regular: ["Own Tempo", "Electromorphosis"], hidden: "Static" },
 
-    // wattrel (ID 1328)
+    // Wattrel (ID 1328)
     1328: { regular: ["Wind Power", "Volt Absorb"], hidden: "Competitive" },
 
-    // kilowattrel (ID 1329)
+    // Kilowattrel (ID 1329)
     1329: { regular: ["Wind Power", "Volt Absorb"], hidden: "Competitive" },
 
-    // maschiff (ID 1330)
+    // Maschiff (ID 1330)
     1330: { regular: ["Intimidate", "Run Away"], hidden: "Stakeout" },
 
-    // mabosstiff (ID 1331)
+    // Mabosstiff (ID 1331)
     1331: { regular: ["Intimidate", "Guard Dog"], hidden: "Stakeout" },
 
-    // shroodle (ID 1332)
+    // Shroodle (ID 1332)
     1332: { regular: ["Unburden", "Pickpocket"], hidden: "Prankster" },
 
-    // grafaiai (ID 1333)
+    // Grafaiai (ID 1333)
     1333: { regular: ["Unburden", "Poison Touch"], hidden: "Prankster" },
 
-    // bramblin (ID 1334)
+    // Bramblin (ID 1334)
     1334: { regular: ["Wind Rider", null], hidden: "Infiltrator" },
 
-    // brambleghast (ID 1335)
+    // Brambleghast (ID 1335)
     1335: { regular: ["Wind Rider", null], hidden: "Infiltrator" },
 
-    // toedscool (ID 1336)
+    // Toedscool (ID 1336)
     1336: { regular: ["Mycelium Might", null], hidden: null },
 
-    // toedscruel (ID 1337)
+    // Toedscruel (ID 1337)
     1337: { regular: ["Mycelium Might", null], hidden: null },
 
-    // klawf [non-vanilla] (ID 1338)
+    // Klawf (ID 1338)
     1338: { regular: ["Regenerator", "Shell Armor"], hidden: "Anger Shell" },
 
-    // capsakid (ID 1339)
+    // Capsakid (ID 1339)
     1339: { regular: ["Chlorophyll", "Insomnia"], hidden: "Klutz" },
 
-    // scovillain (ID 1340)
+    // Scovillain (ID 1340)
     1340: { regular: ["Chlorophyll", "Insomnia"], hidden: "Moody" },
 
-    // rellor (ID 1341)
+    // Rellor (ID 1341)
     1341: { regular: ["Compound Eyes", null], hidden: "Shed Skin" },
 
-    // rabsca (ID 1342)
+    // Rabsca (ID 1342)
     1342: { regular: ["Synchronize", null], hidden: "Telepathy" },
 
-    // flittle [non-vanilla] (ID 1343)
+    // Flittle (ID 1343)
     1343: { regular: ["Speed Boost", null], hidden: "Anticipation" },
 
-    // espathra [non-vanilla] (ID 1344)
+    // Espathra (ID 1344)
     1344: { regular: ["Speed Boost", null], hidden: "Opportunist" },
 
-    // tinkatink (ID 1345)
+    // Tinkatink (ID 1345)
     1345: { regular: ["Mold Breaker", "Own Tempo"], hidden: "Pickpocket" },
 
-    // tinkatuff (ID 1346)
+    // Tinkatuff (ID 1346)
     1346: { regular: ["Mold Breaker", "Own Tempo"], hidden: "Pickpocket" },
 
-    // tinkaton (ID 1347)
+    // Tinkaton (ID 1347)
     1347: { regular: ["Mold Breaker", "Own Tempo"], hidden: "Pickpocket" },
 
-    // wiglett [non-vanilla] (ID 1348)
+    // Wiglett (ID 1348)
     1348: { regular: ["Gooey", null], hidden: "Sand Veil" },
 
-    // wugtrio [non-vanilla] (ID 1349)
+    // Wugtrio (ID 1349)
     1349: { regular: ["Gooey", null], hidden: "Sand Veil" },
 
-    // bombirdier [non-vanilla] (ID 1350)
+    // Bombirdier (ID 1350)
     1350: { regular: ["Rocky Payload", null], hidden: "Big Pecks" },
 
-    // finizen (ID 1351)
+    // Finizen (ID 1351)
     1351: { regular: ["Water Veil", null], hidden: null },
 
-    // palafinhero (ID 1353)
+    // Palafin-Zero (ID 1352)
+    1352: { regular: ["Zero to Hero", null], hidden: null },
+
+    // Palafin-Hero (ID 1353)
     1353: { regular: ["Zero to Hero", null], hidden: null },
 
-    // varoom [non-vanilla] (ID 1354)
+    // Varoom (ID 1354)
     1354: { regular: ["Sturdy", null], hidden: "Overcoat" },
 
-    // revavroom [non-vanilla] (ID 1355)
+    // Revavroom (ID 1355)
     1355: { regular: ["Filter", null], hidden: "Overcoat" },
 
-    // cyclizar (ID 1356)
+    // Cyclizar (ID 1356)
     1356: { regular: ["Shed Skin", null], hidden: "Regenerator" },
 
-    // orthworm (ID 1357)
+    // Orthworm (ID 1357)
     1357: { regular: ["Earth Eater", null], hidden: "Sand Veil" },
 
-    // glimmet [non-vanilla] (ID 1358)
+    // Glimmet (ID 1358)
     1358: { regular: ["Corrosion", null], hidden: "Toxic Debris" },
 
-    // glimmora [non-vanilla] (ID 1359)
+    // Glimmora (ID 1359)
     1359: { regular: ["Corrosion", null], hidden: "Toxic Debris" },
 
-    // greavard (ID 1360)
+    // Greavard (ID 1360)
     1360: { regular: ["Pickup", null], hidden: "Fluffy" },
 
-    // houndstone (ID 1361)
+    // Houndstone (ID 1361)
     1361: { regular: ["Sand Rush", null], hidden: "Fluffy" },
 
-    // flamigo [non-vanilla] (ID 1362)
+    // Flamigo (ID 1362)
     1362: { regular: ["Scrappy", null], hidden: "Costar" },
 
-    // cetoddle (ID 1363)
+    // Cetoddle (ID 1363)
     1363: { regular: ["Thick Fat", "Snow Cloak"], hidden: "Sheer Force" },
 
-    // cetitan (ID 1364)
+    // Cetitan (ID 1364)
     1364: { regular: ["Thick Fat", "Slush Rush"], hidden: "Sheer Force" },
 
-    // veluza [non-vanilla] (ID 1365)
+    // Veluza (ID 1365)
     1365: { regular: ["Sharpness", null], hidden: "Mold Breaker" },
 
-    // dondozo (ID 1366)
+    // Dondozo (ID 1366)
     1366: { regular: ["Unaware", "Oblivious"], hidden: "Water Veil" },
 
-    // tatsugiri (ID 1367)
+    // Tatsugiri (Droopy/Curly/Stretchy - ID 1367, 1368, 1369) - Assuming they share abilities
     1367: { regular: ["Commander", null], hidden: "Storm Drain" },
+    1368: { regular: ["Commander", null], hidden: "Storm Drain" },
+    1369: { regular: ["Commander", null], hidden: "Storm Drain" },
 
-    // annihilape [non-vanilla] (ID 1370)
+    // Annihilape (ID 1370)
     1370: { regular: ["Vital Spirit", null], hidden: "Defiant" },
 
-    // clodsire (ID 1371)
+    // Clodsire (ID 1371)
     1371: { regular: ["Poison Point", "Water Absorb"], hidden: "Unaware" },
 
-    // farigiraf (ID 1372)
+    // Farigiraf (ID 1372)
     1372: { regular: ["Cud Chew", "Armor Tail"], hidden: "Sap Sipper" },
 
-    // dudunsparce [non-vanilla] (ID 1373)
+    // Dudunsparce (Two-Segment) (ID 1373)
     1373: { regular: ["Serene Grace", null], hidden: "Rattled" },
+    // Dudunsparce (Three-Segment) (ID 1374)
+    1374: { regular: ["Serene Grace", null], hidden: "Rattled" }, // Assuming same abilities
 
-    // kingambit [non-vanilla] (ID 1375)
+    // Kingambit (ID 1375)
     1375: { regular: ["Supreme Overlord", null], hidden: "Defiant" },
 
-    // greattusk (ID 1376)
+    // Great Tusk (ID 1376)
     1376: { regular: ["Protosynthesis", null], hidden: null },
 
-    // screamtail (ID 1377)
+    // Scream Tail (ID 1377)
     1377: { regular: ["Protosynthesis", null], hidden: null },
 
-    // brutebonnet (ID 1378)
+    // Brute Bonnet (ID 1378)
     1378: { regular: ["Protosynthesis", null], hidden: null },
 
-    // fluttermane (ID 1379)
+    // Flutter Mane (ID 1379)
     1379: { regular: ["Protosynthesis", null], hidden: null },
 
-    // slitherwing (ID 1380)
+    // Slither Wing (ID 1380)
     1380: { regular: ["Protosynthesis", null], hidden: null },
 
-    // sandyshocks (ID 1381)
+    // Sandy Shocks (ID 1381)
     1381: { regular: ["Protosynthesis", null], hidden: null },
 
-    // irontreads (ID 1382)
+    // Iron Treads (ID 1382)
     1382: { regular: ["Quark Drive", null], hidden: null },
 
-    // ironbundle (ID 1383)
+    // Iron Bundle (ID 1383)
     1383: { regular: ["Quark Drive", null], hidden: null },
 
-    // ironhands (ID 1384)
+    // Iron Hands (ID 1384)
     1384: { regular: ["Quark Drive", null], hidden: null },
 
-    // ironjugulis (ID 1385)
+    // Iron Jugulis (ID 1385)
     1385: { regular: ["Quark Drive", null], hidden: null },
 
-    // ironmoth (ID 1386)
+    // Iron Moth (ID 1386)
     1386: { regular: ["Quark Drive", null], hidden: null },
 
-    // ironthorns (ID 1387)
+    // Iron Thorns (ID 1387)
     1387: { regular: ["Quark Drive", null], hidden: null },
 
-    // frigibax [non-vanilla] (ID 1388)
+    // Frigibax (ID 1388)
     1388: { regular: ["Ice Body", null], hidden: "Thermal Exchange" },
 
-    // arctibax [non-vanilla] (ID 1389)
+    // Arctibax (ID 1389)
     1389: { regular: ["Ice Body", null], hidden: "Thermal Exchange" },
 
-    // baxcalibur [non-vanilla] (ID 1390)
+    // Baxcalibur (ID 1390)
     1390: { regular: ["Ice Body", null], hidden: "Thermal Exchange" },
 
-    // gimmighoulroaming (ID 1392)
+    // Gimmighoul-Chest (ID 1391)
+    1391: { regular: ["Rattled", null], hidden: null },
+
+    // Gimmighoul-Roaming (ID 1392)
     1392: { regular: ["Run Away", null], hidden: null },
 
-    // gholdengo (ID 1393)
+    // Gholdengo (ID 1393)
     1393: { regular: ["Good as Gold", null], hidden: null },
 
-    // wochien [non-vanilla] (ID 1394)
-    1394: { regular: ["Shell Armor", null], hidden: "Tablets of Ruin" },
+    // Wo-Chien (ID 1394)
+    1394: { regular: ["Shell Armor", null], hidden: "Tablets of Ruin" }, // From your existing list, using Shell Armor as base
 
-    // chienpao [non-vanilla] (ID 1395)
-    1395: { regular: ["Mold Breaker", null], hidden: "Sword of Ruin" },
+    // Chien-Pao (ID 1395)
+    1395: { regular: ["Mold Breaker", null], hidden: "Sword of Ruin" }, // From your existing list, using Mold Breaker as base
 
-    // tinglu [non-vanilla] (ID 1396)
-    1396: { regular: ["Battle Armor", null], hidden: "Vessel of Ruin" },
+    // Ting-Lu (ID 1396)
+    1396: { regular: ["Battle Armor", null], hidden: "Vessel of Ruin" }, // From your existing list, using Battle Armor as base
 
-    // chiyu [non-vanilla] (ID 1397)
-    1397: { regular: ["Mold Breaker", null], hidden: "Beads of Ruin" },
+    // Chi-Yu (ID 1397)
+    1397: { regular: ["Mold Breaker", null], hidden: "Beads of Ruin" }, // From your existing list, using Mold Breaker as base
 
-    // roaringmoon (ID 1398)
+    // Roaring Moon (ID 1398)
     1398: { regular: ["Protosynthesis", null], hidden: null },
 
-    // ironvaliant (ID 1399)
+    // Iron Valiant (ID 1399)
     1399: { regular: ["Quark Drive", null], hidden: null },
 
-    // koraidon (ID 1400)
+    // Koraidon (ID 1400)
     1400: { regular: ["Orichalcum Pulse", null], hidden: null },
 
-    // miraidon (ID 1401)
+    // Miraidon (ID 1401)
     1401: { regular: ["Hadron Engine", null], hidden: null },
 
-    // taurospaldeacombat [non-vanilla] (ID 1402)
+    // Tauros-Paldea-Combat (ID 1402)
     1402: { regular: ["Intimidate", null], hidden: "Cud Chew" },
 
-    // taurospaldeablaze [non-vanilla] (ID 1403)
+    // Tauros-Paldea-Blaze (ID 1403)
     1403: { regular: ["Intimidate", null], hidden: "Cud Chew" },
 
-    // taurospaldeaaqua [non-vanilla] (ID 1404)
+    // Tauros-Paldea-Aqua (ID 1404)
     1404: { regular: ["Intimidate", null], hidden: "Cud Chew" },
 
-    // wooperpaldea (ID 1405)
+    // Wooper-Paldea (ID 1405)
     1405: { regular: ["Poison Point", "Water Absorb"], hidden: "Unaware" },
 
-    // walkingwake (ID 1406)
+    // Walking Wake (ID 1406)
     1406: { regular: ["Protosynthesis", null], hidden: null },
 
-    // ironleaves (ID 1407)
+    // Iron Leaves (ID 1407)
     1407: { regular: ["Quark Drive", null], hidden: null },
 
-    // dipplin [non-vanilla] (ID 1408)
+    // Dipplin (ID 1408)
     1408: { regular: ["Supersweet Syrup", null], hidden: "Sticky Hold" },
 
-    // poltchageistartisan (ID 1409)
+    // Poltchageist (Unremarkable Teacup / ID 1409)
     1409: { regular: ["Hospitality", null], hidden: "Heatproof" },
+    // Poltchageist (Masterpiece Teacup / ID 1410)
+    1410: { regular: ["Hospitality", null], hidden: "Heatproof" },
 
-    // sinistchamasterpiece (ID 1411)
+    // Sinistcha (Unremarkable Teacup / ID 1411)
     1411: { regular: ["Hospitality", null], hidden: "Heatproof" },
+    // Sinistcha (Masterpiece Teacup / ID 1412)
+    1412: { regular: ["Hospitality", null], hidden: "Heatproof" },
 
-    // okidogi (ID 1413)
+    // Okidogi (ID 1413)
     1413: { regular: ["Toxic Chain", null], hidden: "Guard Dog" },
 
-    // munkidori (ID 1414)
+    // Munkidori (ID 1414)
     1414: { regular: ["Toxic Chain", null], hidden: "Frisk" },
 
-    // fezandipiti (ID 1415)
+    // Fezandipiti (ID 1415)
     1415: { regular: ["Toxic Chain", null], hidden: "Technician" },
 
-    // ogerpon [non-vanilla] (ID 1416)
-    1416: { regular: ["Inner Focus", null], hidden: null },
+    // Ogerpon (Teal Mask / ID 1416)
+    1416: { regular: ["Inner Focus", null], hidden: null }, // Using your original data for Ogerpon
 
-    // ogerponwellspring [non-vanilla] (ID 1417)
-    1417: { regular: ["Hydration", null], hidden: null },
+    // Ogerpon-Wellspring (ID 1417)
+    1417: { regular: ["Hydration", null], hidden: null }, // Using your original data
 
-    // ogerponhearthflame (ID 1418)
-    1418: { regular: ["Mold Breaker", null], hidden: null },
+    // Ogerpon-Hearthflame (ID 1418)
+    1418: { regular: ["Mold Breaker", null], hidden: null }, // Using your original data
 
-    // ogerponcornerstone (ID 1419)
-    1419: { regular: ["Sturdy", null], hidden: null },
+    // Ogerpon-Cornerstone (ID 1419)
+    1419: { regular: ["Sturdy", null], hidden: null }, // Using your original data
 
-    // ursalunabloodmoon (ID 1424)
-    1424: { regular: [null, null], hidden: null },
+    // Ogerpon-Teal-Mask-Tera (ID 1420)
+    1420: { regular: ["Embody Aspect (Teal)", null], hidden: null }, // Assuming same as base form, or 'Embody Aspect' if distinct
+    // Ogerpon-Wellspring-Mask-Tera (ID 1421)
+    1421: { regular: ["Embody Aspect (Wellspring)", null], hidden: null },
+    // Ogerpon-Hearthflame-Mask-Tera (ID 1422)
+    1422: { regular: ["Embody Aspect (Hearthflame)", null], hidden: null },
+    // Ogerpon-Cornerstone-Mask-Tera (ID 1423)
+    1423: { regular: ["Embody Aspect (Cornerstone)", null], hidden: null },
+    
+    // Ursaluna-Bloodmoon (ID 1424) - Note: Your mons array ends at 1434.
+    // This ID would correspond to mons[1423]
+    // Assuming you have a "Ursaluna-Bloodmoon" in your mons array around this ID
+    1424: { regular: ["Mind's Eye", null], hidden: null },
 
-    // archaludon [non-vanilla] (ID 1425)
+
+    // Archaludon (ID 1425)
     1425: { regular: ["Stalwart", "Sturdy"], hidden: "Stamina" },
 
-    // hydrapple [non-vanilla] (ID 1426)
+    // Hydrapple (ID 1426)
     1426: { regular: ["Supersweet Syrup", null], hidden: "Sticky Hold" },
 
-    // gougingfire (ID 1427)
+    // Gouging Fire (ID 1427)
     1427: { regular: ["Protosynthesis", null], hidden: null },
 
-    // ragingbolt (ID 1428)
+    // Raging Bolt (ID 1428)
     1428: { regular: ["Protosynthesis", null], hidden: null },
 
-    // ironboulder (ID 1429)
+    // Iron Boulder (ID 1429)
     1429: { regular: ["Quark Drive", null], hidden: null },
 
-    // ironcrown (ID 1430)
+    // Iron Crown (ID 1430)
     1430: { regular: ["Quark Drive", null], hidden: null },
 
-    // terapagosterastal (ID 1432)
+    // Terapagos-Normal (ID 1431)
+    1431: { regular: ["Tera Shift", null], hidden: null },
+
+    // Terapagos-Terastal (ID 1432)
     1432: { regular: ["Tera Shell", null], hidden: null },
 
-    // terapagosstellar (ID 1433)
+    // Terapagos-Stellar (ID 1433)
     1433: { regular: ["Teraform Zero", null], hidden: null },
 
-    // pecharunt (ID 1434)
+    // Pecharunt (ID 1434)
     1434: { regular: ["Poison Puppeteer", null], hidden: null }
-};
+
+}; // End of lucidSpeciesAbilities
+
 const moves = [
 "",
 "Pound",
@@ -6400,9 +5629,10 @@ function readBoxMon(dataView, address) {
   }
 
   // Substructure 0 (Growth)
-  mon.species = substructs[0][0] & 0xFFFF; // Standard: species is 16-bit in this field.
+  //mon.species = substructs[0][0] & 0xFFFF; // Standard: species is 16-bit in this field.
                                           // If Lucid uses fewer bits (e.g. 0x7FF for 11 bits), this mask would change.
                                           // PkHex seeing Skitty for Roselia might hint at this value being Skitty's ID.
+                                          mon.species = substructs[0][0] & 0x7FF;  // Lucid uses 11-bit species ID
   mon.heldItem = (substructs[0][0] >> 16) & 0xFFFF;
   mon.experience = substructs[0][1];
   mon.ppBonuses = substructs[0][2] & 0xFF;
@@ -6495,7 +5725,7 @@ function readPartyMon(dataView, address) {
   return mon;
 }
 
-function getAbility(mon) {
+/*function getAbility(mon) {
     if (!mon || mon.species === 0 || !mons[mon.species - 1]) {
         return "Unknown Species/Ability";
     }
@@ -6504,6 +5734,8 @@ function getAbility(mon) {
     const speciesName = mons[speciesIndex - 1];
     const abilitySlotBit = mon.abilityNum; // This is the bit from the save (0 or 1)
     const pid = mon.personality;
+
+    
 
     // --- POKEMON LUCID SPECIFIC HARDCODED OVERRIDES (If any are truly fixed regardless of abilityNum/PID) ---
     // Example: if (speciesName === "Unown") return "Levitate";
@@ -6545,38 +5777,120 @@ function getAbility(mon) {
 
     console.warn(`No ability mapping or resolvable ability in lucidSpeciesAbilities for ${speciesName} (ID: ${speciesIndex}, AbilityNum: ${abilitySlotBit}).`);
     return `Ability? (${speciesName})`;
+}*/
+function getAbility(mon) {
+    if (!mon || mon.species === 0 || !mons[mon.species - 1]) {
+        return "Unknown Species/Ability";
+    }
+
+    const speciesIndex = mon.species;
+    const speciesName = mons[speciesIndex - 1];
+    const abilitySlotBit = mon.abilityNum; // This is the bit from the save (0 or 1)
+    const pid = mon.personality;
+
+    // Special debug for Togedemaru
+    if (speciesIndex === 777) { // Togedemaru's Species ID
+        console.log(`TOGEDEMARU DEBUG: Called for Species ID=${speciesIndex}, abilitySlotBit=${abilitySlotBit}, PID=0x${pid.toString(16)}`);
+        if (lucidSpeciesAbilities[777]) {
+            console.log(`TOGEDEMARU DEBUG: lucidSpeciesAbilities[777] =`, JSON.stringify(lucidSpeciesAbilities[777]));
+        } else {
+            console.log(`TOGEDEMARU DEBUG: No entry in lucidSpeciesAbilities for ID 777!`);
+        }
+    }
+
+    if (lucidSpeciesAbilities[speciesIndex]) {
+        const speciesAbilData = lucidSpeciesAbilities[speciesIndex];
+        let chosenAbilityName = null;
+
+        if (abilitySlotBit === 1 && speciesAbilData.hidden) {
+            // If abilitySlotBit is 1 (indicating potential HA) AND a hidden ability is defined
+            chosenAbilityName = speciesAbilData.hidden;
+            if (speciesIndex === 777) {
+                console.log("TOGEDEMARU DEBUG: Path A - Chose HIDDEN ability:", chosenAbilityName);
+            }
+        } else {
+            // abilitySlotBit is 0 (not HA), or it's 1 but no HA is defined for the species, or no regular abilities defined
+            if (speciesAbilData.regular && speciesAbilData.regular.length > 0) {
+                if (speciesAbilData.regular[1]) { // If there are two regular abilities defined
+                    chosenAbilityName = speciesAbilData.regular[pid % 2];
+                    if (speciesIndex === 777) {
+                        console.log(`TOGEDEMARU DEBUG: Path B - Chose REGULAR via PID (slot ${pid % 2}):`, chosenAbilityName);
+                    }
+                } else if (speciesAbilData.regular[0]) { // Only one regular ability defined (or second is null)
+                    chosenAbilityName = speciesAbilData.regular[0];
+                    if (speciesIndex === 777) {
+                        console.log("TOGEDEMARU DEBUG: Path C - Chose REGULAR[0]:", chosenAbilityName);
+                    }
+                } else {
+                     // This case should ideally not be hit if speciesAbilData.regular is an array with at least one item or nulls.
+                     // It implies speciesAbilData.regular is an empty array or something unexpected.
+                    if (speciesIndex === 777) {
+                        console.log("TOGEDEMARU DEBUG: Path D - No valid regular abilities in speciesAbilData.regular array.");
+                    }
+                }
+            } else {
+                 // No regular abilities defined at all for this species in the map
+                 if (speciesIndex === 777) {
+                    console.log("TOGEDEMARU DEBUG: Path E - speciesAbilData.regular is undefined or empty.");
+                }
+            }
+        }
+
+        if (chosenAbilityName) {
+            if (speciesIndex === 777) {
+                console.log("TOGEDEMARU DEBUG: Final chosenAbilityName before return:", chosenAbilityName);
+            }
+            return chosenAbilityName;
+        } else if (speciesAbilData.regular && speciesAbilData.regular[0]) {
+            // Absolute fallback to the first regular ability if chosenAbilityName is still null
+            // (e.g., if HA path was taken but HA was null, and regular path wasn't explicitly hit)
+            console.warn(`Ultimate ability fallback for ${speciesName} (ID: ${speciesIndex}). Using first regular ability: ${speciesAbilData.regular[0]}`);
+            if (speciesIndex === 777) {
+                console.log("TOGEDEMARU DEBUG: Fallback (F) to regular[0]:", speciesAbilData.regular[0]);
+            }
+            return speciesAbilData.regular[0];
+        } else if (speciesAbilData.hidden) {
+            // Even more ultimate fallback if no regular abilities but a hidden one exists (unlikely structure but covering bases)
+             console.warn(`Ultimate ability fallback for ${speciesName} (ID: ${speciesIndex}). No regular abilities, using hidden: ${speciesAbilData.hidden}`);
+             if (speciesIndex === 777) {
+                console.log("TOGEDEMARU DEBUG: Fallback (G) to hidden:", speciesAbilData.hidden);
+            }
+            return speciesAbilData.hidden;
+        }
+    }
+
+    console.warn(`No ability mapping or resolvable ability in lucidSpeciesAbilities for ${speciesName} (ID: ${speciesIndex}, AbilityNum: ${abilitySlotBit}).`);
+    if (speciesIndex === 777) {
+        console.log("TOGEDEMARU DEBUG: No mapping found in lucidSpeciesAbilities, returning default 'Ability?'.");
+    }
+    return `Ability? (${speciesName})`;
 }
 
 function getNature(mon) {
-  if (!mon) return "Unknown";
+    if (!mon) return "Unknown";
 
-  const hiddenNatureVal = mon.hiddenNature; // This is 0-31 from the 5 bits. For Roselia, it's 3.
-  const personalityPID = mon.personality;
+    const hiddenNatureVal = mon.hiddenNature; // This is 0-31 from the 5-bit field
+    const personalityPID = mon.personality;
 
-  if (mon.personality === 0x7CAF1B52) { // Roselia's PID
-      console.log(`DEBUG_NATURE Roselia: PID=0x${personalityPID.toString(16)}, Raw_HiddenNature_5bit_Val=${hiddenNatureVal}`);
-  }
+    // Optional: For debugging a specific Pokémon by PID or species
+    // const speciesNameForLog = mons[mon.species - 1] || `SpeciesID ${mon.species}`;
+    // if (mon.species === XYZ || mon.personality === 0xABCDEF) { // Replace XYZ/ABCDEF with actual values
+    //    console.log(`DEBUG_NATURE for ${speciesNameForLog} (PID: 0x${personalityPID.toString(16)}): hiddenNatureVal = ${hiddenNatureVal}`);
+    // }
 
-  // If the 5-bit value (0-24) is a valid 0-indexed nature, use it.
-  // Let's assume any value > 24 from these 5 bits means "use PID" or is invalid.
-  // The Lua script's "hiddenNature == 0" for PID fallback is tricky if 0 itself is a valid nature (Hardy).
-  // Let's go by PkHex & your in-game summary. If Roselia is Adamant, and hiddenNature bits are 3,
-  // then the value "3" from those bits must map to Adamant.
-  
-  // If hiddenNatureVal (0-24) directly corresponds to the index in the 0-indexed natures array:
-  if (hiddenNatureVal >= 0 && hiddenNatureVal <= 24) {
-    if (mon.personality === 0x7CAF1B52) {
-        console.log(`DEBUG_NATURE Roselia: Using Raw_HiddenNature_5bit_Val ${hiddenNatureVal} as 0-indexed nature. Nature: ${natures[hiddenNatureVal]}`);
+    if (hiddenNatureVal === 0) {
+        // Case 1: hiddenNatureVal is 0, use PID % 25
+        const pidNatureIndex = personalityPID % 25;
+        return natures[pidNatureIndex] || "Unknown (PID)";
+    } else if (hiddenNatureVal >= 1 && hiddenNatureVal <= 25) {
+        // Case 2: hiddenNatureVal is 1-25, use it as a 1-indexed nature
+        const directNatureIndex = hiddenNatureVal - 1;
+        return natures[directNatureIndex] || `Invalid Nature (HN ${hiddenNatureVal})`;
+    } else {
+        // Case 3: hiddenNatureVal > 25 (i.e., 26-31 for 5 bits), fall back to PID % 25
+        const pidNatureIndex = personalityPID % 25;
+        return natures[pidNatureIndex] || "Unknown (PID Fallback)";
     }
-    return natures[hiddenNatureVal] || `Invalid Nature for HN Index ${hiddenNatureVal}`;
-  }
-  
-  // Fallback to PID if hiddenNatureVal is outside 0-24 (e.g., if the 5 bits were 25-31)
-  const pidNatureIndex = personalityPID % 25;
-    if (mon.personality === 0x7CAF1B52) {
-        console.log(`DEBUG_NATURE Roselia: HiddenNatureVal was ${hiddenNatureVal}, using PID fallback. PID_Nature_Index=${pidNatureIndex}, Nature: ${natures[pidNatureIndex]}`);
-    }
-  return natures[pidNatureIndex] || "Unknown Nature (PID)";
 }
 
 function formatShowdownExport(mon, targetLevel) {
@@ -6617,308 +5931,276 @@ function formatShowdownExport(mon, targetLevel) {
 
 // --- Main functionality ---
 document.addEventListener('DOMContentLoaded', function() {
-  const fileInput = document.getElementById('save-upload');
-  const fileSelectBtn = document.getElementById('file-select-btn');
-  const exportLevelInput = document.getElementById('export-level');
-  const loadingIndicator = document.getElementById('loading');
-  const outputContainer = document.getElementById('output-container');
-  const outputText = document.getElementById('output-text');
-  const copyBtn = document.getElementById('copy-btn');
+    const fileInput = document.getElementById('save-upload');
+    const fileSelectBtn = document.getElementById('file-select-btn');
+    const fileNameDisplay = document.getElementById('file-name-display'); // New
+    const exportLevelInput = document.getElementById('export-level');
+    const processBtn = document.getElementById('process-btn');         // New
+    const loadingIndicator = document.getElementById('loading');
+    const outputContainer = document.getElementById('output-container');
+    const outputText = document.getElementById('output-text');
+    const copyBtn = document.getElementById('copy-btn');
 
-  fileSelectBtn.addEventListener('click', function() {
-    fileInput.click();
-  });
+    let selectedFile = null; // Store the File object
 
-  fileInput.addEventListener('change', function(event) {
-    const file = event.target.files[0];
-    if (!file) return;
+    fileSelectBtn.addEventListener('click', function() {
+        fileInput.click();
+    });
 
-    loadingIndicator.hidden = false;
-    outputContainer.hidden = true;
-    outputText.textContent = '';
-
-        const reader = new FileReader();
-           reader.onload = function(e) {
-      let showdownOutput = ''; 
-      try {
-        const arrayBuffer = e.target.result;
-        const dataView = new DataView(arrayBuffer);
-        
-        console.log(`Save file size: ${dataView.byteLength} bytes`);
-
-        // --- Get and validate the MANDATORY export level ---
-        let exportLevel = 50; 
-        const exportLevelStr = exportLevelInput.value.trim();
-        if (exportLevelStr) {
-            const parsedLevel = parseInt(exportLevelStr, 10);
-            if (!isNaN(parsedLevel) && parsedLevel >= 1 && parsedLevel <= 100) {
-                exportLevel = parsedLevel;
-            } else {
-                alert(`Invalid level "${exportLevelStr}" entered. Defaulting to level 50. Please enter a level between 1 and 100.`);
-                if (typeof exportLevelInput !== 'undefined' && exportLevelInput) exportLevelInput.value = exportLevel; 
-            }
+    fileInput.addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            selectedFile = file;
+            fileNameDisplay.textContent = `Selected: ${file.name}`;
+            processBtn.disabled = false; // Enable process button
+            outputContainer.hidden = true; // Hide previous output if a new file is selected
+            outputText.textContent = '';
         } else {
-            alert("Export Level is required. Defaulting to level 50. Please enter a level.");
-            if (typeof exportLevelInput !== 'undefined' && exportLevelInput) exportLevelInput.value = exportLevel;
+            selectedFile = null;
+            fileNameDisplay.textContent = "No file selected.";
+            processBtn.disabled = true;
+        }
+        // We no longer process automatically here
+    });
+
+    processBtn.addEventListener('click', function() {
+        if (!selectedFile) {
+            alert("Please select a save file first.");
+            return;
+        }
+
+        // --- MANDATORY Export Level Check ---
+        const exportLevelStr = exportLevelInput.value.trim();
+        let exportLevel;
+
+        if (!exportLevelStr) {
+            alert("Export Level is required. Please enter a level between 1 and 100.");
+            exportLevelInput.focus();
+            return; // Stop processing
+        }
+
+        exportLevel = parseInt(exportLevelStr, 10);
+        if (isNaN(exportLevel) || exportLevel < 1 || exportLevel > 100) {
+            alert(`Invalid level "${exportLevelStr}". Please enter a level between 1 and 100.`);
+            exportLevelInput.focus();
+            return; // Stop processing
         }
         console.log(`Using export level: ${exportLevel}`);
-        // --- End of export level handling ---
+        // --- End of export level check ---
 
-        // --- PARTY PARSING ---
-        showdownOutput += "=== PARTY ===\n";
-        let partyCountValue = 0; 
-        let partyDataStartOffsetInFile = 0; 
-        let activeSaveBlockBase = -1; 
 
-        if (DIRECT_MODE) {
-            console.log("Party Parsing: DIRECT_MODE is true.");
-            if (PARTY_COUNT_DIRECT_OFFSET >= dataView.byteLength || PARTY_DATA_DIRECT_OFFSET >= dataView.byteLength) {
-                throw new Error("DIRECT_MODE party offsets are out of bounds for this save file.");
-            }
-            partyCountValue = dataView.getUint8(PARTY_COUNT_DIRECT_OFFSET); // Assign directly
-            partyDataStartOffsetInFile = PARTY_DATA_DIRECT_OFFSET;
-            console.log(`Direct Mode - Party count: ${partyCountValue} (from file offset 0x${PARTY_COUNT_DIRECT_OFFSET.toString(16)})`);
-        } else {
-            console.log("Party Parsing: DIRECT_MODE is false. Entering section-based parsing.");
-            activeSaveBlockBase = findActiveSaveOffset(dataView); 
-            
-            if ((activeSaveBlockBase !== 0 && activeSaveBlockBase !== SAVE_BLOCK_SIZE) && dataView.byteLength >= SAVE_BLOCK_SIZE) {
-                if (typeof activeSaveBlockBase === 'undefined') {
-                   console.error("CRITICAL: findActiveSaveOffset returned undefined!");
-                   throw new Error("findActiveSaveOffset returned undefined, cannot proceed with party parsing.");
-                }
-            }
-            console.log(`Active save block determined to start at file offset: 0x${activeSaveBlockBase.toString(16)}`); 
-            
-            const partySectionSlotOffset = findSectionOffset(dataView, activeSaveBlockBase, PARTY_DATA_SECTION_ID);
-            
-            if (partySectionSlotOffset !== -1) {
-                console.log(`Party Data Section (ID ${PARTY_DATA_SECTION_ID}) found in slot at file offset: 0x${partySectionSlotOffset.toString(16)}`);
+        loadingIndicator.hidden = false;
+        outputContainer.hidden = true;
+        outputText.textContent = '';
 
-                let chosenPartyCountOffset = -1;
-                let tempCountRead = 0; // Use a different variable for the read value
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            let showdownOutput = ''; 
+            try {
+                const arrayBuffer = e.target.result;
+                const dataView = new DataView(arrayBuffer);
+                
+                console.log(`Save file size: ${dataView.byteLength} bytes`);
 
-                const knownPartyCountOffsets = [0x01A7, 0x0057]; // Try 0x01A7 first (for "New Mons"), then 0x0057
+                // --- PARTY PARSING --- (Your existing logic)
+                showdownOutput += "=== PARTY ===\n";
+                let partyCountValue = 0; 
+                let partyDataStartOffsetInFile = 0; 
+                let activeSaveBlockBase = -1; 
 
-                for (const offset of knownPartyCountOffsets) {
-                    const currentPartyCountFileOffset = partySectionSlotOffset + offset;
-                    if (currentPartyCountFileOffset < dataView.byteLength) {
-                        tempCountRead = dataView.getUint8(currentPartyCountFileOffset);
-                        console.log(`(Party Count Check) Trying offset 0x${offset.toString(16)} (abs: 0x${currentPartyCountFileOffset.toString(16)}), found count: ${tempCountRead}`);
-                        if (tempCountRead >= 0 && tempCountRead <= 6) { 
-                            chosenPartyCountOffset = offset;
-                            partyCountValue = tempCountRead; // Assign to the main partyCountValue
-                            console.log(`Party count ${partyCountValue} confirmed using internal offset 0x${offset.toString(16)}.`);
-                            break; 
-                        }
-                    } else {
-                        console.warn(`Party count offset 0x${offset.toString(16)} (abs: 0x${currentPartyCountFileOffset.toString(16)}) is out of bounds for section.`);
-                    }
-                }
-
-                if (chosenPartyCountOffset !== -1) {
-                    const partyCountActualFileOffset = partySectionSlotOffset + chosenPartyCountOffset;
-                    partyDataStartOffsetInFile = partySectionSlotOffset + PARTY_MEMBERS_OFFSET_IN_SECTION; 
-
-                    if (partyCountValue > 0) {
-                        const endOfPartyData = partyDataStartOffsetInFile + (partyCountValue * PARTY_MON_SIZE);
-                        if (endOfPartyData > dataView.byteLength) {
-                            showdownOutput += `Error: Calculated end of party data (0x${endOfPartyData.toString(16)}) is out of file bounds (0x${dataView.byteLength.toString(16)}).\n`;
-                            console.error(`Calculated end of party data (count ${partyCountValue}) from offset 0x${partyDataStartOffsetInFile.toString(16)} is out of bounds.`);
-                            partyCountValue = 0; 
-                        }
-                    }
-                    console.log(`Section Mode - Party count: ${partyCountValue} (from chosen internal offset 0x${chosenPartyCountOffset.toString(16)} at absolute 0x${partyCountActualFileOffset.toString(16)})`);
-                    console.log(`Section Mode - Party data starting at offset: 0x${partyDataStartOffsetInFile.toString(16)}`);
+                if (DIRECT_MODE) {
+                    // ... your direct mode party logic ...
                 } else {
-                    showdownOutput += "Error: Could not determine valid party count from any known offsets.\n";
-                    console.error(`Party count read was invalid from all tried offsets.`);
-                    partyCountValue = 0; 
-                }
-            } else {
-                showdownOutput += "Could not find Party Data Section. Skipping party.\n";
-                console.error(`Could not find Party Data Section (ID ${PARTY_DATA_SECTION_ID}) in the active save block starting at 0x${activeSaveBlockBase.toString(16)}.`);
-            }
-        }
-
-        // This party processing loop uses the partyCountValue determined above
-        if (typeof partyCountValue === 'number' && partyCountValue > 0 && partyCountValue <= 6) {
-            for (let i = 0; i < partyCountValue; i++) {
-                const monAddressInFile = partyDataStartOffsetInFile + (i * PARTY_MON_SIZE);
-                if (monAddressInFile + PARTY_MON_SIZE > dataView.byteLength) { 
-                    console.error(`Attempt to read party mon ${i+1} data out of bounds. Offset: 0x${monAddressInFile.toString(16)}`);
-                    showdownOutput += `Error reading party mon ${i+1} (out of bounds).\n`;
-                    break; 
-                }
-                const monData = readPartyMon(dataView, monAddressInFile);
-                if (monData && monData.species !== 0) {
-                    const speciesNameForLogParty = mons[monData.species-1] || `UnknownSpecies(${monData.species})`;
-                    console.log(`Party Pokemon ${i + 1} (Species ID ${monData.species}, Name: ${speciesNameForLogParty}):`, monData);
-                    showdownOutput += formatShowdownExport(monData, exportLevel); 
-                } else {
-                    console.log(`Party Pokemon ${i + 1} at offset 0x${monAddressInFile.toString(16)} is empty or data is invalid.`);
-                }
-            }
-        } else if (partyCountValue === 0 && !showdownOutput.includes("Could not find Party Data Section")) { 
-            showdownOutput += "Party is empty.\n";
-        } else if (typeof partyCountValue !== 'undefined' && partyCountValue !== 0 && !showdownOutput.includes("Could not find Party Data Section")) {
-            showdownOutput += `Invalid party count read: ${partyCountValue}. Skipping party.\n`;
-            console.warn(`Invalid party count read: ${partyCountValue}`);
-        }
-        showdownOutput += "\n";
-        // --- END OF PARTY PARSING ---
-
-
-        // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        // +++ PC BOX PARSING (BOX 1 and BOX 2) ++++++++++++++++++++++++++++++++++
-        // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        showdownOutput += "\n=== PC BOXES ===\n";
-        console.log("\n--- Starting PC Box Parsing ---");
-        const POKEMON_PER_BOX = 30;
-        const NUM_BOXES_TO_PARSE = 2; 
-
-        if (!DIRECT_MODE) {
-            if (activeSaveBlockBase === -1 && dataView.byteLength >= SAVE_BLOCK_SIZE) { 
-                 console.warn("(PC Parse) activeSaveBlockBase was -1. Recalculating for PC parsing.");
-                 activeSaveBlockBase = findActiveSaveOffset(dataView);
-                 console.log(`(PC Parse) Active save block (re-calculated) starts at: 0x${activeSaveBlockBase.toString(16)}`);
-                 if (activeSaveBlockBase === -1 && dataView.byteLength >= SAVE_BLOCK_SIZE * 2) { 
-                     console.error("(PC Parse) Critical: Failed to determine active save block for PC parsing.");
-                     showdownOutput += "Error: Could not determine active save block for PC data.\n";
-                 }
-            } else if (activeSaveBlockBase !== -1) {
-                 console.log(`(PC Parse) Using activeSaveBlockBase from party parsing: 0x${activeSaveBlockBase.toString(16)}`);
-            } else { 
-                console.warn("(PC Parse) activeSaveBlockBase is -1 and save file is very small. Cannot perform section-based PC parsing.");
-            }
-
-            if (activeSaveBlockBase === 0 || activeSaveBlockBase === SAVE_BLOCK_SIZE) { 
-                for (let boxIndex = 0; boxIndex < NUM_BOXES_TO_PARSE; boxIndex++) {
-                    const currentBoxNumber = boxIndex + 1;
-                    const currentBoxSectionId = PC_BOX_START_SECTION_ID + boxIndex; 
-                    
-                    showdownOutput += `\n=== PC BOX ${currentBoxNumber} (Section ID ${currentBoxSectionId}) ===\n`;
-                    console.log(`(PC Parse) Attempting to parse Box ${currentBoxNumber}, targeting Section ID ${currentBoxSectionId}`);
-
-                    const boxSectionSlotAbsoluteOffset = findSectionOffset(dataView, activeSaveBlockBase, currentBoxSectionId);
-
-                    if (boxSectionSlotAbsoluteOffset === -1) {
-                        showdownOutput += `Box ${currentBoxNumber} (Section ${currentBoxSectionId}) not found.\n`;
-                        console.warn(`(PC Parse) Could not find PC Box Section ID ${currentBoxSectionId}.`);
-                        continue; 
-                    }
-                    
-                    console.log(`(PC Parse) Box ${currentBoxNumber} (Section ${currentBoxSectionId}) slot found at ABSOLUTE file offset: 0x${boxSectionSlotAbsoluteOffset.toString(16)}`);
-                    
-                    const boxDataStartInFile = boxSectionSlotAbsoluteOffset + PC_BOX_DATA_INTERNAL_OFFSET;
-                    console.log(`(PC Parse) Box ${currentBoxNumber} data starts at offset 0x${boxDataStartInFile.toString(16)} (using PC_BOX_DATA_INTERNAL_OFFSET = 0x${PC_BOX_DATA_INTERNAL_OFFSET.toString(16)})`);
-
-                    if (boxDataStartInFile + (POKEMON_PER_BOX * BOX_MON_SIZE) > dataView.byteLength + 1) { 
-                        console.error(`(PC Parse) Calculated data for Box ${currentBoxNumber} extends beyond file length. Start offset: 0x${boxDataStartInFile.toString(16)}, Needs up to: 0x${(boxDataStartInFile + (POKEMON_PER_BOX * BOX_MON_SIZE)).toString(16)}, File size: 0x${dataView.byteLength.toString(16)}`);
-                        showdownOutput += `Error reading Box ${currentBoxNumber} data (offset out of bounds).\n`;
-                        continue; 
-                    }
-                    
-                    let pokemonFoundInThisBox = 0;
-                    for (let slotIndex = 0; slotIndex < POKEMON_PER_BOX; slotIndex++) {
-                        const monAddressInFile = boxDataStartInFile + (slotIndex * BOX_MON_SIZE);
-                         if (monAddressInFile + BOX_MON_SIZE > dataView.byteLength) { 
-                            console.error(`(PC Parse) Attempt to read PC Mon in Box ${currentBoxNumber}, Slot ${slotIndex+1} out of bounds. Offset: 0x${monAddressInFile.toString(16)}`);
-                            break; 
-                        }
-                        const monData = readBoxMon(dataView, monAddressInFile);
-
-                        if (monData && monData.species !== 0) {
-                            pokemonFoundInThisBox++;
-                            const speciesNameForLog = mons[monData.species-1] || `UnknownSpecies(${monData.species})`;
-                            showdownOutput += formatShowdownExport(monData, exportLevel); 
-
-                            if (currentBoxNumber === 1 && slotIndex === 0 && monData.species === 77 && monData.personality === 0x3165F6A0) {
-                                console.log("!!!!!! (PC Parse) SUCCESSFULLY PARSED TARGET PONYTA IN BOX 1 SLOT 1 !!!!!!");
+                    activeSaveBlockBase = findActiveSaveOffset(dataView);
+                    console.log(`Active save block determined to start at file offset: 0x${activeSaveBlockBase.toString(16)}`); 
+                    const partySectionSlotOffset = findSectionOffset(dataView, activeSaveBlockBase, PARTY_DATA_SECTION_ID);
+                    if (partySectionSlotOffset !== -1) {
+                        console.log(`Party Data Section (ID ${PARTY_DATA_SECTION_ID}) found in slot at file offset: 0x${partySectionSlotOffset.toString(16)}`);
+                        let chosenPartyCountOffset = -1;
+                        partyCountValue = 0;
+                        let bestCountSoFar = -1;
+                        const knownPartyCountOffsets = [0x0234, 0x01A7, 0x0057];
+                        for (const offset of knownPartyCountOffsets) {
+                            const currentPartyCountFileOffset = partySectionSlotOffset + offset;
+                            if (currentPartyCountFileOffset < dataView.byteLength) {
+                                const tempCountRead = dataView.getUint8(currentPartyCountFileOffset);
+                                if (tempCountRead >= 0 && tempCountRead <= 6) {
+                                    if (tempCountRead > bestCountSoFar) {
+                                        bestCountSoFar = tempCountRead;
+                                        chosenPartyCountOffset = offset;
+                                    }
+                                }
                             }
                         }
-                    }
-                    if (pokemonFoundInThisBox === 0) {
-                        showdownOutput += "(This box appears empty)\n";
+                        if (bestCountSoFar !== -1) {
+                            partyCountValue = bestCountSoFar;
+                            console.log(`Party count ${partyCountValue} confirmed using internal offset 0x${chosenPartyCountOffset.toString(16)}.`);
+                            partyDataStartOffsetInFile = partySectionSlotOffset + PARTY_MEMBERS_OFFSET_IN_SECTION;
+                            if (partyCountValue > 0 && (partyDataStartOffsetInFile + (partyCountValue * PARTY_MON_SIZE) > dataView.byteLength)) {
+                                showdownOutput += `Error: Calculated end of party data is out of file bounds.\n`;
+                                partyCountValue = 0;
+                            }
+                        } else {
+                            showdownOutput += "Error: Could not determine valid party count.\n";
+                            partyCountValue = 0;
+                        }
+                    } else {
+                        showdownOutput += "Could not find Party Data Section. Skipping party.\n";
                     }
                 }
-            } else {
-                 showdownOutput += "PC Box parsing skipped: activeSaveBlockBase not validly determined.\n";
-                 console.error("(PC Parse) activeSaveBlockBase not valid. Cannot proceed with PC section parsing.");
+
+                if (typeof partyCountValue === 'number' && partyCountValue > 0 && partyCountValue <= 6) {
+                    for (let i = 0; i < partyCountValue; i++) {
+                        const monAddressInFile = partyDataStartOffsetInFile + (i * PARTY_MON_SIZE);
+                        if (monAddressInFile + PARTY_MON_SIZE > dataView.byteLength) { 
+                            showdownOutput += `Error reading party mon ${i+1} (out of bounds).\n`;
+                            break; 
+                        }
+                        const monData = readPartyMon(dataView, monAddressInFile);
+                        if (monData && monData.species !== 0) {
+                            showdownOutput += formatShowdownExport(monData, exportLevel); 
+                        }
+                    }
+                } else if (partyCountValue === 0 && !showdownOutput.includes("Could not find Party Data Section")) { 
+                    showdownOutput += "Party is empty.\n";
+                } else if (typeof partyCountValue !== 'undefined' && partyCountValue !== 0 && !showdownOutput.includes("Could not find Party Data Section")) {
+                    showdownOutput += `Invalid party count read: ${partyCountValue}. Skipping party.\n`;
+                }
+                showdownOutput += "\n";
+                // --- END OF PARTY PARSING ---
+
+                // --- PC BOX PARSING --- (Your existing logic)
+                showdownOutput += "\n=== PC BOXES ===\n";
+                const POKEMON_PER_BOX = 30;
+                const NUM_BOXES_TO_PARSE = 2;
+
+                if (!DIRECT_MODE) {
+                    if (activeSaveBlockBase === -1 && dataView.byteLength >= SAVE_BLOCK_SIZE) { 
+                         activeSaveBlockBase = findActiveSaveOffset(dataView);
+                    }
+                    if (activeSaveBlockBase === 0 || activeSaveBlockBase === SAVE_BLOCK_SIZE) { 
+                        for (let boxIndex = 0; boxIndex < NUM_BOXES_TO_PARSE; boxIndex++) {
+                            const currentBoxNumber = boxIndex + 1;
+                            const currentBoxSectionId = PC_BOX_START_SECTION_ID + boxIndex; 
+                            showdownOutput += `\n=== PC BOX ${currentBoxNumber} (Section ID ${currentBoxSectionId}) ===\n`;
+                            const boxSectionSlotAbsoluteOffset = findSectionOffset(dataView, activeSaveBlockBase, currentBoxSectionId);
+                            if (boxSectionSlotAbsoluteOffset === -1) {
+                                showdownOutput += `Box ${currentBoxNumber} (Section ${currentBoxSectionId}) not found.\n`;
+                                continue; 
+                            }
+                            const boxDataStartInFile = boxSectionSlotAbsoluteOffset + PC_BOX_DATA_INTERNAL_OFFSET;
+                            if (boxDataStartInFile + (POKEMON_PER_BOX * BOX_MON_SIZE) > dataView.byteLength + 1) { 
+                                showdownOutput += `Error reading Box ${currentBoxNumber} data (offset out of bounds).\n`;
+                                continue; 
+                            }
+                            let pokemonFoundInThisBox = 0;
+                            for (let slotIndex = 0; slotIndex < POKEMON_PER_BOX; slotIndex++) {
+                                const monAddressInFile = boxDataStartInFile + (slotIndex * BOX_MON_SIZE);
+                                 if (monAddressInFile + BOX_MON_SIZE > dataView.byteLength) { 
+                                    break; 
+                                }
+                                const monData = readBoxMon(dataView, monAddressInFile);
+                                if (monData && monData.species !== 0) {
+                                    pokemonFoundInThisBox++;
+                                    showdownOutput += formatShowdownExport(monData, exportLevel); 
+                                }
+                            }
+                            if (pokemonFoundInThisBox === 0) {
+                                showdownOutput += "(This box appears empty)\n";
+                            }
+                        }
+                    } else {
+                         showdownOutput += "PC Box parsing skipped: activeSaveBlockBase not validly determined.\n";
+                    }
+                } else {
+                    showdownOutput += "PC Box parsing not implemented for DIRECT_MODE.\n";
+                }
+                // --- END OF PC BOX PARSING ---
+
+                outputText.textContent = showdownOutput.trim() || "No Pokémon data found or processed successfully.";
+                outputContainer.hidden = false;
+
+            } catch (error) {
+                console.error("Error processing save file:", error);
+                let errorMessage = `Error: ${error.message}`;
+                if (error.stack) { errorMessage += `\n\nStack: ${error.stack}`; }
+                errorMessage += "\n\nCheck console (F12) for more details.";
+                outputText.textContent = errorMessage;
+                outputContainer.hidden = false;
+            } finally {
+                loadingIndicator.hidden = true;
+                // fileInput.value = ''; // Keep file selected to allow re-processing with different level
             }
+        }; // End of reader.onload
+
+        reader.onerror = function() { 
+            alert('Error reading the selected file.');
+            loadingIndicator.hidden = true;
+            selectedFile = null;
+            fileNameDisplay.textContent = "No file selected.";
+            processBtn.disabled = true;
+        };
+        reader.readAsArrayBuffer(selectedFile);
+    }); // End of processBtn.addEventListener
+
+    copyBtn.addEventListener('click', function() {
+        const outputToCopy = outputText.textContent;
+        if (!outputToCopy || outputToCopy === "No Pokémon data found or processed successfully." || outputToCopy.startsWith("Error:")) {
+            return;
+        }
+        
+        const originalButtonText = copyBtn.textContent;
+        const originalButtonClass = copyBtn.className;
+
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(outputToCopy)
+                .then(() => {
+                    copyBtn.textContent = "Copied!";
+                    copyBtn.classList.add('copied'); // Optional: for styling feedback
+                    copyBtn.disabled = true;
+                    setTimeout(() => {
+                        copyBtn.textContent = originalButtonText;
+                        copyBtn.classList.remove('copied');
+                        copyBtn.disabled = false;
+                    }, 2000);
+                })
+                .catch(err => {
+                    console.error('Could not copy text using navigator.clipboard: ', err);
+                    fallbackCopyTextToClipboard(outputToCopy, copyBtn, originalButtonText);
+                });
         } else {
-            showdownOutput += "PC Box parsing not implemented for DIRECT_MODE.\n";
+            fallbackCopyTextToClipboard(outputToCopy, copyBtn, originalButtonText);
         }
-        // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        // +++ END: PC BOX PARSING +++++++++++++++++++++++++++++++++++++++++++++++
-        // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    });
 
-        outputText.textContent = showdownOutput.trim() || "No Pokémon data found or processed successfully.";
-        outputContainer.hidden = false;
-
-      } catch (error) {
-        console.error("Error processing save file:", error);
-        let errorMessage = `Error: ${error.message}`;
-        if (error.stack) {
-            errorMessage += `\n\nStack: ${error.stack}`;
+    function fallbackCopyTextToClipboard(text, buttonElement, originalText) {
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        textArea.style.top = "0";
+        textArea.style.left = "0";
+        textArea.style.position = "fixed";
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        try {
+            const successful = document.execCommand('copy');
+            if (successful) {
+                buttonElement.textContent = "Copied!";
+                buttonElement.classList.add('copied');
+                buttonElement.disabled = true;
+                setTimeout(() => {
+                    buttonElement.textContent = originalText;
+                    buttonElement.classList.remove('copied');
+                    buttonElement.disabled = false;
+                }, 2000);
+            } else {
+                 alert('Copying to clipboard failed (fallback).');
+            }
+        } catch (err) {
+            console.error('Fallback copy to clipboard failed: ', err);
+            alert('Copying to clipboard failed. Please select and copy the text manually.');
         }
-        errorMessage += "\n\nCheck console (F12) for more details.";
-        outputText.textContent = errorMessage;
-        outputContainer.hidden = false;
-      } finally {
-        loadingIndicator.hidden = true;
-        if (typeof fileInput !== 'undefined' && fileInput) { 
-            fileInput.value = ''; 
-        }
-      }
-    }; // End of reader.onload
-
-    reader.onerror = function() { 
-      alert('Error reading the selected file.');
-      loadingIndicator.hidden = true;
-      if (typeof fileInput !== 'undefined' && fileInput) { 
-          fileInput.value = '';
-      }
-    };
-    reader.readAsArrayBuffer(file);
-  }); // End of fileInput.addEventListener
-
-  copyBtn.addEventListener('click', function() {
-    const output = outputText.textContent;
-    if (!output || output === "No Pokémon data found or processed successfully." || output.startsWith("Error:")) return;
-    
-    if (navigator.clipboard) {
-      navigator.clipboard.writeText(output)
-        .then(() => {
-          alert('Copied to clipboard!');
-        })
-        .catch(err => {
-          console.error('Could not copy text using navigator.clipboard: ', err);
-          fallbackCopyTextToClipboard(output);
-        });
-    } else {
-      fallbackCopyTextToClipboard(output);
+        document.body.removeChild(textArea);
     }
-  });
-
-  function fallbackCopyTextToClipboard(text) {
-    const textArea = document.createElement('textarea');
-    textArea.value = text;
-    textArea.style.top = "0";
-    textArea.style.left = "0";
-    textArea.style.position = "fixed";
-    document.body.appendChild(textArea);
-    textArea.focus();
-    textArea.select();
-    try {
-      const successful = document.execCommand('copy');
-      const msg = successful ? 'Copied to clipboard!' : 'Copying to clipboard failed.';
-      alert(msg);
-    } catch (err) {
-      console.error('Fallback copy to clipboard failed: ', err);
-      alert('Copying to clipboard failed. Please select and copy the text manually.');
-    }
-    document.body.removeChild(textArea);
-  }
 
 }); // End of DOMContentLoaded

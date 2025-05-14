@@ -12,13 +12,17 @@
         
         <div class="upload-box">
             <input type="file" id="save-upload" accept=".sav" hidden/>
-            <button id="file-select-btn">Choose Save File</button>
+            <div class="file-selection-area">
+                <button id="file-select-btn">Choose Save File</button>
+                <span id="file-name-display">No file selected.</span>
+            </div>
             
             <div class="options">
                 <div class="option-group">
-                    <input type="text" id="export-level" placeholder="Export Level">
+                    <input type="text" id="export-level" placeholder="Export Level (Required)">
                 </div>
             </div>
+            <button id="process-btn" disabled>Process Save File</button> 
         </div>
         
         <div id="loading" class="loading-indicator" hidden>
